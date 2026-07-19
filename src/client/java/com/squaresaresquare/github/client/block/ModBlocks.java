@@ -786,6 +786,10 @@ public class ModBlocks {
         return ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(ArchitectureBlocksClient.MOD_ID, name));
     }
 
+    public static ResourceKey<@NotNull Block> getRK(Block block) {
+        return BuiltInRegistries.BLOCK.getResourceKey(block).get();
+    }
+
     public static boolean neverAllowSpawn(BlockState state, BlockGetter level, BlockPos pos, EntityType<?> type) {
         return false;
     }
@@ -1085,6 +1089,69 @@ public class ModBlocks {
             "thatch_peak",
             ThatchPeakBlock::new,
             BlockBehaviour.Properties.of().sound(SoundType.HANGING_ROOTS)
+                    .noOcclusion()
+                    .strength(1,1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+            true
+    );
+    public static final Block SIMPLE_ARCHED_WINDOW_TOP_LEFT = register(
+            "simple_arched_window_top_left",
+            SimpleArchedWindowTopLeft::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1,1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+            true
+    );
+    public static final Block SIMPLE_ARCHED_WINDOW_TOP_RIGHT = register(
+            "simple_arched_window_top_right",
+            SimpleArchedWindowTopRight::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1,1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+            true
+    );
+    public static final Block SIMPLE_ARCHED_WINDOW_LEFT = register(
+            "simple_arched_window_left",
+            SimpleArchedWindowLeft::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1,1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+            true
+    );
+    public static final Block SIMPLE_ARCHED_WINDOW_RIGHT = register(
+            "simple_arched_window_right",
+            SimpleArchedWindowLeft::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1,1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+            true
+    );
+    public static final Block SIMPLE_ARCHED_WINDOW_BETWEEN = register(
+            "simple_arched_window_between",
+            SimpleArchedWindowBetween::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1,1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+            true
+    );
+    public static final Block SIMPLE_ARCHED_WINDOW_TOP_CENTER = register(
+            "simple_arched_window_top_center",
+            SimpleArchedWindowTopCenter::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1,1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+            true
+    );
+    public static final Block SIMPLE_ARCHED_WINDOW_TOP_BETWEEN = register(
+            "simple_arched_window_top_between",
+            SimpleArchedWindowTopBetween::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
                     .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),

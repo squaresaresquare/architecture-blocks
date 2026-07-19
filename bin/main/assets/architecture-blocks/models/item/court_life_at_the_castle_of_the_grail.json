@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "architecture-blocks:item/court_life_at_the_castle_of_the_grail"
+  }
+}

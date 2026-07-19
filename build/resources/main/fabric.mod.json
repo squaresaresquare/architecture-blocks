@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "architecture_blocks",
+	"id": "architecture-blocks",
 	"version": "1.0.0",
 	"name": "architecture_blocks",
 	"description": "This is an example description! Tell everyone what your mod is about!",
@@ -8,8 +8,8 @@
 		"Me!"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/squaresaresquare",
+		"sources": "https://github.com/squaresaresquare/architecture_mods"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/architecture-blocks/icon.png",
@@ -26,7 +26,7 @@
 		]
 	},
 	"mixins": [
-		"architecture_blocks.mixins.json"
+		"architecture-blocks.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.19.3",

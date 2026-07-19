@@ -1,6 +1,8 @@
 package com.squaresaresquare.github.client.creativemodetab;
 
 import com.mojang.serialization.Codec;
+import com.squaresaresquare.github.client.painting.ModPaintings;
+import com.squaresaresquare.github.client.item.ModItems;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
 import net.minecraft.core.component.DataComponentType;
@@ -11,11 +13,13 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import org.jetbrains.annotations.NotNull;
 import com.squaresaresquare.github.client.ArchitectureBlocksClient;
 import com.squaresaresquare.github.client.block.ModBlocks;
+import com.squaresaresquare.github.client.painting.ModPaintings;
 import net.minecraft.*;
 import java.util.HashMap;
 import java.util.Map;
@@ -29,6 +33,10 @@ public class ModCreativeModeTabs {
                     .build()
     );
     // 1. Create a registration key using your Mod ID
+    public static final ResourceKey<@NotNull CreativeModeTab> PAINTINGS_TAB_KEY = ResourceKey.create(
+            Registries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(ArchitectureBlocksClient.MOD_ID, "paintings_tab")
+    );
     public static final ResourceKey<@NotNull CreativeModeTab> ARCHITECTURE_BLOCK_TAB_KEY = ResourceKey.create(
             Registries.CREATIVE_MODE_TAB,
             Identifier.fromNamespaceAndPath(ArchitectureBlocksClient.MOD_ID, "architecture_block_tab")
@@ -46,7 +54,31 @@ public class ModCreativeModeTabs {
             Registries.CREATIVE_MODE_TAB,
             Identifier.fromNamespaceAndPath(ArchitectureBlocksClient.MOD_ID, "four_arched_window_tab")
     );
-
+    /*public static final CreativeModeTab PAINTINGS_TAB = Registry.register(
+            BuiltInRegistries.CREATIVE_MODE_TAB,
+            PAINTINGS_TAB_KEY,
+            FabricCreativeModeTab.builder().icon(() -> new ItemStack(BuiltInRegistries.ITEM.getValue(ModPaintings.ACCOLADE_RK.registry())))
+                    .title(Component.translatable("itemGroup." + ArchitectureBlocksClient.MOD_ID + ".paintings_tab"))
+                    .displayItems((displayContext, output) -> {
+                        output.accept(BuiltInRegistries.ITEM.getValue(ModPaintings.ACCOLADE_RK.registry()));
+                        output.accept(ModItems.BEDROOM_LOVE_POTION);
+                        output.accept(ModItems.CHAPEL);
+                        output.accept(ModItems.CHAPEL_SAINT_STAINED_GLASS);
+                        output.accept(ModItems.CHAPEL_SUPPLICANTS_STAINED_GLASS);
+                        output.accept(ModItems.COURT_LIFE_AT_THE_CASTLE_OF_THE_GRAIL);
+                        output.accept(ModItems.DINING_ROOM_SONG_CONTEST);
+                        output.accept(ModItems.LUDWIG_II_BLUE_GENERAL_1);
+                        output.accept(ModItems.LUDWIG_II_BLUE_GENERAL_2);
+                        output.accept(ModItems.MALCOLM_AND_MARGARET_AT_QUEENSFERRY);
+                        output.accept(ModItems.MIRACLE_OF_THE_GRAIL);
+                        output.accept(ModItems.PARZIFAL);
+                        output.accept(ModItems.PARZIFALS_FIGHT);
+                        output.accept(ModItems.SIGURD_MEETS_GRYPIN);
+                        output.accept(ModItems.SINGERS_HALL_CURSE_OF_GRAIL_MESSENGER_KUNDRY_UPON_PARZIVAL);
+                        output.accept(ModItems.THE_ARRIVAL_OF_LOHENGRIN_IN_ANTWERP);
+                        output.accept(ModItems.TRISTAN_AND_ISOLDE_WITH_THE_POTION);
+                        output.accept(ModItems.UNDER_THE_LINDON);
+                    }).build());*/
     public static final CreativeModeTab ARCHITECTURE_BLOCK_TAB = Registry.register(
             BuiltInRegistries.CREATIVE_MODE_TAB,
             ARCHITECTURE_BLOCK_TAB_KEY,

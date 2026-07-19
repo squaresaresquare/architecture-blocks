@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "architecture-blocks:item/the_arrival_of_lohengrin_in_antwerp"
+  }
+}

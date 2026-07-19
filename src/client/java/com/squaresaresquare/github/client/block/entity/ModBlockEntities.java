@@ -114,4 +114,11 @@ public class ModBlockEntities {
     public static final BlockEntityType<@NotNull HayBlockEntity> HAY_BLOCK_ENTITY = register("hay_block", HayBlockEntity::new, ModBlocks.HAY_BLOCK);
     public static final BlockEntityType<@NotNull ThatchBlockEntity> THATCH_BLOCK_ENTITY = register("thatch", ThatchBlockEntity::new, ModBlocks.THATCH_BLOCK);
     public static final BlockEntityType<@NotNull ThatchPeakBlockEntity> THATCH_PEAK_BLOCK_ENTITY = register("thatch_peak", ThatchPeakBlockEntity::new, ModBlocks.THATCH_PEAK_BLOCK);
+    public static final BlockEntityType<@NotNull SimpleArchedWindowTopLeftBlockEntity> SIMPLE_ARCHED_WINDOW_TOP_LEFT_BLOCK_ENTITY = register("simple_arched_window_top_left", SimpleArchedWindowTopLeftBlockEntity::new, ModBlocks.SIMPLE_ARCHED_WINDOW_TOP_LEFT);
+    public static final BlockEntityType<@NotNull SimpleArchedWindowTopRightBlockEntity> SIMPLE_ARCHED_WINDOW_TOP_RIGHT_BLOCK_ENTITY = register("simple_arched_window_top_right", SimpleArchedWindowTopRightBlockEntity::new, ModBlocks.SIMPLE_ARCHED_WINDOW_TOP_RIGHT);
+    public static final BlockEntityType<@NotNull SimpleArchedWindowTopCenterBlockEntity> SIMPLE_ARCHED_WINDOW_TOP_CENTER_BLOCK_ENTITY = register("simple_arched_window_top_center", SimpleArchedWindowTopCenterBlockEntity::new, ModBlocks.SIMPLE_ARCHED_WINDOW_TOP_CENTER);
+    public static final BlockEntityType<@NotNull SimpleArchedWindowTopBetweenBlockEntity> SIMPLE_ARCHED_WINDOW_TOP_BETWEEN_BLOCK_ENTITY = register("simple_arched_window_top_between", SimpleArchedWindowTopBetweenBlockEntity::new, ModBlocks.SIMPLE_ARCHED_WINDOW_TOP_BETWEEN);
+    public static final BlockEntityType<@NotNull SimpleArchedWindowLeftBlockEntity> SIMPLE_ARCHED_WINDOW_LEFT_BLOCK_ENTITY = register("simple_arched_window_left", SimpleArchedWindowLeftBlockEntity::new, ModBlocks.SIMPLE_ARCHED_WINDOW_LEFT);
+    public static final BlockEntityType<@NotNull SimpleArchedWindowRightBlockEntity> SIMPLE_ARCHED_WINDOW_RIGHT_BLOCK_ENTITY = register("simple_arched_window_right", SimpleArchedWindowRightBlockEntity::new, ModBlocks.SIMPLE_ARCHED_WINDOW_RIGHT);
+    public static final BlockEntityType<@NotNull SimpleArchedWindowBetweenBlockEntity> SIMPLE_ARCHED_WINDOW_BETWEEN_BLOCK_ENTITY = register("simple_arched_window_between", SimpleArchedWindowBetweenBlockEntity::new, ModBlocks.SIMPLE_ARCHED_WINDOW_BETWEEN);
 }

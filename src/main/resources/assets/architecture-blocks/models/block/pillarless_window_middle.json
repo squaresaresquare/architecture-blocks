@@ -3,7 +3,8 @@
 	"ambientocclusion": false,
 	"texture_size": [64, 64],
 	"textures": {
-		"2": "architecture-blocks:block/pillarless_window_middle/tinted_glass"
+		"2": "architecture-blocks:block/pillarless_window_middle/tinted_glass",
+        "particle": "architecture-blocks:block/pillarless_window_middle/tinted_glass"
 	},
 	"elements": [
 		{
