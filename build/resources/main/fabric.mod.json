@@ -2,14 +2,14 @@
 	"schemaVersion": 1,
 	"id": "architecture-blocks",
 	"version": "1.0.0",
-	"name": "architecture_blocks",
+	"name": "Architecture Blocks",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
 	],
 	"contact": {
-		"homepage": "https://github.com/squaresaresquare",
-		"sources": "https://github.com/squaresaresquare/architecture_mods"
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/architecture-blocks/icon.png",
@@ -18,11 +18,8 @@
 		"main": [
 			"com.squaresaresquare.github.ArchitectureBlocks"
 		],
-        "client": [
-          "com.squaresaresquare.github.client.ArchitectureBlocksClient"
-        ],
 		"fabric-datagen": [
-			"com.squaresaresquare.github.client.ArchitectureBlocksDataGenerator"
+			"com.squaresaresquare.github.ArchitectureBlocksDataGenerator"
 		]
 	},
 	"mixins": [

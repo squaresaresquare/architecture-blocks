@@ -7,6 +7,12 @@ import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.squaresaresquare.github.block.ModBlocks;
+import com.squaresaresquare.github.block.entity.ModBlockEntities;
+import com.squaresaresquare.github.creativemodetab.ModCreativeModeTabs;
+import com.squaresaresquare.github.data.ModDataComponents;
+import com.squaresaresquare.github.item.ModItems;
+
 public class ArchitectureBlocks implements ModInitializer {
 	public static final String MOD_ID = "architecture-blocks";
 
@@ -20,7 +26,11 @@ public class ArchitectureBlocks implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-
+		ModBlocks.initialize();
+		ModItems.registerModItems();
+		ModDataComponents.registerDataComponents();
+		ModCreativeModeTabs.registerModCreativeModeTabs();
+		ModBlockEntities.initialize();
 		LOGGER.info("Hello Fabric world!");
 	}
 

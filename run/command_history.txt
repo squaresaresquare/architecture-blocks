@@ -1,0 +1,38 @@
+//wand
+//replace #air white_concrete
+/give @p painting[painting/variant="singers_hall_curse_of_grail_messenger_kundry_upon_parzival"]
+/give @p painting[entity_data={variant:"singers_hall_curse_of_grail_messenger_kundry_upon_parzival"}]
+/give @p painting[minecraft:entity_data=variant="give @p painting[entity_data={variant:"singers_hall_curse_of_grail_messenger_kundry_upon_parzival"]
+/give @p painting[entity_data={id="painting",variant:"singers_hall_curse_of_grail_messenger_kundry_upon_parzival"}]
+/give @p painting[entity_data={id="painting",variant:"endboss"}]
+/give @p painting[minecraft:painting/variant="Endboss"]
+/give @p painting[minecraft:painting/variant=Endboss]
+/give @p painting[minecraft:painting/variant='Endboss']
+/give @p painting[minecraft:painting/variant='endboss']
+/give @p painting[minecraft:painting/variant='singers_hall_curse_of_grail_messenger_kundry_upon_parzival']
+/give @p painting[minecraft:painting/variant='architecture-blocks:singers_hall_curse_of_grail_messenger_kundry_upon_parzival']
+/give @p painting[minecraft:painting/variant='architecture-blocks:accolade']
+/give @p painting[minecraft:painting/variant='architecture-blocks:bedroom_love_potion']
+/time set minecraft:day
+//replace #existing glowstone
+//replace #existing sea_lantern
+//replace #region ochre_froglight
+/give @p painting[minecraft:painting/variant='architecture-blocks:chapel']
+/give @p painting[minecraft:painting/variant='architecture-blocks:chapel_saint_stained_glass']
+/give @p painting[minecraft:painting/variant='architecture-blocks:chapel_supplicants_stained_glass']
+/give @p painting[minecraft:painting/variant='architecture-blocks:court_life_at_the_castle_of_the_grail']
+//give @p painting[minecraft:painting/variant='architecture-blocks:hermann_of_thuringia']
+/give @p painting[minecraft:painting/variant='architecture-blocks:hermann_of_thuringia']
+/give @p painting[minecraft:painting/variant='architecture-blocks:malcolm_and_margaret_at_queensferry']
+/give @p painting[minecraft:painting/variant='architecture-blocks:miracle_of_the_grail']
+/give @p painting[minecraft:painting/variant='architecture-blocks:parzifals_fight']
+/give @p painting[minecraft:painting/variant='architecture-blocks:parzifal']
+/give @p painting[minecraft:painting/variant='architecture-blocks:sigurd_meets_grypin']
+/give @p painting[minecraft:painting/variant='architecture-blocks:singers_hall_curse_of_grail_messenger_kundry_upon_parzival']
+/give @p painting[minecraft:painting/variant='architecture-blocks:the_arrival_of_lohengrin_in_antwerp']
+/give @p painting[minecraft:painting/variant='architecture-blocks:tristan_and_isolde_with_the_potion']
+/give @p painting[minecraft:painting/variant='architecture-blocks:under_the_lindon']
+//replace #region smooth_quartz
+/time set day
+/weather clear
+/gamemode spectator
