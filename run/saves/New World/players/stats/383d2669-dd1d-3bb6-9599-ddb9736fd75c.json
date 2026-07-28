@@ -1,0 +1,19 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 840,
+      "minecraft:total_world_time": 861,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 396,
+      "minecraft:sneak_time": 6,
+      "minecraft:play_time": 840,
+      "minecraft:time_since_death": 840
+    },
+    "minecraft:used": {
+      "minecraft:painting": 8,
+      "minecraft:ochre_froglight": 2,
+      "architecture-blocks:crown_molding_left": 1
+    }
+  },
+  "DataVersion": 4903
+}

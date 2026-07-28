@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "architecture-blocks:block/center_corner_pillar_middle",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "architecture-blocks:block/center_corner_pillar_middle",
+      "y": -90
+    },
+    "facing=south": {
+      "model": "architecture-blocks:block/center_corner_pillar_middle"
+    },
+    "facing=west": {
+      "model": "architecture-blocks:block/center_corner_pillar_middle",
+      "y": 90
+    }
+  }
+}
+        

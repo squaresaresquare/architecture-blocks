@@ -1,0 +1,13 @@
+{
+  "asset_id": "architecture-blocks:chapel",
+  "author": {
+    "color": "gray",
+    "text": "Mayerischen"
+  },
+  "height": 5,
+  "title": {
+    "color": "yellow",
+    "text": "Chapel"
+  },
+  "width": 3
+}

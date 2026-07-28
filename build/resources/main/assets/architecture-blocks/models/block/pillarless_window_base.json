@@ -1,0 +1,73 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/generated",
+	"texture_size": [64, 64],
+	"textures": {
+		"1": "architecture-blocks:block/pillarless_window_base/tinted_glass",
+		"4": "architecture-blocks:block/pillarless_window_base/polished_andesite"
+	},
+	"elements": [
+		{
+			"name": "ledge3",
+			"from": [0, 0, 0],
+			"to": [16, 1, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 14]},
+			"faces": {
+				"north": {"uv": [0, 1.65, 10.66667, 2.45], "texture": "#4"},
+				"east": {"uv": [9.79167, 2.35, 16, 3.15], "texture": "#4"},
+				"south": {"uv": [0, 0.8, 10.66667, 1.6], "texture": "#4"},
+				"west": {"uv": [0, 0, 10.66667, 0.8], "texture": "#4"},
+				"up": {"uv": [0, 3.2, 10.66667, 16], "texture": "#4"},
+				"down": {"uv": [5.33333, 3.2, 16, 16], "texture": "#4"}
+			}
+		},
+		{
+			"name": "ledge2",
+			"from": [1, 1, 0],
+			"to": [16, 3, 15],
+			"faces": {
+				"north": {"uv": [0, 12.75, 10.66667, 14.35], "texture": "#4"},
+				"east": {"uv": [0, 11.05, 10, 12.65], "texture": "#4"},
+				"south": {"uv": [0, 14.4, 10.66667, 16], "texture": "#4"},
+				"west": {"uv": [0, 9.35, 10, 10.95], "texture": "#4"}
+			}
+		},
+		{
+			"name": "ledge1",
+			"from": [0, 3, 0],
+			"to": [16, 4, 16],
+			"faces": {
+				"north": {"uv": [0.95833, 0.95, 11.625, 1.75], "texture": "#4"},
+				"east": {"uv": [0.95833, 0.95, 11.625, 1.75], "texture": "#4"},
+				"south": {"uv": [0.95833, 0.95, 11.625, 1.75], "texture": "#4"},
+				"west": {"uv": [0.95833, 0.95, 11.625, 1.75], "texture": "#4"},
+				"up": {"uv": [1.83333, 2.85, 12.5, 15.65], "texture": "#4"},
+				"down": {"uv": [1.83333, 2.85, 12.5, 15.65], "texture": "#4"}
+			}
+		},
+		{
+			"name": "window",
+			"from": [0, 4, 0],
+			"to": [16, 16, 2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 4, 2]},
+			"faces": {
+				"north": {"uv": [1, 2.4, 16, 16], "texture": "#1"},
+				"east": {"uv": [0, 0, 0, 0], "texture": "#1"},
+				"south": {"uv": [0, 2.4, 16, 16], "texture": "#1"},
+				"west": {"uv": [0, 0, 0, 0], "texture": "#1"},
+				"up": {"uv": [0, 14.4, 10.66667, 16], "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		0,
+		1,
+		2,
+		{
+			"name": "left",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [3]
+		}
+	]
+}
