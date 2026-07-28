@@ -1,14 +1,17 @@
 package com.squaresaresquare.github.block.custom;
 
 import com.mojang.serialization.MapCodec;
+import com.squaresaresquare.github.block.ModBlocks;
 import com.squaresaresquare.github.block.entity.custom.OakLogBlockEntity;
 import com.squaresaresquare.github.block.entity.custom.PillarCapBlockEntity;
+import com.squaresaresquare.github.block.entity.custom.TripleWindowArchRow4Col6BlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -21,16 +24,19 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import javax.swing.text.html.BlockView;
+
 public class OakLogBlock extends BaseEntityBlock {
     public static final EnumProperty<@NotNull Direction> FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final BooleanProperty ON_GRASS = BooleanProperty.create("on_grass");
     public OakLogBlock(Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any()
-                .setValue(ON_GRASS, true) // Default state
                 .setValue(FACING, Direction.NORTH)
+                .setValue(ON_GRASS, true)
         );
     }
+
     @Override
     protected @NotNull RenderShape getRenderShape(@NotNull BlockState state) {
         return RenderShape.MODEL;
@@ -72,14 +78,16 @@ public class OakLogBlock extends BaseEntityBlock {
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<@NotNull Block, @NotNull BlockState> builder) {
         builder.add(ON_GRASS);
+        builder.add(FACING);
     }
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         BlockPos posBelow = context.getClickedPos().below();
         boolean isGrassBelow = context.getLevel().getBlockState(posBelow).is(Blocks.GRASS_BLOCK);
-
+        Direction directionFacing = context.getHorizontalDirection().getOpposite();
         return this.defaultBlockState()
+                .setValue(FACING, directionFacing)
                 .setValue(ON_GRASS, isGrassBelow);
     }
 
@@ -93,5 +101,4 @@ public class OakLogBlock extends BaseEntityBlock {
     public BlockEntity newBlockEntity(@NotNull BlockPos pos, @NotNull BlockState state) {
         return new OakLogBlockEntity(pos, state);
     }
-
 }

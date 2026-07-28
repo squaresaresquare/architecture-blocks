@@ -6,6 +6,8 @@
 		"2": "architecture-blocks:block/crown_molding_1/mangrove_planks",
 		"particle": "architecture-blocks:block/crown_molding_1/lattice"
 	},
+	"ambientocclusion": false,
+	"force_translucent": true,
 	"elements": [
 		{
 			"from": [15, 2, 2],

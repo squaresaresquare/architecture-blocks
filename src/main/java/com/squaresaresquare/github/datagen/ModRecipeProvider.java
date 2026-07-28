@@ -141,7 +141,24 @@ public class ModRecipeProvider extends FabricRecipeProvider{
                         .pattern("000")
                         .unlockedBy("has_hay_block", this.has(Blocks.HAY_BLOCK))
                         .save(this.output);
-
+                this.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CROWN_MOLDING_LEFT, 3)
+                        .define('0', Blocks.BAMBOO_TRAPDOOR)
+                        .define('1', Blocks.MANGROVE_FENCE)
+                        .pattern("001")
+                        .pattern(" 01")
+                        .pattern("  1")
+                        .unlockedBy("has_hay_block", this.has(Blocks.BAMBOO_TRAPDOOR))
+                        .unlockedBy("has_mangrove_fence", this.has(Blocks.MANGROVE_FENCE))
+                        .save(this.output);
+                this.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CROWN_MOLDING_RIGHT, 3)
+                        .define('0', Blocks.BAMBOO_TRAPDOOR)
+                        .define('1', Blocks.MANGROVE_FENCE)
+                        .pattern("100")
+                        .pattern("10 ")
+                        .pattern("1  ")
+                        .unlockedBy("has_hay_block", this.has(Blocks.BAMBOO_TRAPDOOR))
+                        .unlockedBy("has_mangrove_fence", this.has(Blocks.MANGROVE_FENCE))
+                        .save(this.output);
                 this.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.THATCH_PEAK_BLOCK, 4)
                         .define('0', Blocks.HAY_BLOCK)
                         .pattern(" 0 ")

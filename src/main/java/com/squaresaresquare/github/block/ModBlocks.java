@@ -747,6 +747,7 @@ public class ModBlocks {
                     }),
             true
     );
+
     public static final Block OAK_LOG = register(
             "oak_log",
             OakLogBlock::new,
