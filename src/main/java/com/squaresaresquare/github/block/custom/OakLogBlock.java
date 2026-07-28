@@ -2,18 +2,18 @@ package com.squaresaresquare.github.block.custom;
 
 import com.mojang.serialization.MapCodec;
 import com.squaresaresquare.github.block.entity.custom.OakLogBlockEntity;
+import com.squaresaresquare.github.block.entity.custom.PillarCapBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.BaseEntityBlock;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.RenderShape;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
@@ -22,12 +22,13 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class OakLogBlock extends BaseEntityBlock {
-
+    public static final EnumProperty<@NotNull Direction> FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final BooleanProperty ON_GRASS = BooleanProperty.create("on_grass");
     public OakLogBlock(Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(ON_GRASS, true) // Default state
+                .setValue(FACING, Direction.NORTH)
         );
     }
     @Override
@@ -83,12 +84,12 @@ public class OakLogBlock extends BaseEntityBlock {
     }
 
     @Override
-    protected @NotNull MapCodec<? extends BaseEntityBlock> codec() {
+    @NotNull
+    public MapCodec<? extends BaseEntityBlock> codec() {
         return simpleCodec(OakLogBlock::new);
     }
 
     @Nullable
-    @Override
     public BlockEntity newBlockEntity(@NotNull BlockPos pos, @NotNull BlockState state) {
         return new OakLogBlockEntity(pos, state);
     }

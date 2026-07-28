@@ -6,6 +6,14 @@ plugins {
 version = project.mod_version
 group = project.maven_group
 
+loom {
+	runs {
+		all {
+			vmArg "--enable-preview"
+		}
+	}
+}
+
 repositories {
 	// Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because
@@ -41,7 +49,15 @@ processResources {
 tasks.withType(JavaCompile).configureEach {
 	it.options.release = 25
 }
-
+tasks.withType(JavaCompile).configureEach {
+	options.compilerArgs += ['--enable-preview']
+}
+tasks.withType(JavaCompile).configureEach {
+	options.compilerArgs << "--enable-preview"
+}
+tasks.withType(JavaExec).configureEach {
+	jvmArgs += '--enable-preview'
+}
 java {
 	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
 	// if it is present.

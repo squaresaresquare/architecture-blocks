@@ -1,13 +1,18 @@
 {
   "variants": {
-    "axis=x": {
-      "model": "architecture-blocks:block/oak_log_horizontal"
+    "facing=north": {
+      "model": "architecture-blocks:block/oak_log",
+      "y": 180
     },
-    "axis=y": {
+    "facing=east": {
+      "model": "architecture-blocks:block/oak_log",
+      "y": -90
+    },
+    "facing=south": {
       "model": "architecture-blocks:block/oak_log"
     },
-    "axis=z": {
-      "model": "architecture-blocks:block/oak_log_horizontal",
+    "facing=west": {
+      "model": "architecture-blocks:block/oak_log",
       "y": 90
     }
   }

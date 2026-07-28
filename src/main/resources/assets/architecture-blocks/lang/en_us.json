@@ -141,6 +141,8 @@
   "block.architecture-blocks.simple_arched_window_left": "Simple arched window, left",
   "block.architecture-blocks.simple_arched_window_right": "Simple arched window, right",
   "block.architecture-blocks.simple_arched_window_between": "Simple arched window, between two windows",
+  "block.architecture-blocks.crown_molding_left": "Crown Molding facing left",
+  "block.architecture-blocks.crown_molding_right": "Crown Molding facing right",
   "block.architecture-blocks.quartz_bricks": "Quartz bricks",
   "block.architecture-blocks.thatch": "Thatch",
   "block.architecture-blocks.thatch_peak": "Thatch peak",

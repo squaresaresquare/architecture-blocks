@@ -17,7 +17,5 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.@NotNull Provider registries) {
         tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.THATCH_BLOCK));
-
-
     }
 }

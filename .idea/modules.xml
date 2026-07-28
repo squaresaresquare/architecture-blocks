@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/architecture-blocks.main.iml" filepath="$PROJECT_DIR$/.idea/modules/architecture-blocks.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/architecture-blocks.test.iml" filepath="$PROJECT_DIR$/.idea/modules/architecture-blocks.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.squaresaresquare.github.architecture-blocks.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.squaresaresquare.github.architecture-blocks.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.squaresaresquare.github.architecture-blocks.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.squaresaresquare.github.architecture-blocks.test.iml" />
     </modules>
   </component>
 </project>
