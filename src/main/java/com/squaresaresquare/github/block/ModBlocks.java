@@ -30,9 +30,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block FOUR_ARCHED_WINDOW_COMPLETE = register(
@@ -41,9 +39,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block DOUBLE_ARCHED_WINDOW_COMPLETE = register(
@@ -52,9 +48,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block MARBLE_PLINTH_BLOCK = register(
@@ -63,9 +57,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block MARBLE_BLOCK = register(
@@ -74,9 +66,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block MARBLE_PILLAR = register(
@@ -85,9 +75,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block LEFT_END_BASE = register(
@@ -96,9 +84,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block LEFT_PILLAR_BASE = register(
@@ -107,9 +93,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block RIGHT_PILLAR_BASE = register(
@@ -118,9 +102,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block RIGHT_END_BASE = register(
@@ -129,9 +111,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block LEFT_END_MIDDLE = register(
@@ -140,9 +120,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block LEFT_PILLAR_MIDDLE = register(
@@ -151,9 +129,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block RIGHT_PILLAR_MIDDLE = register(
@@ -162,9 +138,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block RIGHT_END_MIDDLE = register(
@@ -173,9 +147,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block TRIPLE_WINDOW_ARCH_ROW1_COL1 = register(
@@ -184,9 +156,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block LEFT_END_CAP = register(
@@ -195,9 +165,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block LEFT_PILLAR_CAP = register(
@@ -206,9 +174,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block RIGHT_PILLAR_CAP = register(
@@ -217,9 +183,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block RIGHT_END_CAP = register(
@@ -228,9 +192,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block TRIPLE_WINDOW_ARCH_ROW1_COL6 = register(
@@ -239,9 +201,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block TRIPLE_WINDOW_ARCH_ROW2_COL1 = register(
@@ -250,9 +210,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block TRIPLE_WINDOW_ARCH_ROW2_COL2 = register(
@@ -261,9 +219,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block TRIPLE_WINDOW_ARCH_ROW2_COL5 = register(
@@ -272,9 +228,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block TRIPLE_WINDOW_ARCH_ROW2_COL6 = register(
@@ -283,9 +237,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block TRIPLE_WINDOW_ARCH_ROW4_COL1 = register(
@@ -294,9 +246,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block TRIPLE_WINDOW_ARCH_ROW4_COL2 = register(
@@ -305,9 +255,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block TRIPLE_WINDOW_ARCH_ROW4_COL3 = register(
@@ -316,9 +264,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block TRIPLE_WINDOW_ARCH_ROW4_COL4 = register(
@@ -327,9 +273,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block TRIPLE_WINDOW_ARCH_ROW4_COL5 = register(
@@ -338,9 +282,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block TRIPLE_WINDOW_ARCH_ROW4_COL6 = register(
@@ -349,9 +291,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block TRIPLE_WINDOW_ARCH_ROW5_COL2 = register(
@@ -360,9 +300,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block TRIPLE_WINDOW_ARCH_ROW5_COL3 = register(
@@ -371,9 +309,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block TRIPLE_WINDOW_ARCH_ROW5_COL4 = register(
@@ -382,9 +318,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block TRIPLE_WINDOW_ARCH_ROW5_COL5 = register(
@@ -393,9 +327,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block MARBLE_PILLAR_BASE = register(
@@ -404,9 +336,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block PILLAR_CAP = register(
@@ -415,9 +345,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block RIGHT_HALF_PILLAR_BASE = register(
@@ -426,9 +354,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block LEFT_HALF_PILLAR_BASE = register(
@@ -437,9 +363,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block LEFT_HALF_PILLAR_MIDDLE = register(
@@ -448,9 +372,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block RIGHT_HALF_PILLAR_MIDDLE = register(
@@ -459,9 +381,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block LEFT_HALF_PILLAR_CAP = register(
@@ -470,9 +390,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block RIGHT_HALF_PILLAR_CAP = register(
@@ -481,9 +399,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block CENTER_PILLAR_BASE = register(
@@ -492,9 +408,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block CENTER_PILLAR_MIDDLE = register(
@@ -503,9 +417,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block CENTER_PILLAR_CAP = register(
@@ -514,9 +426,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block CENTER_CORNER_PILLAR_BASE = register(
@@ -525,9 +435,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block CENTER_CORNER_PILLAR_MIDDLE = register(
@@ -536,9 +444,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block CENTER_CORNER_PILLAR_CAP = register(
@@ -547,9 +453,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block CORNER_WINDOW_CAP = register(
@@ -558,9 +462,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block CORNER_WINDOW_MIDDLE = register(
@@ -569,9 +471,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block CORNER_WINDOW_BASE = register(
@@ -580,9 +480,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block SLOT_WINDOW_CAP = register(
@@ -591,9 +489,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block SLOT_WINDOW_MIDDLE = register(
@@ -602,9 +498,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block SLOT_WINDOW_BASE = register(
@@ -613,9 +507,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block PILLARLESS_WINDOW_CAP = register(
@@ -624,9 +516,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block PILLARLESS_WINDOW_MIDDLE = register(
@@ -635,9 +525,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block PILLARLESS_WINDOW_BASE = register(
@@ -646,9 +534,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block INVISIBLE = register(
@@ -664,9 +550,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
 
@@ -676,9 +560,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block QUADRUPLE_WINDOW_ARCH_ROW1_COL8 = register(
@@ -687,9 +569,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block QUADRUPLE_WINDOW_ARCH_ROW2_COL1 = register(
@@ -698,9 +578,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block QUADRUPLE_WINDOW_ARCH_ROW2_COL8 = register(
@@ -709,9 +587,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block INNER_ARCH_BLOCK = register(
@@ -720,9 +596,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block QUADRUPLE_WINDOW_ARCH_ROW2_COL2 = register(
@@ -731,9 +605,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block QUADRUPLE_WINDOW_ARCH_ROW2_COL7 = register(
@@ -742,9 +614,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
 
@@ -754,9 +624,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1, 1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
-                        return false;
-                    }),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
 
@@ -790,7 +658,11 @@ public class ModBlocks {
     }
 
     public static ResourceKey<@NotNull Block> getRK(Block block) {
-        return BuiltInRegistries.BLOCK.getResourceKey(block).get();
+        if(BuiltInRegistries.BLOCK.getResourceKey(block).isPresent()) {
+            return BuiltInRegistries.BLOCK.getResourceKey(block).get();
+        } else {
+            return null;
+        }
     }
 
     public static boolean neverAllowSpawn(BlockState state, BlockGetter level, BlockPos pos, EntityType<?> type) {
@@ -805,7 +677,7 @@ public class ModBlocks {
         BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
         true
     );
 
@@ -816,7 +688,7 @@ public class ModBlocks {
         BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
         true
     );
 
@@ -827,7 +699,7 @@ public class ModBlocks {
         BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
         true
     );
 
@@ -838,7 +710,7 @@ public class ModBlocks {
         BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
         true
     );
 
@@ -849,7 +721,7 @@ public class ModBlocks {
         BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
         true
     );
 
@@ -860,7 +732,7 @@ public class ModBlocks {
         BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
         true
     );
 
@@ -871,7 +743,7 @@ public class ModBlocks {
         BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
         true
     );
 
@@ -882,7 +754,7 @@ public class ModBlocks {
         BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
         true
     );
 
@@ -893,7 +765,7 @@ public class ModBlocks {
         BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
         true
     );
 
@@ -904,7 +776,7 @@ public class ModBlocks {
         BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
         true
     );
 
@@ -915,7 +787,7 @@ public class ModBlocks {
         BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
         true
     );
 
@@ -926,7 +798,7 @@ public class ModBlocks {
         BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
         true
     );
 
@@ -937,7 +809,7 @@ public class ModBlocks {
         BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
         true
     );
 
@@ -948,7 +820,7 @@ public class ModBlocks {
         BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
         true
     );
 
@@ -959,7 +831,7 @@ public class ModBlocks {
         BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
         true
     );
 
@@ -970,7 +842,7 @@ public class ModBlocks {
         BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
         true
     );
 
@@ -981,7 +853,7 @@ public class ModBlocks {
         BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
         true
     );
 
@@ -992,7 +864,7 @@ public class ModBlocks {
         BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
         true
     );
 
@@ -1003,7 +875,7 @@ public class ModBlocks {
         BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
         true
     );
 
@@ -1014,7 +886,7 @@ public class ModBlocks {
         BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
         true
     );
 
@@ -1025,7 +897,7 @@ public class ModBlocks {
         BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
         true
     );
 
@@ -1036,7 +908,7 @@ public class ModBlocks {
         BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
         true
     );
 
@@ -1046,7 +918,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
 
@@ -1056,7 +928,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block QUARTZ_BRICKS = register(
@@ -1065,7 +937,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block WINDOW_BLANK = register(
@@ -1074,7 +946,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.GLASS)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
 
@@ -1084,7 +956,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.HANGING_ROOTS)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
 
@@ -1094,7 +966,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.HANGING_ROOTS)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block SIMPLE_ARCHED_WINDOW_TOP_LEFT = register(
@@ -1103,7 +975,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block SIMPLE_ARCHED_WINDOW_TOP_RIGHT = register(
@@ -1112,7 +984,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block SIMPLE_ARCHED_WINDOW_LEFT = register(
@@ -1121,7 +993,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block SIMPLE_ARCHED_WINDOW_RIGHT = register(
@@ -1130,7 +1002,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block SIMPLE_ARCHED_WINDOW_BETWEEN = register(
@@ -1139,7 +1011,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block SIMPLE_ARCHED_WINDOW_TOP_CENTER = register(
@@ -1148,7 +1020,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block SIMPLE_ARCHED_WINDOW_TOP_BETWEEN = register(
@@ -1157,7 +1029,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false),
             true
     );
     public static final Block CROWN_MOLDING_LEFT = register(
@@ -1166,7 +1038,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;})
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false)
                     .isSuffocating((state, level, pos) -> false)
                     .isViewBlocking((state, level, pos) -> false),
             true
@@ -1177,7 +1049,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;})
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> false)
                     .isSuffocating((state, level, pos) -> false)
                     .isViewBlocking((state, level, pos) -> false),
             true

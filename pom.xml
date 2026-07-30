@@ -1,0 +1,18 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.squaresaresquare</groupId>
+  <artifactId>architecture-blocks</artifactId>
+  <version>0.0.1</version>
+  <repositories>
+    <repository>
+      <id>my-repo1</id>
+      <name>fzzyhmstrs</name>
+      <url>https://maven.fzzyhmstrs.me/</url>
+    </repository>
+    <repository>
+      <id>my-repo2</id>
+      <name>Terraformersmc</name>
+      <url>https://maven.terraformersmc.com/</url>
+    </repository>
+  </repositories>
+</project>
