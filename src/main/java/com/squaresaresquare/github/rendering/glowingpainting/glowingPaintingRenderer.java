@@ -1,0 +1,30 @@
+package com.squaresaresquare.github.rendering.glowingpainting;
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.mojang.blaze3d.vertex.PoseStack.Pose;
+import com.mojang.math.Axis;
+import java.util.List;
+import java.util.Optional;
+import net.conczin.immersive_paintings.ClientPaintingManager;
+import net.conczin.immersive_paintings.ImmersivePaintings;
+import net.conczin.immersive_paintings.Painting;
+import net.conczin.immersive_paintings.Painting.Size;
+import net.conczin.immersive_paintings.client.render.state.ImmersivePaintingRenderState;
+import net.conczin.immersive_paintings.config.ClientConfig;
+import net.conczin.immersive_paintings.entity.ImmersivePaintingEntity;
+import net.conczin.immersive_paintings.registry.Config;
+import net.conczin.immersive_paintings.resources.ObjectLoader;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.SubmitNodeCollector;
+import net.minecraft.client.renderer.entity.EntityRenderer;
+import net.minecraft.client.renderer.entity.EntityRendererProvider.Context;
+import net.minecraft.client.renderer.rendertype.RenderTypes;
+import net.minecraft.client.renderer.state.level.CameraRenderState;
+import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.core.BlockPos;
+import net.minecraft.resources.Identifier;
+import net.minecraft.util.LightCoordsUtil;
+import owens.oobjloader.Face;
+import owens.oobjloader.FaceVertex;
+public class glowingPaintingRenderer {
+}

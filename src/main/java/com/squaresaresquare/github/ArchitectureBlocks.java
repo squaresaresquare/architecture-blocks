@@ -21,6 +21,11 @@ public class ArchitectureBlocks implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
+	public static final Identifier NONE_LOCATION = locate("none");
+	public static Identifier locate(String path) {
+		return Identifier.fromNamespaceAndPath(MOD_ID, path);
+	}
+
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.

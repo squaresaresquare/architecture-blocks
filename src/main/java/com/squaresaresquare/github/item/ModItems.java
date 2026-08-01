@@ -23,9 +23,6 @@ public class ModItems implements ModInitializer {
     public static void registerModItems() {
         ArchitectureBlocks.LOGGER.info("Registering Mod Items for " + ArchitectureBlocks.MOD_ID);
 
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> {
-
-        });
     }
 
 
