@@ -1,5 +1,6 @@
 package com.squaresaresquare.github.datagen;
 
+import com.squaresaresquare.github.item.ModPaintings;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.tags.PaintingVariantTags;
@@ -23,8 +24,8 @@ public class ModPaintingTagProvider extends FabricTagsProvider<@NotNull Painting
                 .add(TagEntry.element(ModPaintings.ARCHER_ANGEL_RK.identifier()))
                 .add(TagEntry.element(ModPaintings.BEDROOM_LOVE_POTION_RK.identifier()))
                 .add(TagEntry.element(ModPaintings.CHAPEL_RK.identifier()))
-                .add(TagEntry.element(ModPaintings.CHAPEL_SAINT_STAINED_GLASS_RK.identifier()))
-                .add(TagEntry.element(ModPaintings.CHAPEL_SUPPLICANTS_STAINED_GLASS_RK.identifier()))
+                .add(TagEntry.element(ModPaintings.ORATORY_STAINED_GLASS_RK.identifier()))
+                .add(TagEntry.element(ModPaintings.IMMACULATE_CONCEPTION_OF_MARY_RK.identifier()))
                 .add(TagEntry.element(ModPaintings.COURT_LIFE_AT_THE_CASTLE_OF_THE_GRAIL_RK.identifier()))
                 .add(TagEntry.element(ModPaintings.HERMANN_OF_THURINGIA_RK.identifier()))
                 .add(TagEntry.element(ModPaintings.LUDWIG_II_BLUE_GENERAL_1_RK.identifier()))

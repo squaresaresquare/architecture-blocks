@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "architecture-blocks:window_blank",
-  "result": {
-    "id": "architecture-blocks:corner_window_middle"
-  }
-}

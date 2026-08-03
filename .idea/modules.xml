@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/architecture-blocks.iml" filepath="$PROJECT_DIR$/.idea/modules/architecture-blocks.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/architecture-blocks.main.iml" filepath="$PROJECT_DIR$/.idea/modules/architecture-blocks.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/architecture-blocks.test.iml" filepath="$PROJECT_DIR$/.idea/modules/architecture-blocks.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.squaresaresquare.github.architecture-blocks.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.squaresaresquare.github.architecture-blocks.main.iml" />

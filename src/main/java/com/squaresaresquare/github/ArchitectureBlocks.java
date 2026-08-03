@@ -1,5 +1,6 @@
 package com.squaresaresquare.github;
 
+import com.squaresaresquare.github.item.ModPaintings;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -31,6 +32,7 @@ public class ArchitectureBlocks implements ModInitializer {
 		ModDataComponents.registerDataComponents();
 		ModCreativeModeTabs.registerModCreativeModeTabs();
 		ModBlockEntities.initialize();
+		ModPaintings.initialize();
 		LOGGER.info("Hello Fabric world!");
 	}
 

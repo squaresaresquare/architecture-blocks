@@ -1,5 +1,6 @@
 package com.squaresaresquare.github.block.entity;
 
+import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -123,4 +124,5 @@ public class ModBlockEntities {
     public static final BlockEntityType<@NotNull SimpleArchedWindowBetweenBlockEntity> SIMPLE_ARCHED_WINDOW_BETWEEN_BLOCK_ENTITY = register("simple_arched_window_between", SimpleArchedWindowBetweenBlockEntity::new, ModBlocks.SIMPLE_ARCHED_WINDOW_BETWEEN);
     public static final BlockEntityType<@NotNull CrownMoldingRightBlockEntity> CROWN_MOLDING_RIGHT_BLOCK_ENTITY = register("crown_molding_right", CrownMoldingRightBlockEntity::new, ModBlocks.CROWN_MOLDING_RIGHT);
     public static final BlockEntityType<@NotNull CrownMoldingLeftBlockEntity> CROWN_MOLDING_LEFT_BLOCK_ENTITY = register("crown_molding_left", CrownMoldingLeftBlockEntity::new, ModBlocks.CROWN_MOLDING_LEFT);
+
 }

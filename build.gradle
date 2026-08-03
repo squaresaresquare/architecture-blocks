@@ -1,15 +1,27 @@
 plugins {
+	id 'java'
 	id 'net.fabricmc.fabric-loom' version "${loom_version}"
 	id 'maven-publish'
 }
 
 version = project.mod_version
 group = project.maven_group
-
+sourceSets {
+	main {
+		ext.refMap = "${modid}.refmap.json"
+	}
+}
 loom {
+	mixin {
+		//useLegacyMixinAp = true
+		useLegacyMixinAp = false
+		defaultRefmapName = "${modid}.refmap.json"
+	}
+
 	runs {
-		all {
-			vmArg "--enable-preview"
+		configureEach {
+			hasProperty("enable-preview")
+			property("mixin.debug.export", "true")
 		}
 	}
 }
@@ -20,6 +32,10 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+	mavenCentral()
+	//maven {
+	//	url "https://repo.spongepowered.org/maven"
+	//}
 }
 
 fabricApi {
@@ -29,12 +45,11 @@ fabricApi {
 }
 
 dependencies {
-	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	implementation "net.fabricmc:fabric-loader:${project.loader_version}"
-
-	// Fabric API. This is technically optional, but you probably want it anyway.
 	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+	//implementation "org.spongepowered:mixin:0.8.7"
+	//annotationProcessor "org.spongepowered:mixin:0.8.7:processor"
 }
 
 processResources {
@@ -47,7 +62,7 @@ processResources {
 }
 
 tasks.withType(JavaCompile).configureEach {
-	it.options.release = 25
+	it.options.release = 26
 }
 tasks.withType(JavaCompile).configureEach {
 	options.compilerArgs += ['--enable-preview']
@@ -64,8 +79,8 @@ java {
 	// If you remove this line, sources will not be generated.
 	withSourcesJar()
 
-	sourceCompatibility <= JavaVersion.VERSION_25
-	targetCompatibility <= JavaVersion.VERSION_25
+	sourceCompatibility <= JavaVersion.VERSION_26
+	targetCompatibility <= JavaVersion.VERSION_26
 }
 
 jar {
@@ -93,3 +108,5 @@ publishing {
 		// retrieving dependencies.
 	}
 }
+
+def void expand(LinkedHashMap<String, Object> stringObjectLinkedHashMap) {}

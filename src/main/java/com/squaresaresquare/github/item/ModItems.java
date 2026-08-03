@@ -27,8 +27,6 @@ public class ModItems implements ModInitializer {
 
         });
     }
-
-
     @Override
     public void onInitialize() {
     }

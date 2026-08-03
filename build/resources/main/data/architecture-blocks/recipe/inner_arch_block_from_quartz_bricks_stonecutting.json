@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "minecraft:quartz_bricks",
-  "result": {
-    "id": "architecture-blocks:inner_arch_block"
-  }
-}
