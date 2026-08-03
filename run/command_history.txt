@@ -37,3 +37,9 @@
 /weather clear
 /gamemode spectator
 /gamemode creative
+/give @p painting[minecraft:painting/variant='architecture-blocks:oratory_stained_glass']
+/time set minecraft:night
+//wand
+//replace #region white_concrete
+/give Player259 minecraft:painting[minecraft:painting/variant="architecture-blocks:oratory_stained_glass"]
+/time set night

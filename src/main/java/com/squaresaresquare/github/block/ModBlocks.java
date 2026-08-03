@@ -2,6 +2,7 @@ package com.squaresaresquare.github.block;
 
 import com.squaresaresquare.github.block.entity.custom.CrownMoldingLeftBlockEntity;
 import com.squaresaresquare.github.block.entity.custom.CrownMoldingRightBlockEntity;
+import net.fabricmc.api.ModInitializer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -1182,7 +1183,6 @@ public class ModBlocks {
                     .isViewBlocking((state, level, pos) -> false),
             true
     );
-    public static void initialize() {
 
-    }
+    public static void initialize() { }
 }

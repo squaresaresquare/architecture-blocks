@@ -2,5 +2,12 @@
   <profile version="1.0">
     <option name="myName" value="Project Default" />
     <inspection_tool class="EditorConfigVerifyByCore" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="FabricModJsonEntrypointsValidation" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="MixinAnnotationTarget" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="MixinExtrasUnnecessaryMutableLocal" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="UnnecessaryQualifiedMemberReference" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="UnnecessaryUnsafe" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="UnresolvedFabricModJsonReference" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="UnresolvedMixinReference" enabled="false" level="ERROR" enabled_by_default="false" />
   </profile>
 </component>

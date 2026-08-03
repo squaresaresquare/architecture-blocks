@@ -1,5 +1,6 @@
 package com.squaresaresquare.github;
 
+import com.squaresaresquare.github.item.ModPaintings;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.core.RegistrySetBuilder;
@@ -23,6 +24,7 @@ public class ArchitectureBlocksDataGenerator implements DataGeneratorEntrypoint 
 		pack.addProvider(ModRecipeProvider::new);
 		pack.addProvider(ModRegistryDataProvider::new);
 		pack.addProvider(ModPaintingTagProvider::new);
+		pack.addProvider(ModPaintingVariantProvider::new);
 	}
 	@Override
 	public void buildRegistry(@NotNull RegistrySetBuilder registryBuilder) {
