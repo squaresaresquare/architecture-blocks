@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "architecture-blocks:painting/immaculate_conception_of_mary"
+    "layer0": "architecture-blocks:item/immaculate_conception_of_mary"
   },
   "display": {
     "firstperson_righthand": {

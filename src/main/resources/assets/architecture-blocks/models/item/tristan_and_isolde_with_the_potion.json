@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "architecture-blocks:painting/tristan_and_isolde_with_the_potion"
+    "layer0": "architecture-blocks:item/tristan_and_isolde_with_the_potion"
   },
   "display": {
     "firstperson_righthand": {

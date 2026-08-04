@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "architecture-blocks:painting/court_life_at_the_castle_of_the_grail"
+    "layer0": "architecture-blocks:item/court_life_at_the_castle_of_the_grail"
   },
   "display": {
     "firstperson_righthand": {

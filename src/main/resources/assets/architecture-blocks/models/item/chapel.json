@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "architecture-blocks:painting/chapel"
+    "layer0": "architecture-blocks:item/chapel"
   },
   "display": {
     "firstperson_righthand": {

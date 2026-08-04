@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "architecture-blocks:painting/ludwig_ii_blue_general_"
+    "layer0": "architecture-blocks:item/ludwig_ii_blue_general_"
   },
   "display": {
     "firstperson_righthand": {

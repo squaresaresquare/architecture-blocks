@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "architecture-blocks:painting/sigurd_meets_grypin"
+    "layer0": "architecture-blocks:item/sigurd_meets_grypin"
   },
   "display": {
     "firstperson_righthand": {

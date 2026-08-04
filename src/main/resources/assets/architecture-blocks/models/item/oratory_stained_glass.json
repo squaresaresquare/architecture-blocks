@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "architecture-blocks:painting/oratory_stained_glass"
+    "layer0": "architecture-blocks:item/oratory_stained_glass"
   },
   "display": {
     "firstperson_righthand": {

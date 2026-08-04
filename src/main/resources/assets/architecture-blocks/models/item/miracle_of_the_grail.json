@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "architecture-blocks:painting/miracle_of_the_grail"
+    "layer0": "architecture-blocks:item/miracle_of_the_grail"
   },
   "display": {
     "firstperson_righthand": {

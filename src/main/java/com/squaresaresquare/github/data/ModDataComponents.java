@@ -24,7 +24,7 @@ public class ModDataComponents {
         return Registry.register(BuiltInRegistries.DATA_COMPONENT_TYPE, Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, name),
                 builderOperator.apply(DataComponentType.builder()).build());
     }
-    
+
     public static void registerDataComponents() {
         ArchitectureBlocks.LOGGER.info("Registering Data Components for " + ArchitectureBlocks.MOD_ID);
     }

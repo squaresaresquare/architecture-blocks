@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "architecture-blocks:painting/parzifals_fight"
+    "layer0": "architecture-blocks:item/parzifals_fight"
   },
   "display": {
     "firstperson_righthand": {

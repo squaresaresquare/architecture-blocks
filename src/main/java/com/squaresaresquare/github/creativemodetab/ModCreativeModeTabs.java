@@ -61,9 +61,9 @@ public class ModCreativeModeTabs {
 
     public static final CreativeModeTab PAINTINGS_TAB = Registry.register(
             BuiltInRegistries.CREATIVE_MODE_TAB,
-            ARCHITECTURE_BLOCK_TAB_KEY,
+            PAINTINGS_TAB_KEY,
             FabricCreativeModeTab.builder().icon(() -> new ItemStack(Items.PAINTING))
-                    .title(Component.translatable("itemGroup." + ArchitectureBlocks.MOD_ID + ".paintinge_tab"))
+                    .title(Component.translatable("itemGroup." + ArchitectureBlocks.MOD_ID + "painting_tab"))
                     .displayItems((displayContext, output) -> {
                         output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "accolade")));
                         output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "archer_angel")));

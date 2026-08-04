@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "architecture-blocks:painting/our_lady_of_the_rosary_simone_cantarini"
+    "layer0": "architecture-blocks:item/our_lady_of_the_rosary_simone_cantarini"
   },
   "display": {
     "firstperson_righthand": {

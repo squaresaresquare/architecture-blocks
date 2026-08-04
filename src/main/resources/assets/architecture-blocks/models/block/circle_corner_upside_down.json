@@ -3,6 +3,7 @@
 	"parent": "minecraft:block/cube_all",
 	"textures": {
 		"0": "architecture-blocks:block/polished_diorite",
+		"all": "architecture-blocks:block/polished_diorite",
 		"particle": "architecture-blocks:block/polished_diorite"
 	},
 	"elements": [

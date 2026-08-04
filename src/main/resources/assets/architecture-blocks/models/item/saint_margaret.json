@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "architecture-blocks:painting/saint_margaret"
+    "layer0": "architecture-blocks:item/saint_margaret"
   },
   "display": {
     "firstperson_righthand": {

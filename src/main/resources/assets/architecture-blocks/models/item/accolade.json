@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "architecture-blocks:painting/accolade"
+    "layer0": "architecture-blocks:item/accolade"
   },
   "display": {
     "firstperson_righthand": {

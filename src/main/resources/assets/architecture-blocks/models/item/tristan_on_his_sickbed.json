@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "architecture-blocks:painting/tristan_on_his_sickbed"
+    "layer0": "architecture-blocks:item/tristan_on_his_sickbed"
   },
   "display": {
     "firstperson_righthand": {

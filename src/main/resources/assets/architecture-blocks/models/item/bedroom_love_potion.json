@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "architecture-blocks:painting/bedroom_love_potion"
+    "layer0": "architecture-blocks:item/bedroom_love_potion"
   },
   "display": {
     "firstperson_righthand": {

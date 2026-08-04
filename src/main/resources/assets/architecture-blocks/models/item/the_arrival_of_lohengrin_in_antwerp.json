@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "architecture-blocks:painting/the_arrival_of_lohengrin_in_antwerp"
+    "layer0": "architecture-blocks:item/the_arrival_of_lohengrin_in_antwerp"
   },
   "display": {
     "firstperson_righthand": {
