@@ -1,0 +1,16 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "architecture-blocks:circle_corner": 4,
+      "minecraft:stripped_oak_wood": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 866,
+      "minecraft:total_world_time": 1912,
+      "minecraft:fly_one_cm": 999,
+      "minecraft:play_time": 866,
+      "minecraft:time_since_death": 866
+    }
+  },
+  "DataVersion": 4903
+}

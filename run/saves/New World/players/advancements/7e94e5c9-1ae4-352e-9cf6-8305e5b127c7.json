@@ -1,0 +1,39 @@
+{
+  "architecture-blocks:recipes/building_blocks/white_concrete_from_white_concrete_keyhole_stonecutting": {
+    "criteria": {
+      "has_white_concrete_keyhole": "2026-08-04 00:06:09 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-08-04 00:06:09 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/polished_diorite_from_polished_diorite_keyhole_stonecutting": {
+    "criteria": {
+      "has_polished_diorite_keyhole": "2026-08-04 00:06:09 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/charcoal": {
+    "criteria": {
+      "has_log": "2026-08-04 00:06:09 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_planks": {
+    "criteria": {
+      "has_logs": "2026-08-04 00:06:09 -0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2026-08-04 00:06:10 -0700"
+    },
+    "done": false
+  },
+  "DataVersion": 4903
+}

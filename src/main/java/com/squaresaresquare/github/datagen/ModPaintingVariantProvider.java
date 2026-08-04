@@ -18,18 +18,42 @@ public class ModPaintingVariantProvider extends FabricDynamicRegistryProvider {
         super(output, registriesFuture);
     }
 
+
     @Override
     protected void configure(HolderLookup.Provider registries, Entries entries){
-        Identifier paintingId = Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "oratory_stained_glass");
-        ResourceKey<PaintingVariant> paintingKey = ResourceKey.create(Registries.PAINTING_VARIANT, paintingId);
-        String author = "Mayerischen";
-        String title = "Oratory Stained Glass";
-        Optional component_title = java.util.Optional.of(Component.literal(title).withStyle(ChatFormatting.YELLOW));
-        Optional component_author = java.util.Optional.of(Component.literal(author).withStyle(ChatFormatting.GRAY));
-
-        PaintingVariant glowingPainting = new PaintingVariant(3, 5, paintingId, component_title, component_author);
-
-        entries.add(paintingKey, glowingPainting);
+        entries.add(
+                ResourceKey.create(
+                        Registries.PAINTING_VARIANT,
+                        Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "oratory_stained_glass")),
+                new PaintingVariant(
+                        3,
+                        5,
+                        Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "oratory_stained_glass"),
+                        java.util.Optional.of(Component.literal("Oratory Stained Glass").withStyle(ChatFormatting.YELLOW)),
+                        java.util.Optional.of(Component.literal("Franz Mayer Mayerischen Studios").withStyle(ChatFormatting.GRAY)))
+        );
+        entries.add(
+                ResourceKey.create(
+                        Registries.PAINTING_VARIANT,
+                        Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "immaculate_conception_of_mary")),
+                new PaintingVariant(
+                        3,
+                        5,
+                        Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "immaculate_conception_of_mary"),
+                        java.util.Optional.of(Component.literal("Immaculate Conception of Mary").withStyle(ChatFormatting.YELLOW)),
+                        java.util.Optional.of(Component.literal("Franz Mayer Mayerischen Studios").withStyle(ChatFormatting.GRAY)))
+        );
+        entries.add(
+                ResourceKey.create(
+                        Registries.PAINTING_VARIANT,
+                        Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "chapel")),
+                new PaintingVariant(
+                        3,
+                        5,
+                        Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "chapel"),
+                        java.util.Optional.of(Component.literal("Chapel").withStyle(ChatFormatting.YELLOW)),
+                        java.util.Optional.of(Component.literal("Franz Mayer Mayerischen Studios").withStyle(ChatFormatting.GRAY)))
+        );
     }
 
     @Override

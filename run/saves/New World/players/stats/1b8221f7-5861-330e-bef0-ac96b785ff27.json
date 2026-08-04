@@ -1,0 +1,19 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "architecture-blocks:simple_arched_window_top_center": 1,
+      "architecture-blocks:simple_arched_window_top_left": 1,
+      "architecture-blocks:simple_arched_window_top_right": 1,
+      "architecture-blocks:simple_arched_window_right": 2,
+      "architecture-blocks:simple_arched_window_left": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 937,
+      "minecraft:total_world_time": 937,
+      "minecraft:sneak_time": 6,
+      "minecraft:play_time": 937,
+      "minecraft:time_since_death": 937
+    }
+  },
+  "DataVersion": 4903
+}

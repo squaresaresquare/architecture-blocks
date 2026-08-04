@@ -1,0 +1,17 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "architecture-blocks:circle_corner": 2
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 723,
+      "minecraft:total_world_time": 1983,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 285,
+      "minecraft:sneak_time": 4,
+      "minecraft:play_time": 723,
+      "minecraft:time_since_death": 723
+    }
+  },
+  "DataVersion": 4903
+}

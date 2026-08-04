@@ -26,6 +26,7 @@ public class ModBlockEntities {
         System.out.print("initialize ModBlockEntities\n");
     }
     public static final BlockEntityType<@NotNull OakLogBlockEntity> OAK_LOG_BLOCK_ENTITY = register("oak_log", OakLogBlockEntity::new, ModBlocks.OAK_LOG);
+    public static final BlockEntityType<@NotNull CircleCornerBlockEntity> CIRCLE_CORNER_BLOCK_ENTITY = register("circle_corner", CircleCornerBlockEntity::new, ModBlocks.CIRCLE_CORNER);
     public static final BlockEntityType<@NotNull MarbleBlockBlockEntity> MARBLE_BLOCK_BLOCK_ENTITY = register("marble_block", MarbleBlockBlockEntity::new, ModBlocks.MARBLE_BLOCK);
     public static final BlockEntityType<@NotNull MarblePillarBaseBlockEntity> MARBLE_PILLAR_BASE_BLOCK_ENTITY = register("marble_pillar_base", MarblePillarBaseBlockEntity::new, ModBlocks.MARBLE_PILLAR_BASE);
     public static final BlockEntityType<@NotNull MarblePillarBlockEntity> MARBLE_PILLAR_BLOCK_ENTITY = register("marble_pillar", MarblePillarBlockEntity::new, ModBlocks.MARBLE_PILLAR);
@@ -124,5 +125,8 @@ public class ModBlockEntities {
     public static final BlockEntityType<@NotNull SimpleArchedWindowBetweenBlockEntity> SIMPLE_ARCHED_WINDOW_BETWEEN_BLOCK_ENTITY = register("simple_arched_window_between", SimpleArchedWindowBetweenBlockEntity::new, ModBlocks.SIMPLE_ARCHED_WINDOW_BETWEEN);
     public static final BlockEntityType<@NotNull CrownMoldingRightBlockEntity> CROWN_MOLDING_RIGHT_BLOCK_ENTITY = register("crown_molding_right", CrownMoldingRightBlockEntity::new, ModBlocks.CROWN_MOLDING_RIGHT);
     public static final BlockEntityType<@NotNull CrownMoldingLeftBlockEntity> CROWN_MOLDING_LEFT_BLOCK_ENTITY = register("crown_molding_left", CrownMoldingLeftBlockEntity::new, ModBlocks.CROWN_MOLDING_LEFT);
+
+    public static final BlockEntityType<@NotNull WhiteConcreteKeyholeBlockEntity> WHITE_CONCRETE_KEYHOLE_BLOCK_ENTITY = register("white_concrete_keyhole", WhiteConcreteKeyholeBlockEntity::new, ModBlocks.WHITE_CONCRETE_KEYHOLE_BLOCK);
+    public static final BlockEntityType<@NotNull PolishedDioriteKeyholeBlockEntity> POLISHED_DIORITE_KEYHOLE_BLOCK_ENTITY = register("polished_diorite_keyhole", PolishedDioriteKeyholeBlockEntity::new, ModBlocks.POLISHED_DIORITE_KEYHOLE_BLOCK);
 
 }

@@ -25,7 +25,8 @@ public class PaintingRendererMixin {
     @Unique
     private static final Set<String> EMISSIVE_VARIANTS = Set.of(
             "oratory_stained_glass",
-            "immaculate_conception_of_mary"
+            "immaculate_conception_of_mary",
+            "chapel"
     );
 
     @Unique

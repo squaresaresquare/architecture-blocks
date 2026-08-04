@@ -117,6 +117,9 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.SIMPLE_ARCHED_WINDOW_TOP_LEFT);
         dropSelf(ModBlocks.CROWN_MOLDING_LEFT);
         dropSelf(ModBlocks.CROWN_MOLDING_RIGHT);
+        dropSelf(ModBlocks.CIRCLE_CORNER);
+        dropSelf(ModBlocks.WHITE_CONCRETE_KEYHOLE_BLOCK);
+        dropSelf(ModBlocks.POLISHED_DIORITE_KEYHOLE_BLOCK);
         //::new block here
     }
 }

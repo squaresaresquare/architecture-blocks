@@ -81,6 +81,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.PILLARLESS_WINDOW_CAP);
                         output.accept(ModBlocks.CROWN_MOLDING_LEFT);
                         output.accept(ModBlocks.CROWN_MOLDING_RIGHT);
+                        output.accept(ModBlocks.CIRCLE_CORNER);
+                        output.accept(ModBlocks.POLISHED_DIORITE_KEYHOLE_BLOCK);
+                        output.accept(ModBlocks.WHITE_CONCRETE_KEYHOLE_BLOCK);
                         //::new architecture_block here
                     }).build());
 

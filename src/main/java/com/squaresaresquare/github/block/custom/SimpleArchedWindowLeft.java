@@ -46,15 +46,8 @@ public class SimpleArchedWindowLeft extends BaseEntityBlock {
 
     public VoxelShape makeShape(){
         VoxelShape shape = Shapes.empty();
-        shape = Shapes.join(shape, Shapes.box(0.75, -0.0625, 0, 1, 0.125, 0.75), BooleanOp.OR);
-        shape = Shapes.join(shape, Shapes.box(0, -0.0625, 0, 0.75, 0.125, 1), BooleanOp.OR);
-        shape = Shapes.join(shape, Shapes.box(0, 0.125, 0, 0.8125, 0.3125, 1), BooleanOp.OR);
-        shape = Shapes.join(shape, Shapes.box(0, 0.3125, 0, 0.875, 0.5, 1), BooleanOp.OR);
-        shape = Shapes.join(shape, Shapes.box(0, 0.5, 0, 0.9375, 0.5625, 1), BooleanOp.OR);
-        shape = Shapes.join(shape, Shapes.box(0, 0.5625, 0, 1, 0.9375, 1), BooleanOp.OR);
-        shape = Shapes.join(shape, Shapes.box(0.8125, 0.125, 0, 1, 0.3125, 0.75), BooleanOp.OR);
-        shape = Shapes.join(shape, Shapes.box(0.875, 0.3125, 0, 1, 0.5, 0.75), BooleanOp.OR);
-        shape = Shapes.join(shape, Shapes.box(0.9375, 0.5, 0, 1, 0.5625, 0.75), BooleanOp.OR);
+        shape = Shapes.join(shape, Shapes.box(0, 0, 0, 1, 1, 0.75), BooleanOp.OR);
+        shape = Shapes.join(shape, Shapes.box(0, 0, 0.75, 0.75, 1, 1), BooleanOp.OR);
 
         return shape;
     }

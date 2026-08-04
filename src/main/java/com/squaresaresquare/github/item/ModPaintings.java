@@ -52,12 +52,12 @@ public class ModPaintings {
         register(context, CHAPEL_RK, 3, 5, "Chapel", "Franz Mayer Mayerischen Studios");
         register(context, COURT_LIFE_AT_THE_CASTLE_OF_THE_GRAIL_RK, 3, 4, "Court Life at the Castle of the Grail", "Ferdinand Piloty");
         register(context, HERMANN_OF_THURINGIA_RK, 5, 6, "Hermann of Thuringia helping to represent the poem of a minstrel", "Ferdinand Piloty");
-        register(context, IMMACULATE_CONCEPTION_OF_MARY_RK, 3, 4, "The Immaculate Conception of Mary stained glass window","Franz Mayer Mayerischen Studios");
+        register(context, IMMACULATE_CONCEPTION_OF_MARY_RK, 3, 5, "The Immaculate Conception of Mary stained glass window","Franz Mayer Mayerischen Studios");
         register(context, LUDWIG_II_BLUE_GENERAL_1_RK, 2, 3, "King Ludwig II of Bavaria in a blue generals uniform", "Ferdinand Piloty");
         register(context, LUDWIG_II_BLUE_GENERAL_2_RK, 2, 3, "King Ludwig II of Bavaria in a blue generals uniform", "Ferdinand Piloty");
         register(context, MALCOLM_AND_MARGARET_AT_QUEENSFERRY_RK, 3, 5, "The Landing of St Margaret at Queensferry", "William Brassey Hole");
         register(context, MIRACLE_OF_THE_GRAIL_RK, 8, 5, "The Miracle of the Grail", "Wilhelm Hauschild");
-        register(context, ORATORY_STAINED_GLASS_RK, 3, 4, "Oratory stained glass","Franz Mayer Mayerischen Studios");
+        register(context, ORATORY_STAINED_GLASS_RK, 3, 5, "Oratory stained glass","Franz Mayer Mayerischen Studios");
         register(context, OUR_LADY_OF_THE_ROSARY_SIMONE_CANTARINI_RK, 2, 3, "Our lady of the rosary simone cantarini","Simone Cantarini");
         register(context, PARZIFALS_FIGHT_RK, 5, 7, "Parzifals battle with the Red Knight", "August Spiess");
         register(context, PARZIFAL_RK, 4, 6, "Parzifal", "August Spiess");

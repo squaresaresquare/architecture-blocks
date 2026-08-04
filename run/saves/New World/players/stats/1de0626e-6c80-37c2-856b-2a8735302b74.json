@@ -1,0 +1,17 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "architecture-blocks:crown_molding_right": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 961,
+      "minecraft:total_world_time": 990,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 820,
+      "minecraft:sneak_time": 6,
+      "minecraft:play_time": 961,
+      "minecraft:time_since_death": 961
+    }
+  },
+  "DataVersion": 4903
+}

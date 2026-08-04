@@ -1,0 +1,15 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "architecture-blocks:simple_arched_window_left": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 265,
+      "minecraft:total_world_time": 265,
+      "minecraft:fly_one_cm": 493,
+      "minecraft:play_time": 265,
+      "minecraft:time_since_death": 265
+    }
+  },
+  "DataVersion": 4903
+}

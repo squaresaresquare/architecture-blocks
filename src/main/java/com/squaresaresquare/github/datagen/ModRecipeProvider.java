@@ -112,6 +112,9 @@ public class ModRecipeProvider extends FabricRecipeProvider{
                 this.stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS,ModBlocks.SIMPLE_ARCHED_WINDOW_TOP_RIGHT, Blocks.QUARTZ_BRICKS,1);
                 this.stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS,ModBlocks.HAY_BLOCK, ModBlocks.THATCH_BLOCK,1);
                 this.stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS,ModBlocks.HAY_BLOCK, ModBlocks.THATCH_PEAK_BLOCK,1);
+                this.stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS,Blocks.POLISHED_DIORITE, ModBlocks.CIRCLE_CORNER,1);
+                this.stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS,Blocks.POLISHED_DIORITE, ModBlocks.POLISHED_DIORITE_KEYHOLE_BLOCK,1);
+                this.stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS,Blocks.CONCRETE.white(), ModBlocks.WHITE_CONCRETE_KEYHOLE_BLOCK,1);
                 this.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MARBLE_BLOCK, 3)
                         .define('0', Blocks.POLISHED_DIORITE)
                         .define('1', Blocks.QUARTZ_BLOCK)

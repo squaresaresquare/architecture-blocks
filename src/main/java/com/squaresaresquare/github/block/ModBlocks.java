@@ -1127,7 +1127,7 @@ public class ModBlocks {
     );
     public static final Block SIMPLE_ARCHED_WINDOW_RIGHT = register(
             "simple_arched_window_right",
-            SimpleArchedWindowLeft::new,
+            SimpleArchedWindowRight::new,
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
@@ -1172,6 +1172,7 @@ public class ModBlocks {
                     .isViewBlocking((state, level, pos) -> false),
             true
     );
+
     public static final Block CROWN_MOLDING_RIGHT = register(
             "crown_molding_right",
             CrownMoldingRight::new,
@@ -1184,5 +1185,34 @@ public class ModBlocks {
             true
     );
 
+    public static final Block CIRCLE_CORNER = register(
+            "circle_corner",
+            CircleCornerBlock::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1,1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;})
+                    .isSuffocating((state, level, pos) -> false)
+                    .isViewBlocking((state, level, pos) -> false),
+            true
+    );
+    public static final Block POLISHED_DIORITE_KEYHOLE_BLOCK = register(
+            "polished_diorite_keyhole",
+            PolishedDioriteKeyholeBlock::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1,1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+            true
+    );
+    public static final Block WHITE_CONCRETE_KEYHOLE_BLOCK = register(
+            "white_concrete_keyhole",
+            WhiteConcreteKeyholeBlock::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1,1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+            true
+    );
     public static void initialize() { }
 }

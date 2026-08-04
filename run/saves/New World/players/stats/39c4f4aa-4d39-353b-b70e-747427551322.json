@@ -1,0 +1,15 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:painting": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 891,
+      "minecraft:total_world_time": 8394,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 891,
+      "minecraft:time_since_death": 891
+    }
+  },
+  "DataVersion": 4903
+}

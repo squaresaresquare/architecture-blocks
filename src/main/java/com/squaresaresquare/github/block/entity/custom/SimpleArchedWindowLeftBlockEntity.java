@@ -7,7 +7,7 @@ import net.minecraft.world.level.block.state.BlockState;
 
 public class SimpleArchedWindowLeftBlockEntity extends BlockEntity {
     public SimpleArchedWindowLeftBlockEntity(BlockPos pos, BlockState state) {
-        super(ModBlockEntities.SIMPLE_ARCHED_WINDOW_TOP_LEFT_BLOCK_ENTITY, pos, state);
+        super(ModBlockEntities.SIMPLE_ARCHED_WINDOW_LEFT_BLOCK_ENTITY, pos, state);
     }
 }
         
