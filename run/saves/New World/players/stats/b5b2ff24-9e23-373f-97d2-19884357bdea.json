@@ -1,0 +1,24 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 2152,
+      "minecraft:total_world_time": 7631,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 140,
+      "minecraft:sneak_time": 6,
+      "minecraft:play_time": 2152,
+      "minecraft:time_since_death": 2152
+    },
+    "minecraft:used": {
+      "architecture-blocks:simple_arched_window_top_between": 1,
+      "architecture-blocks:simple_arched_window_top_left": 1,
+      "architecture-blocks:pillarless_window_middle": 2,
+      "architecture-blocks:simple_arched_window_top_right": 1,
+      "architecture-blocks:simple_arched_window_right": 2,
+      "architecture-blocks:simple_arched_window_left": 2,
+      "architecture-blocks:pillarless_window_base": 1,
+      "architecture-blocks:simple_arched_window_between": 2
+    }
+  },
+  "DataVersion": 4903
+}

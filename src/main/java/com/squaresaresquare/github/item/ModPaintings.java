@@ -2,6 +2,7 @@ package com.squaresaresquare.github.item;
 import com.squaresaresquare.github.ArchitectureBlocks;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.ChatFormatting;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.network.chat.Component;
@@ -17,6 +18,7 @@ import net.minecraft.resources.Identifier;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.BiConsumer;
 
+import net.minecraft.world.level.ItemLike;
 import org.jetbrains.annotations.NotNull;
 
 public class ModPaintings {
@@ -44,6 +46,8 @@ public class ModPaintings {
     public static final ResourceKey<@NotNull PaintingVariant> TRISTAN_ON_HIS_SICKBED_RK = create("tristan_on_his_sickbed");
     public static final ResourceKey<@NotNull PaintingVariant> UNDER_THE_LINDON_2_RK = create("under_the_lindon_2");
     public static final ResourceKey<@NotNull PaintingVariant> UNDER_THE_LINDON_RK = create("under_the_lindon");
+
+    public static final Item ACCOLADE = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "accolade"));
 
     public static void bootstrap(BootstrapContext<@NotNull PaintingVariant> context) {
         register(context, ACCOLADE_RK, 3, 5, "Accolade", "Edmund Blair Leighton");

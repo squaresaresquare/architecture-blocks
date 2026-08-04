@@ -1,7 +1,3 @@
-/give @p painting[entity_data={variant:"singers_hall_curse_of_grail_messenger_kundry_upon_parzival"}]
-/give @p painting[minecraft:entity_data=variant="give @p painting[entity_data={variant:"singers_hall_curse_of_grail_messenger_kundry_upon_parzival"]
-/give @p painting[entity_data={id="painting",variant:"singers_hall_curse_of_grail_messenger_kundry_upon_parzival"}]
-/give @p painting[entity_data={id="painting",variant:"endboss"}]
 /give @p painting[minecraft:painting/variant="Endboss"]
 /give @p painting[minecraft:painting/variant=Endboss]
 /give @p painting[minecraft:painting/variant='Endboss']
@@ -48,3 +44,7 @@
 /give Player996 architecture-blocks:simple_arched_window_top_right
 /give Player996 architecture-blocks:simple_arched_window_top_between
 /give Player996 architecture-blocks:simple_arched_window_top_center
+/time set day
+/give Player858 architecture-blocks:simple_arched_window_top_center
+/gamemode spectator
+/gamemode creative

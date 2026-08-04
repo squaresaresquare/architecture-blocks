@@ -1,6 +1,7 @@
 package com.squaresaresquare.github.creativemodetab;
 
 import com.mojang.serialization.Codec;
+import com.squaresaresquare.github.item.ModPaintings;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
 import net.minecraft.core.component.DataComponentType;
@@ -10,7 +11,10 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import org.jetbrains.annotations.NotNull;
@@ -33,6 +37,10 @@ public class ModCreativeModeTabs {
             Registries.CREATIVE_MODE_TAB,
             Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "paintings_tab")
     );
+    public static final ResourceKey<@NotNull CreativeModeTab> SIMPLE_ARCHED_WINDOW_TAB_KEY = ResourceKey.create(
+            Registries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "simple_arched_window_tab")
+    );
     public static final ResourceKey<@NotNull CreativeModeTab> ARCHITECTURE_BLOCK_TAB_KEY = ResourceKey.create(
             Registries.CREATIVE_MODE_TAB,
             Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "architecture_block_tab")
@@ -51,6 +59,37 @@ public class ModCreativeModeTabs {
             Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "four_arched_window_tab")
     );
 
+    public static final CreativeModeTab PAINTINGS_TAB = Registry.register(
+            BuiltInRegistries.CREATIVE_MODE_TAB,
+            ARCHITECTURE_BLOCK_TAB_KEY,
+            FabricCreativeModeTab.builder().icon(() -> new ItemStack(Items.PAINTING))
+                    .title(Component.translatable("itemGroup." + ArchitectureBlocks.MOD_ID + ".paintinge_tab"))
+                    .displayItems((displayContext, output) -> {
+                        output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "accolade")));
+                        output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "archer_angel")));
+                        output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "bedroom_love_potion")));
+                        output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "chapel")));
+                        output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "court_life_at_the_castle_of_the_grail")));
+                        output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "hermann_of_thuringia"))); //HERMANN_OF_THURINGIA
+                        output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "immaculate_conception_of_mary"))); //IMMACULATE_CONCEPTION_OF_MARY
+                        output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "ludwig_ii_blue_general_1"))); //LUDWIG_II_BLUE_GENERAL_1
+                        output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "ludwig_ii_blue_general_"))); //LUDWIG_II_BLUE_GENERAL_2
+                        output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "malcom_and_margaret_at_queensferry"))); //MALCOLM_AND_MARGARET_AT_QUEENSFERRY
+                        output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "miracle_of_the_grail"))); //MIRACLE_OF_THE_GRAIL
+                        output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "oratory_stained_glass"))); //ORATORY_STAINED_GLASS
+                        output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "our_lady_of_the_rosary_simone_cantarini"))); //OUR_LADY_OF_THE_ROSARY_SIMONE_CANTARINI
+                        output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "parzifal"))); //PARZIFAL_RK
+                        output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "parzifals_fight"))); //PARZIFALS_FIGHT_RK
+                        output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "saint_margaret"))); //SAINT_MARGARET_RK
+                        output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "sigurd_meets_grypin"))); //SIGURD_MEETS_GRYPIN_RK
+                        output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "singers_hall_curse_of_grail_messenger_kundry_upon_parzival"))); //
+                        output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "the_arrival_of_lohengrin_in_antwerp"))); //
+                        output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "tristan_and_isolde_seperation"))); //
+                        output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "tristan_and_isolde_with_the_potion"))); //
+                        output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "tristan_on_his_sickbed"))); //
+                        output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "under_the_lindon_2"))); //
+                        output.accept(BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "under_the_lindon")));
+                    }).build());
     public static final CreativeModeTab ARCHITECTURE_BLOCK_TAB = Registry.register(
             BuiltInRegistries.CREATIVE_MODE_TAB,
             ARCHITECTURE_BLOCK_TAB_KEY,
@@ -85,6 +124,53 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.POLISHED_DIORITE_KEYHOLE_BLOCK);
                         output.accept(ModBlocks.WHITE_CONCRETE_KEYHOLE_BLOCK);
                         //::new architecture_block here
+                    }).build());
+    public static final CreativeModeTab SIMPLE_ARCHED_WINDOW_TAB = Registry.register(
+            BuiltInRegistries.CREATIVE_MODE_TAB,
+            SIMPLE_ARCHED_WINDOW_TAB_KEY,
+            CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0)
+                    .title(Component.translatable("itemGroup.architecture_blocks.simple_arched_window_blocks_tab"))
+                    .icon(() -> new ItemStack(ModBlocks.SIMPLE_ARCHED_WINDOW_COMPLETE))
+                    .displayItems((displayContext, entries) -> {
+                        // create a grid of where I want to put items
+                        Map<Integer, Block> TabLayout = new HashMap<>();
+                        // create a grid of where I want to put items
+                        //TabLayout.put(1, ModBlocks.simple_window_arch_row1_col1);
+                        //row1
+                        TabLayout.put(0, ModBlocks.SIMPLE_ARCHED_WINDOW_TOP_LEFT);
+                        TabLayout.put(1, ModBlocks.SIMPLE_ARCHED_WINDOW_TOP_CENTER);
+                        TabLayout.put(2, ModBlocks.SIMPLE_ARCHED_WINDOW_TOP_BETWEEN);
+                        TabLayout.put(3, ModBlocks.SIMPLE_ARCHED_WINDOW_TOP_CENTER);
+                        TabLayout.put(4, ModBlocks.SIMPLE_ARCHED_WINDOW_TOP_RIGHT);
+                        TabLayout.put(6, ModBlocks.SIMPLE_ARCHED_WINDOW_TOP_LEFT);
+                        TabLayout.put(7, ModBlocks.SIMPLE_ARCHED_WINDOW_TOP_CENTER);
+                        TabLayout.put(8, ModBlocks.SIMPLE_ARCHED_WINDOW_TOP_RIGHT);
+                        TabLayout.put(9, ModBlocks.SIMPLE_ARCHED_WINDOW_LEFT);
+                        TabLayout.put(10, ModBlocks.PILLARLESS_WINDOW_MIDDLE);
+                        TabLayout.put(11, ModBlocks.SIMPLE_ARCHED_WINDOW_BETWEEN);
+                        TabLayout.put(12, ModBlocks.PILLARLESS_WINDOW_MIDDLE);
+                        TabLayout.put(13, ModBlocks.SIMPLE_ARCHED_WINDOW_RIGHT);
+                        TabLayout.put(15, ModBlocks.SIMPLE_ARCHED_WINDOW_LEFT);
+                        TabLayout.put(16, ModBlocks.PILLARLESS_WINDOW_MIDDLE);
+                        TabLayout.put(17, ModBlocks.SIMPLE_ARCHED_WINDOW_RIGHT);
+                        TabLayout.put(18, ModBlocks.SIMPLE_ARCHED_WINDOW_LEFT);
+                        TabLayout.put(19, ModBlocks.PILLARLESS_WINDOW_MIDDLE);
+                        TabLayout.put(20, ModBlocks.SIMPLE_ARCHED_WINDOW_BETWEEN);
+                        TabLayout.put(21, ModBlocks.PILLARLESS_WINDOW_MIDDLE);
+                        TabLayout.put(22, ModBlocks.SIMPLE_ARCHED_WINDOW_RIGHT);
+                        TabLayout.put(24, ModBlocks.SIMPLE_ARCHED_WINDOW_LEFT);
+                        TabLayout.put(25, ModBlocks.PILLARLESS_WINDOW_MIDDLE);
+                        TabLayout.put(26, ModBlocks.SIMPLE_ARCHED_WINDOW_RIGHT);
+
+                        int maxSlot = TabLayout.keySet().stream().max(Integer::compare).orElse(0);
+                        for (int slotIndex = 0; slotIndex <= maxSlot; slotIndex++) {
+                            ItemStack stack = TabLayout.containsKey(slotIndex)
+                                    ? new ItemStack(TabLayout.get(slotIndex))
+                                    : new ItemStack(ModBlocks.INVISIBLE);
+
+                            stack.set(MY_INT_COMPONENT, slotIndex);
+                            entries.accept(stack);
+                        }
                     }).build());
 
     public static final CreativeModeTab DOUBLE_ARCHED_WINDOW_TAB = Registry.register(

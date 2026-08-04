@@ -1161,6 +1161,15 @@ public class ModBlocks {
                     .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
             true
     );
+    public static final Block SIMPLE_ARCHED_WINDOW_COMPLETE = register(
+            "simple_arched_window_complete",
+            SimpleArchedWindowComplete::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1,1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+            true
+    );
     public static final Block CROWN_MOLDING_LEFT = register(
             "crown_molding_left",
             CrownMoldingLeft::new,
