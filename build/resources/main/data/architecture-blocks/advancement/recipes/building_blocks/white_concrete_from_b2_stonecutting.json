@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_b2": {
+      "conditions": {
+        "items": [
+          {
+            "items": "architecture-blocks:b2"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "architecture-blocks:white_concrete_from_b2_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_b2"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "architecture-blocks:white_concrete_from_b2_stonecutting"
+    ]
+  }
+}

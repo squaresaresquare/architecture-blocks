@@ -1,13 +1,17 @@
 {
   "stats": {
     "minecraft:custom": {
-      "minecraft:time_since_rest": 471,
-      "minecraft:total_world_time": 501,
+      "minecraft:time_since_rest": 1645,
+      "minecraft:total_world_time": 6355,
       "minecraft:leave_game": 1,
-      "minecraft:fly_one_cm": 140,
+      "minecraft:fly_one_cm": 2360,
       "minecraft:sneak_time": 3,
-      "minecraft:play_time": 471,
-      "minecraft:time_since_death": 471
+      "minecraft:play_time": 1645,
+      "minecraft:time_since_death": 1645
+    },
+    "minecraft:used": {
+      "architecture-blocks:quartz_circle_corner": 4,
+      "architecture-blocks:white_concrete_circle_corner": 4
     }
   },
   "DataVersion": 4903

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_d10": {
+      "conditions": {
+        "items": [
+          {
+            "items": "architecture-blocks:d10"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "architecture-blocks:white_concrete_from_d10_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_d10"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "architecture-blocks:white_concrete_from_d10_stonecutting"
+    ]
+  }
+}

@@ -490,5 +490,32 @@
         5
       ]
     }
-  ]
+  ],
+"display": {
+		"thirdperson_righthand": {
+			"rotation": [45, -18, 35],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [20, 43, 0],
+			"translation": [2.75, 2.75, 0],
+			"scale": [0.26, 0.26, 0.26]
+		},
+		"firstperson_lefthand": {
+			"rotation": [4, 18, 26],
+			"translation": [0, 3.75, 0.75],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"ground": {
+			"scale": [0.74, 0.74, 0.74]
+		},
+		"gui": {
+			"rotation": [49, 41, 16],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"fixed": {
+			"rotation": [-90, -180, 0],
+			"scale": [0.8, 0.8, 0.8]
+		}
+	}
 }

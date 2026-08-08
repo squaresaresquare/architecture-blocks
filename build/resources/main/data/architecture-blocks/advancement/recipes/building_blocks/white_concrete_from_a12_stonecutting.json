@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_a12": {
+      "conditions": {
+        "items": [
+          {
+            "items": "architecture-blocks:a12"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "architecture-blocks:white_concrete_from_a12_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_a12"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "architecture-blocks:white_concrete_from_a12_stonecutting"
+    ]
+  }
+}

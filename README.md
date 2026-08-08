@@ -2,6 +2,42 @@
 
 ## Setup
 
+## Architectural blocks
+### Composite architecture
+### Windows
+
+### A simple window
+[<img src="src/main/resources/assets/architecture-blocks/textures/README/simple_window.png" alt="simple window" width="15%" height="15%">](accolade.png)
+
+### A simple arched window
+[<img src="src/main/resources/assets/architecture-blocks/textures/README/simple_arched_window.png" alt="simple window" width="15%" height="15%">](accolade.png)
+
+### Two simple arched windows together
+[<img src="src/main/resources/assets/architecture-blocks/textures/README/two_simple_arched_windows_together.png" alt="simple window" width="15%" height="15%">](accolade.png)
+
+### A slot window with pillars
+[<img src="src/main/resources/assets/architecture-blocks/textures/README/slot_window.png" alt="simple window" width="15%" height="15%">](accolade.png)
+
+### A diagonal slot window with pillars
+[<img src="src/main/resources/assets/architecture-blocks/textures/README/corner_slot_window.png" alt="simple window" width="15%" height="15%">](accolade.png)
+
+#### A window with two arches
+[<img src="src/main/resources/assets/architecture-blocks/textures/README/window_two_arches.png" alt="simple window" width="15%" height="15%">](accolade.png)
+#### A window with three arches
+[<img src="src/main/resources/assets/architecture-blocks/textures/README/window_three_arches.png" alt="simple window" width="15%" height="15%">](accolade.png)
+#### A window with four arches
+[<img src="src/main/resources/assets/architecture-blocks/textures/README/window_four_arches.png" alt="simple window" width="15%" height="15%">](accolade.png)
+
+| And of course you can mix and match the elements to make crazy things    |
+|-----|
+
+|                                                                      Big Window                                                                      |                                                                            a tall window with lots of arches                                                                            | 
+|:----------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:| 
+| [<img src="src/main/resources/assets/architecture-blocks/textures/README/big_window.png" alt="big window" width="50%" height="50%">](big_window.png) |            [<img src="src/main/resources/assets/architecture-blocks/textures/README/lots_of_arches.png" alt="lots of arches" width="50%" height="50%">](lots_of_arches.png)             |  
+|                                                                        title                                                                         |                                                                         lots of simple arched windows in a row                                                                          |
+| [<img src="src/main/resources/assets/architecture-blocks/textures/README/.png" alt="something else here" width="50%" height="50%">](big_window.png)  | [<img src="src/main/resources/assets/architecture-blocks/textures/README/many_simple_arched_window.png" alt="mant of arches" width="50%" height="50%">](many_simple_arched_windows.png) | 
+### Columns
+
 ## Paintings
 
 <img src="src/main/resources/assets/architecture-blocks/textures/painting/paintings1.png" alt="Paintings1">

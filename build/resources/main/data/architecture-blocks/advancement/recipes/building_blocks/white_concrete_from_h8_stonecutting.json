@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_h8": {
+      "conditions": {
+        "items": [
+          {
+            "items": "architecture-blocks:h8"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "architecture-blocks:white_concrete_from_h8_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_h8"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "architecture-blocks:white_concrete_from_h8_stonecutting"
+    ]
+  }
+}

@@ -1,8 +1,10 @@
 package com.squaresaresquare.github.block;
 
-import com.squaresaresquare.github.block.entity.custom.CrownMoldingLeftBlockEntity;
-import com.squaresaresquare.github.block.entity.custom.CrownMoldingRightBlockEntity;
-import net.fabricmc.api.ModInitializer;
+import com.squaresaresquare.github.block.custom.doublewindowarch.*;
+import com.squaresaresquare.github.block.custom.quadruplewindowarch.*;
+import com.squaresaresquare.github.block.custom.simplearchedwindow.*;
+import com.squaresaresquare.github.block.custom.triplewindowarch.*;
+import com.squaresaresquare.github.block.custom.mosaic.*;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -1200,9 +1202,25 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;})
-                    .isSuffocating((state, level, pos) -> false)
-                    .isViewBlocking((state, level, pos) -> false),
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+            true
+    );
+    public static final Block QUARTZ_CIRCLE_CORNER = register(
+            "quartz_circle_corner",
+            QuartzCircleCornerBlock::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1,1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
+            true
+    );
+    public static final Block WHITE_CONCRETE_CIRCLE_CORNER = register(
+            "white_concrete_circle_corner",
+            WhiteConcreteCircleCornerBlock::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1,1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
             true
     );
     public static final Block POLISHED_DIORITE_KEYHOLE_BLOCK = register(
@@ -1223,5 +1241,1602 @@ public class ModBlocks {
                     .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
             true
     );
+
+    public static final Block MOSAIC_COMPLETE = register(
+            "mosaic_complete",
+            MosaicComplete::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_A1_BLOCK = register(
+            "a1",
+            MosaicA1Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_A2_BLOCK = register(
+            "a2",
+            MosaicA2Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_A3_BLOCK = register(
+            "a3",
+            MosaicA3Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_A4_BLOCK = register(
+            "a4",
+            MosaicA4Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_A5_BLOCK = register(
+            "a5",
+            MosaicA5Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_A6_BLOCK = register(
+            "a6",
+            MosaicA6Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_A7_BLOCK = register(
+            "a7",
+            MosaicA7Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_A8_BLOCK = register(
+            "a8",
+            MosaicA8Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_A9_BLOCK = register(
+            "a9",
+            MosaicA9Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_A10_BLOCK = register(
+            "a10",
+            MosaicA10Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_A11_BLOCK = register(
+            "a11",
+            MosaicA11Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_A12_BLOCK = register(
+            "a12",
+            MosaicA12Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_B1_BLOCK = register(
+            "b1",
+            MosaicB1Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_B2_BLOCK = register(
+            "b2",
+            MosaicB2Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_B3_BLOCK = register(
+            "b3",
+            MosaicB3Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_B4_BLOCK = register(
+            "b4",
+            MosaicB4Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_B5_BLOCK = register(
+            "b5",
+            MosaicB5Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_B6_BLOCK = register(
+            "b6",
+            MosaicB6Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_B7_BLOCK = register(
+            "b7",
+            MosaicB7Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_B8_BLOCK = register(
+            "b8",
+            MosaicB8Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_B9_BLOCK = register(
+            "b9",
+            MosaicB9Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_B10_BLOCK = register(
+            "b10",
+            MosaicB10Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_B11_BLOCK = register(
+            "b11",
+            MosaicB11Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_B12_BLOCK = register(
+            "b12",
+            MosaicB12Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_C1_BLOCK = register(
+            "c1",
+            MosaicC1Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_C2_BLOCK = register(
+            "c2",
+            MosaicC2Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_C3_BLOCK = register(
+            "c3",
+            MosaicC3Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_C4_BLOCK = register(
+            "c4",
+            MosaicC4Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_C5_BLOCK = register(
+            "c5",
+            MosaicC5Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_C6_BLOCK = register(
+            "c6",
+            MosaicC6Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_C7_BLOCK = register(
+            "c7",
+            MosaicC7Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_C8_BLOCK = register(
+            "c8",
+            MosaicC8Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_C9_BLOCK = register(
+            "c9",
+            MosaicC9Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_C10_BLOCK = register(
+            "c10",
+            MosaicC10Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_C11_BLOCK = register(
+            "c11",
+            MosaicC11Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_C12_BLOCK = register(
+            "c12",
+            MosaicC12Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_D1_BLOCK = register(
+            "d1",
+            MosaicD1Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_D2_BLOCK = register(
+            "d2",
+            MosaicD2Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_D3_BLOCK = register(
+            "d3",
+            MosaicD3Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_D4_BLOCK = register(
+            "d4",
+            MosaicD4Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_D5_BLOCK = register(
+            "d5",
+            MosaicD5Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_D6_BLOCK = register(
+            "d6",
+            MosaicD6Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_D7_BLOCK = register(
+            "d7",
+            MosaicD7Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_D8_BLOCK = register(
+            "d8",
+            MosaicD8Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_D9_BLOCK = register(
+            "d9",
+            MosaicD9Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_D10_BLOCK = register(
+            "d10",
+            MosaicD10Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_D11_BLOCK = register(
+            "d11",
+            MosaicD11Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_D12_BLOCK = register(
+            "d12",
+            MosaicD12Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_E1_BLOCK = register(
+            "e1",
+            MosaicE1Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_E2_BLOCK = register(
+            "e2",
+            MosaicE2Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_E3_BLOCK = register(
+            "e3",
+            MosaicE3Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_E4_BLOCK = register(
+            "e4",
+            MosaicE4Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_E5_BLOCK = register(
+            "e5",
+            MosaicE5Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_E6_BLOCK = register(
+            "e6",
+            MosaicE6Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_E7_BLOCK = register(
+            "e7",
+            MosaicE7Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_E8_BLOCK = register(
+            "e8",
+            MosaicE8Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_E9_BLOCK = register(
+            "e9",
+            MosaicE9Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_E10_BLOCK = register(
+            "e10",
+            MosaicE10Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_E11_BLOCK = register(
+            "e11",
+            MosaicE11Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_E12_BLOCK = register(
+            "e12",
+            MosaicE12Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_F1_BLOCK = register(
+            "f1",
+            MosaicF1Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_F2_BLOCK = register(
+            "f2",
+            MosaicF2Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_F3_BLOCK = register(
+            "f3",
+            MosaicF3Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_F4_BLOCK = register(
+            "f4",
+            MosaicF4Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_F5_BLOCK = register(
+            "f5",
+            MosaicF5Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_F6_BLOCK = register(
+            "f6",
+            MosaicF6Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_F7_BLOCK = register(
+            "f7",
+            MosaicF7Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_F8_BLOCK = register(
+            "f8",
+            MosaicF8Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_F9_BLOCK = register(
+            "f9",
+            MosaicF9Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_F10_BLOCK = register(
+            "f10",
+            MosaicF10Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_F11_BLOCK = register(
+            "f11",
+            MosaicF11Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_F12_BLOCK = register(
+            "f12",
+            MosaicF12Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_G1_BLOCK = register(
+            "g1",
+            MosaicG1Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_G2_BLOCK = register(
+            "g2",
+            MosaicG2Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_G3_BLOCK = register(
+            "g3",
+            MosaicG3Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_G4_BLOCK = register(
+            "g4",
+            MosaicG4Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_G5_BLOCK = register(
+            "g5",
+            MosaicG5Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_G6_BLOCK = register(
+            "g6",
+            MosaicG6Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_G7_BLOCK = register(
+            "g7",
+            MosaicG7Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_G8_BLOCK = register(
+            "g8",
+            MosaicG8Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_G9_BLOCK = register(
+            "g9",
+            MosaicG9Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_G10_BLOCK = register(
+            "g10",
+            MosaicG10Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_G11_BLOCK = register(
+            "g11",
+            MosaicG11Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_G12_BLOCK = register(
+            "g12",
+            MosaicG12Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_H1_BLOCK = register(
+            "h1",
+            MosaicH1Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_H2_BLOCK = register(
+            "h2",
+            MosaicH2Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_H3_BLOCK = register(
+            "h3",
+            MosaicH3Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_H4_BLOCK = register(
+            "h4",
+            MosaicH4Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_H5_BLOCK = register(
+            "h5",
+            MosaicH5Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_H6_BLOCK = register(
+            "h6",
+            MosaicH6Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_H7_BLOCK = register(
+            "h7",
+            MosaicH7Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_H8_BLOCK = register(
+            "h8",
+            MosaicH8Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_H9_BLOCK = register(
+            "h9",
+            MosaicH9Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_H10_BLOCK = register(
+            "h10",
+            MosaicH10Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_H11_BLOCK = register(
+            "h11",
+            MosaicH11Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_H12_BLOCK = register(
+            "h12",
+            MosaicH12Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_I1_BLOCK = register(
+            "i1",
+            MosaicI1Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_I2_BLOCK = register(
+            "i2",
+            MosaicI2Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_I3_BLOCK = register(
+            "i3",
+            MosaicI3Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_I4_BLOCK = register(
+            "i4",
+            MosaicI4Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_I5_BLOCK = register(
+            "i5",
+            MosaicI5Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_I6_BLOCK = register(
+            "i6",
+            MosaicI6Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_I7_BLOCK = register(
+            "i7",
+            MosaicI7Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_I8_BLOCK = register(
+            "i8",
+            MosaicI8Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_I9_BLOCK = register(
+            "i9",
+            MosaicI9Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_I10_BLOCK = register(
+            "i10",
+            MosaicI10Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_I11_BLOCK = register(
+            "i11",
+            MosaicI11Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_I12_BLOCK = register(
+            "i12",
+            MosaicI12Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_J1_BLOCK = register(
+            "j1",
+            MosaicJ1Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_J2_BLOCK = register(
+            "j2",
+            MosaicJ2Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_J3_BLOCK = register(
+            "j3",
+            MosaicJ3Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_J4_BLOCK = register(
+            "j4",
+            MosaicJ4Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_J5_BLOCK = register(
+            "j5",
+            MosaicJ5Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_J6_BLOCK = register(
+            "j6",
+            MosaicJ6Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_J7_BLOCK = register(
+            "j7",
+            MosaicJ7Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_J8_BLOCK = register(
+            "j8",
+            MosaicJ8Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_J9_BLOCK = register(
+            "j9",
+            MosaicJ9Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_J10_BLOCK = register(
+            "j10",
+            MosaicJ10Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_J11_BLOCK = register(
+            "j11",
+            MosaicJ11Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_J12_BLOCK = register(
+            "j12",
+            MosaicJ12Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_K1_BLOCK = register(
+            "k1",
+            MosaicK1Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_K2_BLOCK = register(
+            "k2",
+            MosaicK2Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_K3_BLOCK = register(
+            "k3",
+            MosaicK3Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_K4_BLOCK = register(
+            "k4",
+            MosaicK4Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_K5_BLOCK = register(
+            "k5",
+            MosaicK5Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_K6_BLOCK = register(
+            "k6",
+            MosaicK6Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_K7_BLOCK = register(
+            "k7",
+            MosaicK7Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_K8_BLOCK = register(
+            "k8",
+            MosaicK8Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_K9_BLOCK = register(
+            "k9",
+            MosaicK9Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_K10_BLOCK = register(
+            "k10",
+            MosaicK10Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_K11_BLOCK = register(
+            "k11",
+            MosaicK11Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_K12_BLOCK = register(
+            "k12",
+            MosaicK12Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_L1_BLOCK = register(
+            "l1",
+            MosaicL1Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_L2_BLOCK = register(
+            "l2",
+            MosaicL2Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_L3_BLOCK = register(
+            "l3",
+            MosaicL3Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_L4_BLOCK = register(
+            "l4",
+            MosaicL4Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_L5_BLOCK = register(
+            "l5",
+            MosaicL5Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_L6_BLOCK = register(
+            "l6",
+            MosaicL6Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_L7_BLOCK = register(
+            "l7",
+            MosaicL7Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_L8_BLOCK = register(
+            "l8",
+            MosaicL8Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_L9_BLOCK = register(
+            "l9",
+            MosaicL9Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_L10_BLOCK = register(
+            "l10",
+            MosaicL10Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_L11_BLOCK = register(
+            "l11",
+            MosaicL11Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_L12_BLOCK = register(
+            "l12",
+            MosaicL12Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    //:::::::::::
     public static void initialize() { }
 }
