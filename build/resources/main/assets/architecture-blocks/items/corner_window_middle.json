@@ -1,7 +1,7 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "architecture-blocks:item/corner_window_middle"
+    "model": "architecture-blocks:block/corner_window_middle"
   }
 }
             

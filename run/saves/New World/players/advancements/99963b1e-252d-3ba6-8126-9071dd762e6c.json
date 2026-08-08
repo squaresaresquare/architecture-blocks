@@ -23,5 +23,23 @@
     },
     "done": false
   },
+  "architecture-blocks:recipes/building_blocks/polished_diorite_from_circle_corner_stonecutting": {
+    "criteria": {
+      "has_circle_corner": "2026-08-05 00:19:42 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/quartz_block_from_quartz_circle_corner_stonecutting": {
+    "criteria": {
+      "has_quartz_circle_corner": "2026-08-05 00:19:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/white_concrete_from_white_concrete_circle_corner_stonecutting": {
+    "criteria": {
+      "has_white_concrete_circle_corner": "2026-08-05 00:19:58 -0700"
+    },
+    "done": true
+  },
   "DataVersion": 4903
 }

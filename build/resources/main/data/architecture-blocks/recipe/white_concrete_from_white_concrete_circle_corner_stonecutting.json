@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "architecture-blocks:white_concrete_circle_corner",
+  "result": {
+    "id": "minecraft:white_concrete"
+  }
+}

@@ -1,7 +1,9 @@
 package com.squaresaresquare.github.item;
+
 import com.squaresaresquare.github.ArchitectureBlocks;
-import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.event.registry.RegistryAttribute;
 import net.minecraft.ChatFormatting;
+import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
@@ -9,19 +11,184 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.entity.decoration.painting.PaintingVariant;
-
-import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricCodecDataProvider;
-import net.minecraft.core.HolderLookup; //HolderLookup.Provider replaces RegistryWrapper
 import net.minecraft.world.item.Item; //Item registry Keys repalce
-import net.minecraft.resources.Identifier;
-import java.util.concurrent.CompletableFuture;
-import java.util.function.BiConsumer;
-
-import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.NotNull;
+import java.util.Hashtable;
+import static com.squaresaresquare.github.item.PaintingsRecord.PaintingRecords;
 
 public class ModPaintings {
+    public static void loadRecord(){
+            PaintingRecords.add(new PaintingsRecord(
+                    ModPaintings.ACCOLADE_RK,
+                    3,  5,
+                    "Accolade",
+                    "Edmund Blair Leighton",
+                    ""
+            ));
+            PaintingRecords.add(new PaintingsRecord(
+                    ModPaintings.ARCHER_ANGEL_RK,
+                    1,  3,
+                    "Archer angel",
+                    "August Spieß",
+                    ""
+            ));
+            PaintingRecords.add(new PaintingsRecord(
+                    ModPaintings.BEDROOM_LOVE_POTION_RK,
+                    5,  8,
+                    "Tristan hands Isolde the love potion",
+                    "August Spieß",
+                    ""
+            ));
+            PaintingRecords.add(new PaintingsRecord(
+                    ModPaintings.CHAPEL_RK,
+                    3,  5,
+                    "Chapel",
+                    "Franz Mayer Mayerischen Studios",
+                    ""
+            ));
+            PaintingRecords.add(new PaintingsRecord(
+                    ModPaintings.COURT_LIFE_AT_THE_CASTLE_OF_THE_GRAIL_RK,
+                    3,  4,
+                    "Court Life at the Castle of the Grail",
+                    "Ferdinand Piloty",
+                    ""
+            ));
+            PaintingRecords.add(new PaintingsRecord(
+                    ModPaintings.HERMANN_OF_THURINGIA_RK,
+                    5,  6,
+                    "Hermann of Thuringia helping to represent the poem of a minstrel",
+                    "Ferdinand Piloty",
+                    ""
+            ));
+            PaintingRecords.add(new PaintingsRecord(
+                    ModPaintings.IMMACULATE_CONCEPTION_OF_MARY_RK,
+                    3,  5,
+                    "The Immaculate Conception of Mary stained glass window",
+                    "Franz Mayer Mayerischen Studios",
+                    ""
+            ));
+            PaintingRecords.add(new PaintingsRecord(
+                    ModPaintings.LUDWIG_II_BLUE_GENERAL_1_RK,
+                    2,  3,
+                    "King Ludwig II of Bavaria in a blue generals uniform",
+                    "Ferdinand Piloty",
+                    ""
+            ));
+            PaintingRecords.add(new PaintingsRecord(
+                    ModPaintings.LUDWIG_II_BLUE_GENERAL_2_RK,
+                    2,  3,
+                    "King Ludwig II of Bavaria in a blue generals uniform",
+                    "Ferdinand Piloty",
+                    ""
+            ));
+            PaintingRecords.add(new PaintingsRecord(
+                    ModPaintings.MALCOLM_AND_MARGARET_AT_QUEENSFERRY_RK,
+                    3,  5,
+                    "The Landing of St Margaret at Queensferry",
+                    "William Brassey Hole",
+                    ""
+            ));
+            PaintingRecords.add(new PaintingsRecord(
+                    ModPaintings.MIRACLE_OF_THE_GRAIL_RK,
+                    8,  5,
+                    "The Miracle of the Grail",
+                    "Wilhelm Hauschild",
+                    ""
+            ));
+            PaintingRecords.add(new PaintingsRecord(
+                    ModPaintings.ORATORY_STAINED_GLASS_RK,
+                    3,  5,
+                    "Oratory stained glass",
+                    "Franz Mayer Mayerischen Studios",
+                    ""
+            ));
+            PaintingRecords.add(new PaintingsRecord(
+                    ModPaintings.OUR_LADY_OF_THE_ROSARY_SIMONE_CANTARINI_RK,
+                    2,  3,
+                    "Our lady of the rosary simone cantarini",
+                    "Simone Cantarini",
+                    ""
+            ));
+            PaintingRecords.add(new PaintingsRecord(
+                    ModPaintings.PARZIFALS_FIGHT_RK,
+                    5,  7,
+                    "Parzifals battle with the Red Knight",
+                    "August Spiess",
+                    ""
+            ));
+            PaintingRecords.add(new PaintingsRecord(
+                    ModPaintings.PARZIFAL_RK,
+                    4,  6,
+                    "Parzifal",
+                    "August Spiess",
+                    ""
+            ));
+            PaintingRecords.add(new PaintingsRecord(
+                    ModPaintings.SAINT_MARGARET_RK,
+                    1,  3,
+                    "Saint margaret",
+                    "August Spieß",
+                    ""
+            ));
+            PaintingRecords.add(new PaintingsRecord(
+                    ModPaintings.SIGURD_MEETS_GRYPIN_RK,
+                    3,  4,
+                    "King Sigurd meets the wise hermit Grypin",
+                    "Wilhelm Hauschild",
+                    ""
+            ));
+            PaintingRecords.add(new PaintingsRecord(
+                    ModPaintings.SINGERS_HALL_CURSE_OF_GRAIL_MESSENGER_KUNDRY_UPON_PARZIVAL_RK,
+                    2,  3,
+                    "Curse of the Grail Messenger Kundry",
+                    "Ferdinand Piloty",
+                    ""
+            ));
+            PaintingRecords.add(new PaintingsRecord(
+                    ModPaintings.THE_ARRIVAL_OF_LOHENGRIN_IN_ANTWERP_RK,
+                    4,  2,
+                    "The Arrival of Lohengrin in Antwerp",
+                    "August Von Heckle",
+                    ""
+            ));
+            PaintingRecords.add(new PaintingsRecord(
+                    ModPaintings.TRISTAN_AND_ISOLDE_SEPERATION_RK,
+                    5,  3,
+                    "Tristan and isolde seperation",
+                    "August Spieß",
+                    ""
+            ));
+            PaintingRecords.add(new PaintingsRecord(
+                    ModPaintings.TRISTAN_AND_ISOLDE_WITH_THE_POTION_RK,
+                    4,  6,
+                    "Tristan and Isolde with the potion",
+                    "John William Waterhouse",
+                    ""
+            ));
+            PaintingRecords.add(new PaintingsRecord(
+                    ModPaintings.TRISTAN_ON_HIS_SICKBED_RK,
+                    5,  3,
+                    "Tristan on his sickbed",
+                    "August Spieß",
+                    ""
+            ));
+            PaintingRecords.add(new PaintingsRecord(
+                    ModPaintings.UNDER_THE_LINDON_2_RK,
+                    5,  3,
+                    "Under the lindon 2",
+                    "August Spieß",
+                    ""
+            ));
+            PaintingRecords.add(new PaintingsRecord(
+                    ModPaintings.UNDER_THE_LINDON_RK,
+                    6,  4,
+                    "Tristan and Isolde under the lindon",
+                    "Ferdinand Piloty",
+                    ""
+            ));
+
+    }
     public static final ResourceKey<@NotNull PaintingVariant> ACCOLADE_RK = create("accolade");
     public static final ResourceKey<@NotNull PaintingVariant> ARCHER_ANGEL_RK = create("archer_angel");
     public static final ResourceKey<@NotNull PaintingVariant> BEDROOM_LOVE_POTION_RK = create("bedroom_love_potion");
@@ -47,33 +214,10 @@ public class ModPaintings {
     public static final ResourceKey<@NotNull PaintingVariant> UNDER_THE_LINDON_2_RK = create("under_the_lindon_2");
     public static final ResourceKey<@NotNull PaintingVariant> UNDER_THE_LINDON_RK = create("under_the_lindon");
 
-    public static final Item ACCOLADE = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "accolade"));
-
     public static void bootstrap(BootstrapContext<@NotNull PaintingVariant> context) {
-        register(context, ACCOLADE_RK, 3, 5, "Accolade", "Edmund Blair Leighton");
-        register(context, ARCHER_ANGEL_RK, 1, 3, "Archer angel","August Spieß");
-        register(context, BEDROOM_LOVE_POTION_RK, 5, 8, "Tristan hands Isolde the love potion", "August Spieß");
-        register(context, CHAPEL_RK, 3, 5, "Chapel", "Franz Mayer Mayerischen Studios");
-        register(context, COURT_LIFE_AT_THE_CASTLE_OF_THE_GRAIL_RK, 3, 4, "Court Life at the Castle of the Grail", "Ferdinand Piloty");
-        register(context, HERMANN_OF_THURINGIA_RK, 5, 6, "Hermann of Thuringia helping to represent the poem of a minstrel", "Ferdinand Piloty");
-        register(context, IMMACULATE_CONCEPTION_OF_MARY_RK, 3, 5, "The Immaculate Conception of Mary stained glass window","Franz Mayer Mayerischen Studios");
-        register(context, LUDWIG_II_BLUE_GENERAL_1_RK, 2, 3, "King Ludwig II of Bavaria in a blue generals uniform", "Ferdinand Piloty");
-        register(context, LUDWIG_II_BLUE_GENERAL_2_RK, 2, 3, "King Ludwig II of Bavaria in a blue generals uniform", "Ferdinand Piloty");
-        register(context, MALCOLM_AND_MARGARET_AT_QUEENSFERRY_RK, 3, 5, "The Landing of St Margaret at Queensferry", "William Brassey Hole");
-        register(context, MIRACLE_OF_THE_GRAIL_RK, 8, 5, "The Miracle of the Grail", "Wilhelm Hauschild");
-        register(context, ORATORY_STAINED_GLASS_RK, 3, 5, "Oratory stained glass","Franz Mayer Mayerischen Studios");
-        register(context, OUR_LADY_OF_THE_ROSARY_SIMONE_CANTARINI_RK, 2, 3, "Our lady of the rosary simone cantarini","Simone Cantarini");
-        register(context, PARZIFALS_FIGHT_RK, 5, 7, "Parzifals battle with the Red Knight", "August Spiess");
-        register(context, PARZIFAL_RK, 4, 6, "Parzifal", "August Spiess");
-        register(context, SAINT_MARGARET_RK, 1, 3, "Saint margaret","August Spieß");
-        register(context, SIGURD_MEETS_GRYPIN_RK, 3, 4, "King Sigurd meets the wise hermit Grypin", "Wilhelm Hauschild");
-        register(context, SINGERS_HALL_CURSE_OF_GRAIL_MESSENGER_KUNDRY_UPON_PARZIVAL_RK, 2, 3, "Curse of the Grail Messenger Kundry", "Ferdinand Piloty");
-        register(context, THE_ARRIVAL_OF_LOHENGRIN_IN_ANTWERP_RK, 4, 2, "The Arrival of Lohengrin in Antwerp", "August Von Heckle");
-        register(context, TRISTAN_AND_ISOLDE_SEPERATION_RK, 5, 3, "Tristan and isolde seperation","August Spieß");
-        register(context, TRISTAN_AND_ISOLDE_WITH_THE_POTION_RK, 4, 6, "Tristan and Isolde with the potion", "John William Waterhouse");
-        register(context, TRISTAN_ON_HIS_SICKBED_RK, 5, 3, "Tristan on his sickbed","August Spieß");
-        register(context, UNDER_THE_LINDON_2_RK, 5, 3, "Under the lindon 2","August Spieß");
-        register(context, UNDER_THE_LINDON_RK, 6, 4, "Tristan and Isolde under the lindon", "Ferdinand Piloty");
+        for (PaintingsRecord rec : PaintingRecords) {
+            register(context, rec.rk(), rec.w(), rec.h(), rec.title(), rec.author());
+        }
     }
 
     private static ResourceKey<@NotNull PaintingVariant> create(final String id) {
@@ -91,5 +235,28 @@ public class ModPaintings {
                 )
         );
    }
-    public static void initialize() { }
+    public static ItemStack getItemStack(final ResourceKey<@NotNull PaintingVariant> rk, final String name) {
+        Identifier identifier = rk.identifier();
+
+        ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, identifier);
+
+        Item.Properties properties = new Item.Properties()
+                .setId(itemKey)   // This resolves the missing constructor error in 26.2!
+                .stacksTo(1);
+
+        String isRegistered = BuiltInRegistries.ITEM.containsKey(rk.identifier()) ? "true" : "false";
+        System.out.println("The identifier is in the ITEM registry: " + isRegistered);
+        String foundRK = BuiltInRegistries.ITEM.containsKey((ResourceKey) rk) ? "true" : "false";
+        System.out.println("The resource key is in the ITEM registry: " + foundRK);
+        Item i = BuiltInRegistries.ITEM.getValue(itemKey);
+
+        ItemStack itemStack1 = new ItemStack(i);
+        itemStack1.limitSize(1);
+        ItemStack itemStack = itemStack1;
+        return itemStack;
+    }
+
+    public static void initialize() {
+        loadRecord();
+    }
 }

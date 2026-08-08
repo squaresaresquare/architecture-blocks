@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "architecture-blocks:a10",
+  "result": {
+    "id": "minecraft:white_concrete"
+  }
+}

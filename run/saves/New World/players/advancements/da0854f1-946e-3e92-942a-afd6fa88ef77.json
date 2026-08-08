@@ -1,0 +1,21 @@
+{
+  "architecture-blocks:recipes/building_blocks/polished_diorite_from_circle_corner_stonecutting": {
+    "criteria": {
+      "has_circle_corner": "2026-08-04 23:36:12 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-08-04 23:35:45 -0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2026-08-04 23:35:45 -0700"
+    },
+    "done": false
+  },
+  "DataVersion": 4903
+}

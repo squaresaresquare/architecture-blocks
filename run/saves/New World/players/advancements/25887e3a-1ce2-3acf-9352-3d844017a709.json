@@ -1,0 +1,597 @@
+{
+  "minecraft:recipes/decorations/tuff_brick_wall_from_polished_tuff_stonecutting": {
+    "criteria": {
+      "has_polished_tuff": "2026-08-05 12:21:42 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/quadruple_window_arch_row3_col8_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_stairs": {
+    "criteria": {
+      "has_polished_diorite": "2026-08-05 11:59:14 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/triple_window_arch_row4_col1_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/double_window_arch_row3_col3_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tuff_brick_stairs_from_polished_tuff_stonecutting": {
+    "criteria": {
+      "has_polished_tuff": "2026-08-05 12:21:42 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_slab": {
+    "criteria": {
+      "has_quartz_block": "2026-08-05 13:11:21 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/triple_window_arch_row2_col5_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/quadruple_window_arch_row1_col4_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/purpur_slab": {
+    "criteria": {
+      "has_purpur_block": "2026-08-05 12:24:56 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_bricks": {
+    "criteria": {
+      "has_quartz_block": "2026-08-05 13:11:21 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/quadruple_window_arch_row2_col1_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/hay_block_from_thatch_peak_stonecutting": {
+    "criteria": {
+      "has_thatch_peak": "2026-08-05 11:59:14 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/triple_window_arch_row1_col1_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/double_window_arch_row1_col1_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/simple_arched_window_left_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/double_window_arch_row3_col4_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/simple_arched_window_right_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/quadruple_window_arch_row3_col1_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/triple_window_arch_row2_col6_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/triple_window_arch_row5_col5_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/quadruple_window_arch_row1_col3_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-08-05 11:59:14 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2026-08-05 12:42:13 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/triple_window_arch_row1_col6_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/double_window_arch_row2_col4_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/quadruple_window_arch_row3_col6_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/double_window_arch_row1_col2_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_pillar_from_quartz_block_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2026-08-05 13:11:21 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/quadruple_window_arch_row2_col8_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/spruce_shelf": {
+    "criteria": {
+      "has_stripped_spruce_log": "2026-08-05 12:27:33 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/quadruple_window_arch_row1_col6_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/triple_window_arch_row5_col4_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_tuff_stairs_from_polished_tuff_stonecutting": {
+    "criteria": {
+      "has_polished_tuff": "2026-08-05 12:21:42 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_tuff_slab": {
+    "criteria": {
+      "has_polished_tuff": "2026-08-05 12:21:42 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_pillar": {
+    "criteria": {
+      "has_quartz_block": "2026-08-05 13:11:21 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/quadruple_window_arch_row1_col1_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_stairs_from_quartz_block_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2026-08-05 13:11:21 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/spruce_hanging_sign": {
+    "criteria": {
+      "has_stripped_log": "2026-08-05 12:27:33 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_slab_from_quartz_block_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2026-08-05 13:11:21 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_tuff_wall_from_polished_tuff_stonecutting": {
+    "criteria": {
+      "has_polished_tuff": "2026-08-05 12:21:42 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/triple_window_arch_row4_col2_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/double_window_arch_row2_col1_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/simple_arched_window_top_between_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/quadruple_window_arch_row3_col3_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/simple_arched_window_top_right_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/double_window_arch_row1_col4_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/purpur_pillar": {
+    "criteria": {
+      "has_purpur_block": "2026-08-05 12:24:56 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_spruce_wood": {
+    "criteria": {
+      "has_log": "2026-08-05 12:27:33 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/triple_window_arch_row4_col5_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/quartz_block_from_quartz_circle_corner_stonecutting": {
+    "criteria": {
+      "has_quartz_circle_corner": "2026-08-05 13:10:57 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_tuff_wall": {
+    "criteria": {
+      "has_polished_tuff": "2026-08-05 12:21:42 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_planks": {
+    "criteria": {
+      "has_logs": "2026-08-05 12:27:33 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_slab": {
+    "criteria": {
+      "has_polished_diorite": "2026-08-05 11:59:14 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_stairs": {
+    "criteria": {
+      "has_quartz_block": "2026-08-05 13:11:21 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/double_window_arch_row2_col2_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_quartz": {
+    "criteria": {
+      "has_quartz_block": "2026-08-05 13:11:21 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/triple_window_arch_row2_col1_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/triple_window_arch_row5_col2_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/double_window_arch_row1_col5_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_quartz_block": {
+    "criteria": {
+      "has_quartz_block": "2026-08-05 13:11:21 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/quartz_bricks": {
+    "criteria": {
+      "has_quartz_blocks": "2026-08-05 13:11:21 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_bricks_from_quartz_block_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2026-08-05 13:11:21 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/inner_arch_block_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/double_window_arch_row2_col3_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/triple_window_arch_row4_col4_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/hay_block_from_thatch_stonecutting": {
+    "criteria": {
+      "has_thatch": "2026-08-05 11:59:14 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/charcoal": {
+    "criteria": {
+      "has_log": "2026-08-05 12:27:33 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_tuff_slab_from_polished_tuff_stonecutting": {
+    "criteria": {
+      "has_polished_tuff": "2026-08-05 12:21:42 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/quadruple_window_arch_row1_col8_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/triple_window_arch_row2_col2_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/quadruple_window_arch_row1_col7_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/simple_arched_window_top_left_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/purpur_stairs": {
+    "criteria": {
+      "has_purpur_block": "2026-08-05 12:24:56 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/purpur_pillar_from_purpur_block_stonecutting": {
+    "criteria": {
+      "has_purpur_block": "2026-08-05 12:24:56 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/triple_window_arch_row4_col3_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_quartz_block_from_quartz_block_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2026-08-05 13:11:21 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_stairs_from_polished_diorite_stonecutting": {
+    "criteria": {
+      "has_polished_diorite": "2026-08-05 11:59:14 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/marble_block": {
+    "criteria": {
+      "has_polished_diorite": "2026-08-05 11:59:14 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_tuff_stairs": {
+    "criteria": {
+      "has_polished_tuff": "2026-08-05 12:21:42 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_slab_from_polished_diorite_stonecutting": {
+    "criteria": {
+      "has_polished_diorite": "2026-08-05 11:59:14 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_tuff_bricks_from_polished_tuff_stonecutting": {
+    "criteria": {
+      "has_polished_tuff": "2026-08-05 12:21:42 -0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2026-08-05 11:59:14 -0700"
+    },
+    "done": false
+  },
+  "architecture-blocks:recipes/building_blocks/quadruple_window_arch_row3_col2_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/quadruple_window_arch_row1_col2_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/double_window_arch_row2_col5_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/purpur_stairs_from_purpur_block_stonecutting": {
+    "criteria": {
+      "has_purpur_block": "2026-08-05 12:24:56 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tuff_bricks": {
+    "criteria": {
+      "has_polished_tuff": "2026-08-05 12:21:42 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/quadruple_window_arch_row3_col7_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/quadruple_window_arch_row2_col7_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tuff_bricks_from_polished_tuff_stonecutting": {
+    "criteria": {
+      "has_polished_tuff": "2026-08-05 12:21:42 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/triple_window_arch_row5_col3_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/double_window_arch_row3_col2_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/simple_arched_window_between_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/quadruple_window_arch_row1_col5_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tuff_brick_slab_from_polished_tuff_stonecutting": {
+    "criteria": {
+      "has_polished_tuff": "2026-08-05 12:21:42 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/triple_window_arch_row4_col6_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/purpur_slab_from_purpur_block_stonecutting": {
+    "criteria": {
+      "has_purpur_block": "2026-08-05 12:24:56 -0700"
+    },
+    "done": true
+  },
+  "architecture-blocks:recipes/building_blocks/quadruple_window_arch_row2_col2_from_quartz_bricks_stonecutting": {
+    "criteria": {
+      "has_quartz_bricks": "2026-08-05 12:23:57 -0700"
+    },
+    "done": true
+  },
+  "DataVersion": 4903
+}

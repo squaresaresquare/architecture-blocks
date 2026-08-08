@@ -1,7 +1,13 @@
-.DS_Store
+**/.DS_Store
 .idea
 .git
 .cache
 *.bbmodel
 shapes
 logs
+run/crash-reports
+run/logs
+run/saves
+run/screenshots
+run/command_history.txt
+
