@@ -1,14 +1,3 @@
-/give Player996 architecture-blocks:simple_arched_window_top_right
-/give Player996 architecture-blocks:simple_arched_window_top_between
-/give Player996 architecture-blocks:simple_arched_window_top_center
-/time set day
-/give Player858 architecture-blocks:simple_arched_window_top_center
-/gamemode spectator
-/gamemode creative
-/kill @e[type=!minecraft:player]
-/time set minecraft:day
-/kill @e[type=!minecraft:player]
-/gamemode spectator
 /gamemode creative
 /kill @e[type=!minecraft:player]
 /gamemode spectator
@@ -48,3 +37,14 @@
 /kill @e[type=!minecraft:player]
 /time set minecraft:day
 /gamemode spectator
+/time set minecraft:day
+/give Player858 minecraft:painting
+/gamemode survival
+/give Player957 minecraft:quartz_bricks
+/give Player957 minecraft:quartz_block
+/give Player957 minecraft:white_concrete
+/give Player957 minecraft:smooth_sandstone
+/give Player957 architecture-blocks:marble_pillar
+/give Player957 architecture-blocks:window_blank
+/give Player669 minecraft:cherry_log
+/gamemode creative

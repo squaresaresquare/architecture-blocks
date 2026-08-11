@@ -15,11 +15,15 @@ import java.util.function.Function;
 
 public class ModItems implements ModInitializer {
 
-    private static Item registerItem(String name, Function<Item.Properties, Item> function) {
-        return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, name),
-                function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, name)))));
-    }
+    public static Item register(ResourceKey<Item> itemKey, Function<Item.Properties, Item> itemFactory, Item.Properties settings) {
+        // Create the item instance.
+        Item item = itemFactory.apply(settings.setId(itemKey));
 
+        // Register the item.
+        Registry.register(BuiltInRegistries.ITEM, itemKey, item);
+
+        return item;
+    }
     public static void registerModItems() {
         ArchitectureBlocks.LOGGER.info("Registering Mod Items for " + ArchitectureBlocks.MOD_ID);
 
@@ -30,5 +34,6 @@ public class ModItems implements ModInitializer {
     @Override
     public void onInitialize() {
     }
-
+    public static void initialize() {
+    }
 }

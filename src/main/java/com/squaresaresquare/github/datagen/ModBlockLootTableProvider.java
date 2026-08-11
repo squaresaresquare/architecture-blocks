@@ -266,6 +266,19 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.MOSAIC_L10_BLOCK);
         dropSelf(ModBlocks.MOSAIC_L11_BLOCK);
         dropSelf(ModBlocks.MOSAIC_L12_BLOCK);
+        dropSelf(ModBlocks.MOSAIC_BORDER00_BLOCK);
+        dropSelf(ModBlocks.MOSAIC_BORDER01_BLOCK);
+        dropSelf(ModBlocks.MOSAIC_BORDER02_BLOCK);
+        dropSelf(ModBlocks.MOSAIC_BORDER03_BLOCK);
+        dropSelf(ModBlocks.MOSAIC_BORDER04_BLOCK);
+        dropSelf(ModBlocks.MOSAIC_BORDER05_BLOCK);
+        dropSelf(ModBlocks.MOSAIC_BORDER06_BLOCK);
+        dropSelf(ModBlocks.MOSAIC_BORDER07_BLOCK);
+        dropSelf(ModBlocks.MOSAIC_BORDER08_BLOCK);
+        dropSelf(ModBlocks.MOSAIC_BORDER09_BLOCK);
+        dropSelf(ModBlocks.MOSAIC_BORDER10_BLOCK);
+        dropSelf(ModBlocks.MOSAIC_BORDER11_BLOCK);
+        dropSelf(ModBlocks.MOSAIC_BORDER12_BLOCK);
         //:::::::::::
     }
 }

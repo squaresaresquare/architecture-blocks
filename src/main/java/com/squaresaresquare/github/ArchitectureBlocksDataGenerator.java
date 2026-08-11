@@ -25,10 +25,6 @@ public class ArchitectureBlocksDataGenerator implements DataGeneratorEntrypoint 
 		pack.addProvider(ModRegistryDataProvider::new);
 		pack.addProvider(ModPaintingTagProvider::new);
 		pack.addProvider(ModPaintingVariantProvider::new);
-	}
-	@Override
-	public void buildRegistry(@NotNull RegistrySetBuilder registryBuilder) {
-		ArchitectureBlocks.LOGGER.info("Add PAINTING_VARIANT registry to registry builder");
-		registryBuilder.add(Registries.PAINTING_VARIANT, ModPaintings::bootstrap);
+		pack.addProvider((FabricDataGenerator.Pack.Factory<GenericDataProvider<Object>>) GenericDataProvider::new);
 	}
 }

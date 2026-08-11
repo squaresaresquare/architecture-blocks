@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:painting",
+  "result": {
+    "components": {
+      "minecraft:painting/variant": "architecture-blocks:malcolm_and_margaret_at_queensferry"
+    },
+    "id": "minecraft:painting"
+  }
+}

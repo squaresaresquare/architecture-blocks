@@ -2837,6 +2837,149 @@ public class ModBlocks {
                     }),
             true
     );
+    public static final Block MOSAIC_BORDER00_BLOCK = register(
+            "border00",
+            MosaicBORDER00Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_BORDER01_BLOCK = register(
+            "border01",
+            MosaicBORDER01Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_BORDER02_BLOCK = register(
+            "border02",
+            MosaicBORDER02Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_BORDER03_BLOCK = register(
+            "border03",
+            MosaicBORDER03Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_BORDER04_BLOCK = register(
+            "border04",
+            MosaicBORDER04Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_BORDER05_BLOCK = register(
+            "border05",
+            MosaicBORDER05Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_BORDER06_BLOCK = register(
+            "border06",
+            MosaicBORDER06Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_BORDER07_BLOCK = register(
+            "border07",
+            MosaicBORDER07Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_BORDER08_BLOCK = register(
+            "border08",
+            MosaicBORDER08Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_BORDER09_BLOCK = register(
+            "border09",
+            MosaicBORDER09Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_BORDER10_BLOCK = register(
+            "border10",
+            MosaicBORDER10Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_BORDER11_BLOCK = register(
+            "border11",
+            MosaicBORDER11Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
+    public static final Block MOSAIC_BORDER12_BLOCK = register(
+            "border12",
+            MosaicBORDER12Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1, 1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {
+                        return false;
+                    }),
+            true
+    );
     //:::::::::::
     public static void initialize() { }
 }

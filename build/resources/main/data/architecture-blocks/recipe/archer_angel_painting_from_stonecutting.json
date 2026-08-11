@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:painting",
+  "result": {
+    "components": {
+      "minecraft:painting/variant": "architecture-blocks:archer_angel"
+    },
+    "id": "minecraft:painting"
+  }
+}

@@ -5,7 +5,6 @@ import com.squaresaresquare.github.creativemodetab.ModCreativeModeTabs;
 import com.squaresaresquare.github.data.ModDataComponents;
 import com.squaresaresquare.github.item.ModItems;
 import com.squaresaresquare.github.item.ModPaintings;
-import com.squaresaresquare.github.item.PaintingsRecord;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.AttackBlockCallback;
 import net.minecraft.core.BlockPos;
@@ -59,7 +58,7 @@ public class ArchitectureBlocks implements ModInitializer {
 			System.out.println("painting accolade is in the registry.");
 		}
 		System.out.println("---------------------------------------");
-
+		ModItems.initialize();
 		ModCreativeModeTabs.registerModCreativeModeTabs();
 		System.out.println("------after register ModCreativeModeTabs-----");
 		if (BuiltInRegistries.ITEM.containsKey(Identifier.fromNamespaceAndPath(MOD_ID,"accolade"))){

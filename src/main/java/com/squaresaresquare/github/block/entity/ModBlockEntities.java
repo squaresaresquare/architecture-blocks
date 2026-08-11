@@ -281,6 +281,19 @@ public class ModBlockEntities {
     public static final BlockEntityType<@NotNull MosaicL10BlockEntity> MOSAIC_L10_BLOCK_ENTITY = register("l10", MosaicL10BlockEntity::new, ModBlocks.MOSAIC_L10_BLOCK);
     public static final BlockEntityType<@NotNull MosaicL11BlockEntity> MOSAIC_L11_BLOCK_ENTITY = register("l11", MosaicL11BlockEntity::new, ModBlocks.MOSAIC_L11_BLOCK);
     public static final BlockEntityType<@NotNull MosaicL12BlockEntity> MOSAIC_L12_BLOCK_ENTITY = register("l12", MosaicL12BlockEntity::new, ModBlocks.MOSAIC_L12_BLOCK);
+    public static final BlockEntityType<@NotNull MosaicBORDER00BlockEntity> MOSAIC_BORDER00_BLOCK_ENTITY = register("border00", MosaicBORDER00BlockEntity::new, ModBlocks.MOSAIC_BORDER00_BLOCK);
+    public static final BlockEntityType<@NotNull MosaicBORDER01BlockEntity> MOSAIC_BORDER01_BLOCK_ENTITY = register("border01", MosaicBORDER01BlockEntity::new, ModBlocks.MOSAIC_BORDER01_BLOCK);
+    public static final BlockEntityType<@NotNull MosaicBORDER02BlockEntity> MOSAIC_BORDER02_BLOCK_ENTITY = register("border02", MosaicBORDER02BlockEntity::new, ModBlocks.MOSAIC_BORDER02_BLOCK);
+    public static final BlockEntityType<@NotNull MosaicBORDER03BlockEntity> MOSAIC_BORDER03_BLOCK_ENTITY = register("border03", MosaicBORDER03BlockEntity::new, ModBlocks.MOSAIC_BORDER03_BLOCK);
+    public static final BlockEntityType<@NotNull MosaicBORDER04BlockEntity> MOSAIC_BORDER04_BLOCK_ENTITY = register("border04", MosaicBORDER04BlockEntity::new, ModBlocks.MOSAIC_BORDER04_BLOCK);
+    public static final BlockEntityType<@NotNull MosaicBORDER05BlockEntity> MOSAIC_BORDER05_BLOCK_ENTITY = register("border05", MosaicBORDER05BlockEntity::new, ModBlocks.MOSAIC_BORDER05_BLOCK);
+    public static final BlockEntityType<@NotNull MosaicBORDER06BlockEntity> MOSAIC_BORDER06_BLOCK_ENTITY = register("border06", MosaicBORDER06BlockEntity::new, ModBlocks.MOSAIC_BORDER06_BLOCK);
+    public static final BlockEntityType<@NotNull MosaicBORDER07BlockEntity> MOSAIC_BORDER07_BLOCK_ENTITY = register("border07", MosaicBORDER07BlockEntity::new, ModBlocks.MOSAIC_BORDER07_BLOCK);
+    public static final BlockEntityType<@NotNull MosaicBORDER08BlockEntity> MOSAIC_BORDER08_BLOCK_ENTITY = register("border08", MosaicBORDER08BlockEntity::new, ModBlocks.MOSAIC_BORDER08_BLOCK);
+    public static final BlockEntityType<@NotNull MosaicBORDER09BlockEntity> MOSAIC_BORDER09_BLOCK_ENTITY = register("border09", MosaicBORDER09BlockEntity::new, ModBlocks.MOSAIC_BORDER09_BLOCK);
+    public static final BlockEntityType<@NotNull MosaicBORDER10BlockEntity> MOSAIC_BORDER10_BLOCK_ENTITY = register("border10", MosaicBORDER10BlockEntity::new, ModBlocks.MOSAIC_BORDER10_BLOCK);
+    public static final BlockEntityType<@NotNull MosaicBORDER11BlockEntity> MOSAIC_BORDER11_BLOCK_ENTITY = register("border11", MosaicBORDER11BlockEntity::new, ModBlocks.MOSAIC_BORDER11_BLOCK);
+    public static final BlockEntityType<@NotNull MosaicBORDER12BlockEntity> MOSAIC_BORDER12_BLOCK_ENTITY = register("border12", MosaicBORDER12BlockEntity::new, ModBlocks.MOSAIC_BORDER12_BLOCK);
     //:::::::::::
 
 }

@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "architecture-blocks:h7",
-  "result": {
-    "id": "minecraft:white_concrete"
-  }
-}

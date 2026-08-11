@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:painting",
+  "result": {
+    "components": {
+      "minecraft:painting/variant": "architecture-blocks:court_life_at_the_castle_of_the_grail"
+    },
+    "id": "minecraft:painting"
+  }
+}

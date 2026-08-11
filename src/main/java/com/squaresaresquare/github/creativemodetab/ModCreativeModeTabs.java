@@ -1,16 +1,23 @@
 package com.squaresaresquare.github.creativemodetab;
 
 import com.mojang.serialization.Codec;
+import com.squaresaresquare.github.item.ModPaintings;
+import com.squaresaresquare.github.util.PaintingConversionTool;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
+import net.minecraft.core.Holder;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.core.Registry;
+import net.minecraft.core.component.DataComponentPatch;
 import net.minecraft.core.component.DataComponentType;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.decoration.painting.PaintingVariant;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import org.jetbrains.annotations.NotNull;
@@ -19,6 +26,8 @@ import com.squaresaresquare.github.block.ModBlocks;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
+import java.util.stream.Stream;
 
 public class ModCreativeModeTabs {
     public static final DataComponentType<@NotNull Integer> MY_INT_COMPONENT = Registry.register(
@@ -28,7 +37,10 @@ public class ModCreativeModeTabs {
                     .persistent(Codec.INT) // Makes sure the integer saves to the item NBT on disk
                     .build()
     );
-
+    public static final ResourceKey<@NotNull CreativeModeTab> PAINTINGS_TAB_KEY = ResourceKey.create(
+            Registries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "paintings_tab")
+    );
     public static final ResourceKey<@NotNull CreativeModeTab> SIMPLE_ARCHED_WINDOW_TAB_KEY = ResourceKey.create(
             Registries.CREATIVE_MODE_TAB,
             Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "simple_arched_window_tab")
@@ -54,6 +66,26 @@ public class ModCreativeModeTabs {
             Registries.CREATIVE_MODE_TAB,
             Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "mosaic_tab")
     );
+
+    private static final HolderLookup.Provider provider = new HolderLookup.Provider() {
+        @Override
+        public Stream<ResourceKey<? extends Registry<?>>> listRegistryKeys() {
+            return null;
+        }
+
+        @Override
+        public <T> Optional<? extends HolderLookup.RegistryLookup<T>> lookup(ResourceKey<? extends Registry<? extends T>> key) {
+            return Optional.empty();
+        }
+    };
+    public static final CreativeModeTab PAINTINGS_TAB = Registry.register(
+            BuiltInRegistries.CREATIVE_MODE_TAB,
+            PAINTINGS_TAB_KEY,
+            FabricCreativeModeTab.builder().icon(() -> new ItemStack(Items.PAINTING))
+                    .title(Component.translatable("itemGroup." + ArchitectureBlocks.MOD_ID + ".paintings_tab"))
+                    .displayItems((displayContext, output) -> {
+                        output.accept(PaintingConversionTool.getItem(provider, ModPaintings.ACCOLADE_RK,  "accolade"));
+                    }).build());;
     public static final CreativeModeTab MOSAIC_TAB = Registry.register(
             BuiltInRegistries.CREATIVE_MODE_TAB,
             MOSAIC_TAB_KEY,
@@ -204,6 +236,19 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MOSAIC_L10_BLOCK);
                         output.accept(ModBlocks.MOSAIC_L11_BLOCK);
                         output.accept(ModBlocks.MOSAIC_L12_BLOCK);
+                        output.accept(ModBlocks.MOSAIC_BORDER00_BLOCK);
+                        output.accept(ModBlocks.MOSAIC_BORDER01_BLOCK);
+                        output.accept(ModBlocks.MOSAIC_BORDER02_BLOCK);
+                        output.accept(ModBlocks.MOSAIC_BORDER03_BLOCK);
+                        output.accept(ModBlocks.MOSAIC_BORDER04_BLOCK);
+                        output.accept(ModBlocks.MOSAIC_BORDER05_BLOCK);
+                        output.accept(ModBlocks.MOSAIC_BORDER06_BLOCK);
+                        output.accept(ModBlocks.MOSAIC_BORDER07_BLOCK);
+                        output.accept(ModBlocks.MOSAIC_BORDER08_BLOCK);
+                        output.accept(ModBlocks.MOSAIC_BORDER09_BLOCK);
+                        output.accept(ModBlocks.MOSAIC_BORDER10_BLOCK);
+                        output.accept(ModBlocks.MOSAIC_BORDER11_BLOCK);
+                        output.accept(ModBlocks.MOSAIC_BORDER12_BLOCK);
                         //:::::::::::
                     }).build());
     public static final CreativeModeTab ARCHITECTURE_BLOCK_TAB = Registry.register(
@@ -491,7 +536,23 @@ public class ModCreativeModeTabs {
                 }
             }).build());
 
+    private static ItemStack paintingItemStack(HolderLookup.Provider lookup, ResourceKey<PaintingVariant> variantKey, String pathName) {
+        // 1. Fetch your custom painting variant holder reference
+        var dynamicRegistry = lookup.lookupOrThrow(Registries.PAINTING_VARIANT);
+        var paintingHolder = dynamicRegistry.getOrThrow(variantKey);
 
+        // 2. Build the DataComponentPatch containing the metadata
+        DataComponentPatch componentPatch = DataComponentPatch.builder()
+                .set(DataComponents.PAINTING_VARIANT, paintingHolder)
+                .build();
+
+        // 3. FIX: Fetch the required Holder<Item> reference for the base painting
+        Holder<Item> paintingItemHolder = Items.PAINTING.builtInRegistryHolder();
+
+        // 4. FIX: Instantiating ItemStackTemplate using the item holder
+        ItemStackTemplate templateResult = new ItemStackTemplate(paintingItemHolder, 1, componentPatch);
+        return new ItemStack(paintingItemHolder,1, componentPatch);
+    }
     public static void registerModCreativeModeTabs() {
         System.out.print("Registering Creative Mode Tabs");
         ArchitectureBlocks.LOGGER.info("Registering Creative Mode Tabs for " + ArchitectureBlocks.MOD_ID);

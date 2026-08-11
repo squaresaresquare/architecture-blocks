@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "architecture-blocks:white_concrete_keyhole",
-  "result": {
-    "id": "minecraft:white_concrete"
-  }
-}
