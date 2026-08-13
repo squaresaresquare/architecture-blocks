@@ -19,22 +19,67 @@ import net.minecraft.world.item.ItemStackTemplate;
 import net.minecraft.world.item.Items;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.Objects;
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Stream;
+import net.minecraft.client.multiplayer.ClientPacketListener;
 
 public class PaintingConversionTool {
+    // Keep the lookup reference private to protect the data state
+    private static HolderLookup.RegistryLookup<PaintingVariant> paintingRegistry = null;
+
     public PaintingConversionTool(FabricPackOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
         super();
     }
+    /**
+     * Initializes the tool with the active registry lookup from the server connection.
+     */
+    public static void initialize(HolderLookup.RegistryLookup<PaintingVariant> lookup) {
+        paintingRegistry = lookup;
+        System.out.println("[PaintingConversionTool] Initialized and ready with " + getVariantCount() + " paintings.");
+    }
+
+    /**
+     * Resets the tool when the player disconnects to prevent memory leaks or stale data.
+     */
+    public static void reset() {
+        paintingRegistry = null;
+    }
+
+    /**
+     * Dependent classes call this to ensure they don't execute before data packs sync.
+     */
+    public static boolean isReady() {
+        return paintingRegistry != null;
+    }
+
+    public static int getVariantCount() {
+        return isReady() ? (int) paintingRegistry.listElements().count() : 0;
+    }
+
     // In your ModRegistryKeys or main initialization class
+    public static RegistryAccess getRegistryAccess() {
+        Minecraft minecraft = Minecraft.getInstance();
+        if (minecraft == null) return null;
+
+        // Get the client-side connection listener
+        ClientPacketListener connection = minecraft.getConnection();
+
+        // Ensure the player is actually in a world/connected to a server
+        if (connection != null) {
+            // Access the dynamic registry access provider
+            return connection.registryAccess();
+            // Example usage: Accessing a specific registry wrapper
+            // var biomeRegistry = registryAccess.lookupOrThrow(net.minecraft.core.registries.Registries.BIOME);
+        }
+        return null;
+    }
     public static final ResourceKey<Registry<Object>> MY_DYNAMIC_REGISTRY =
-            ResourceKey.createRegistryKey(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "custom_Painting_Item_Registry"));
+            ResourceKey.createRegistryKey(Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "custom_painting_item_registry"));
 
     public static ItemStackTemplate getItemStackTemplate(ResourceKey<PaintingVariant> variantKey, String pathName) {
         // 1. Fetch your custom painting variant holder reference
-        RegistryAccess access = Objects.requireNonNull(Minecraft.getInstance().getConnection()).registryAccess();
+        RegistryAccess access = getRegistryAccess();
         HolderLookup.Provider lookup = new HolderLookup.Provider() {
 
             @Override
@@ -73,6 +118,13 @@ public class PaintingConversionTool {
         ItemStack itemStack = getItemStack(lookup, variantKey, pathName);
         return itemStack.getItem();
     }
-    //
+
+    /**
+     * Example utility method dependent classes can use once initialized.
+     */
+    public static Optional<PaintingVariant> getVariantData(net.minecraft.resources.ResourceKey<PaintingVariant> key) {
+        if (!isReady()) return Optional.empty();
+        return paintingRegistry.get(key).map(net.minecraft.core.Holder::value);
+    }
 
 }

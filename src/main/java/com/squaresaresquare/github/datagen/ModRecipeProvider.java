@@ -1,13 +1,10 @@
 package com.squaresaresquare.github.datagen;
 
 import com.squaresaresquare.github.ArchitectureBlocks;
-import com.squaresaresquare.github.item.ModPaintings;
-import com.squaresaresquare.github.util.PaintingConversionTool;
-import com.squaresaresquare.github.datagen.GenericDataProvider;
+import com.squaresaresquare.github.records.PaintingsRecord;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponentPatch;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
@@ -22,18 +19,14 @@ import net.minecraft.world.level.block.Blocks;
 import org.jetbrains.annotations.NotNull;
 import com.squaresaresquare.github.block.ModBlocks;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.data.recipes.RecipeUnlockAdvancementBuilder;
-import net.minecraft.data.recipes.SingleItemRecipeBuilder;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.StonecutterRecipe;
-import net.minecraft.data.CachedOutput;
 
 public class ModRecipeProvider extends FabricRecipeProvider{
     public ModRecipeProvider(FabricPackOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
@@ -41,38 +34,22 @@ public class ModRecipeProvider extends FabricRecipeProvider{
         System.out.print("ModRecipeProvider constructor");
     }
     @Override
-    protected @NotNull RecipeProvider createRecipeProvider(HolderLookup.@NotNull Provider registries, @NotNull RecipeOutput output) {
-        return new RecipeProvider(registries, output) {
+    protected @NotNull RecipeProvider createRecipeProvider(HolderLookup.@NotNull Provider registries, @NotNull RecipeOutput exporter) {
+        return new RecipeProvider(registries, exporter) {
             @Override
             public void buildRecipes() {
 
 
                 //believe it or not this lets you give a painting to a stonecutter and choose the custom painting you want.
-                this.paintingStonecutterRecipe(output, registries, ModPaintings.ACCOLADE_RK, "accolade");
-                this.paintingStonecutterRecipe(output, registries, ModPaintings.ARCHER_ANGEL_RK, "archer_angel");
-                this.paintingStonecutterRecipe(output, registries, ModPaintings.BEDROOM_LOVE_POTION_RK, "bedroom_love_potion");
-                this.paintingStonecutterRecipe(output, registries, ModPaintings.CHAPEL_RK, "chapel");
-                this.paintingStonecutterRecipe(output, registries, ModPaintings.COURT_LIFE_AT_THE_CASTLE_OF_THE_GRAIL_RK, "court_life_at_the_castle_of_the_grail");
-                this.paintingStonecutterRecipe(output, registries, ModPaintings.HERMANN_OF_THURINGIA_RK, "hermann_of_thuringia");
-                this.paintingStonecutterRecipe(output, registries, ModPaintings.IMMACULATE_CONCEPTION_OF_MARY_RK, "immaculate_conception_of_mary");
-                this.paintingStonecutterRecipe(output, registries, ModPaintings.LUDWIG_II_BLUE_GENERAL_1_RK, "ludwig_ii_blue_general_1");
-                this.paintingStonecutterRecipe(output, registries, ModPaintings.LUDWIG_II_BLUE_GENERAL_2_RK, "ludwig_ii_blue_general_2");
-                this.paintingStonecutterRecipe(output, registries, ModPaintings.MALCOLM_AND_MARGARET_AT_QUEENSFERRY_RK, "malcolm_and_margaret_at_queensferry");
-                this.paintingStonecutterRecipe(output, registries, ModPaintings.MIRACLE_OF_THE_GRAIL_RK, "miracle_of_the_grail");
-                this.paintingStonecutterRecipe(output, registries, ModPaintings.ORATORY_STAINED_GLASS_RK, "oratory_stained_glass");
-                this.paintingStonecutterRecipe(output, registries, ModPaintings.OUR_LADY_OF_THE_ROSARY_SIMONE_CANTARINI_RK, "our_lady_of_the_rosary_simone_cantarini");
-                this.paintingStonecutterRecipe(output, registries, ModPaintings.PARZIFALS_FIGHT_RK, "parzifals_fight");
-                this.paintingStonecutterRecipe(output, registries, ModPaintings.PARZIFAL_RK, "parzifal");
-                this.paintingStonecutterRecipe(output, registries, ModPaintings.SAINT_MARGARET_RK, "saint_margaret");
-                this.paintingStonecutterRecipe(output, registries, ModPaintings.SIGURD_MEETS_GRYPIN_RK, "sigurd_meets_grypin");
-                this.paintingStonecutterRecipe(output, registries, ModPaintings.SINGERS_HALL_CURSE_OF_GRAIL_MESSENGER_KUNDRY_UPON_PARZIVAL_RK, "singers_hall_curse_of_grail_messenger_kundry_upon_parzival");
-                this.paintingStonecutterRecipe(output, registries, ModPaintings.THE_ARRIVAL_OF_LOHENGRIN_IN_ANTWERP_RK, "the_arrival_of_lohengrin_in_antwerp");
-                this.paintingStonecutterRecipe(output, registries, ModPaintings.TRISTAN_AND_ISOLDE_SEPERATION_RK, "tristan_and_isolde_seperation");
-                this.paintingStonecutterRecipe(output, registries, ModPaintings.TRISTAN_AND_ISOLDE_WITH_THE_POTION_RK, "tristan_and_isolde_with_the_potion");
-                this.paintingStonecutterRecipe(output, registries, ModPaintings.TRISTAN_ON_HIS_SICKBED_RK, "tristan_on_his_sickbed");
-                this.paintingStonecutterRecipe(output, registries, ModPaintings.UNDER_THE_LINDON_2_RK, "under_the_lindon_2");
-                this.paintingStonecutterRecipe(output, registries, ModPaintings.UNDER_THE_LINDON_RK, "under_the_lindon");
-
+                PaintingsRecord.initialize();
+                for (Map.Entry<String, PaintingsRecord.Painting> painting : PaintingsRecord.PaintingMap.entrySet()) {
+                    this.paintingStonecutterRecipe(
+                            exporter,
+                            registries,
+                            painting.getValue().resourceKey(),
+                            painting.getKey()
+                    );
+                }
 
                 //-----------
                   System.out.print("add the recipes");
@@ -170,11 +147,6 @@ public class ModRecipeProvider extends FabricRecipeProvider{
                 this.stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_CONCRETE_KEYHOLE_BLOCK,Blocks.CONCRETE.white(),1);
                 this.stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_CONCRETE_CIRCLE_CORNER, Blocks.CONCRETE.white().asItem(),1);
                 this.stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.QUARTZ_CIRCLE_CORNER,Blocks.QUARTZ_BLOCK,1);
-                this.stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSAIC_A1_BLOCK,Blocks.CHERRY_LOG, 1);
-
-                //this.stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSAIC_A1_BLOCK, Blocks.CON, 1);
-
-
                 this.stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSAIC_A1_BLOCK,Blocks.CONCRETE.white(),1);
                 this.stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSAIC_A2_BLOCK,Blocks.CONCRETE.white().asItem(),1);
                 this.stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSAIC_A3_BLOCK,Blocks.CONCRETE.white(),1);
@@ -411,21 +383,19 @@ public class ModRecipeProvider extends FabricRecipeProvider{
                 //::new block here
             }
 
-            //more gemini code
             private void paintingStonecutterRecipe(RecipeOutput recipeOutput, HolderLookup.Provider lookup, ResourceKey<PaintingVariant> variantKey, String pathName) {
-                // 1. Fetch your custom painting variant holder reference
-                var dynamicRegistry = lookup.lookupOrThrow(Registries.PAINTING_VARIANT);
-                var paintingHolder = dynamicRegistry.getOrThrow(variantKey);
 
-                // 2. Build the DataComponentPatch containing the metadata
+                var dynamicRegistry = lookup.lookupOrThrow(Registries.PAINTING_VARIANT);
+
+                Holder<PaintingVariant> paintingHolder = registries.lookupOrThrow(net.minecraft.core.registries.Registries.PAINTING_VARIANT)
+                        .getOrThrow(variantKey);
+
                 DataComponentPatch componentPatch = DataComponentPatch.builder()
                         .set(DataComponents.PAINTING_VARIANT, paintingHolder)
                         .build();
 
-                // 3. FIX: Fetch the required Holder<Item> reference for the base painting
                 Holder<Item> paintingItemHolder = Items.PAINTING.builtInRegistryHolder();
 
-                // 4. FIX: Instantiating ItemStackTemplate using the item holder
                 ItemStackTemplate templateResult = new ItemStackTemplate(paintingItemHolder, 1, componentPatch);
 
                 // Configure standard visibility properties
@@ -450,7 +420,6 @@ public class ModRecipeProvider extends FabricRecipeProvider{
                 recipeOutput.accept(
                         recipeKey,
                         recipePayload,
-                        // FIX: Pass the recipeOutput stream directly into the build parameter
                         advancementBuilder.build(recipeOutput, recipeKey ,RecipeCategory.DECORATIONS)
                 );
             }

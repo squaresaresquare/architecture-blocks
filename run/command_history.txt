@@ -1,7 +1,4 @@
 /gamemode creative
-/kill @e[type=!minecraft:player]
-/gamemode spectator
-/gamemode creative
 /time set minecraft:day
 /kill @e[type=!minecraft:player]
 /gamemode spectator
@@ -48,3 +45,6 @@
 /give Player957 architecture-blocks:window_blank
 /give Player669 minecraft:cherry_log
 /gamemode creative
+/time set minecraft:day
+/gamemode survival
+/give Player737 minecraft:painting

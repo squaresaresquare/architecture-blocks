@@ -4,7 +4,7 @@
 	"textures": {
 		"0": "architecture-blocks:block/white_concrete_circle_corner/white_concrete",
 		"all": "architecture-blocks:block/white_concrete_circle_corner/white_concrete",
-		"1": "architecture-blocks:block/throne_room_mosaic/border00",
+		"1": "architecture-blocks:block/throne_room_mosaic/mosaic_border00",
 		"particle": "architecture-blocks:block/white_concrete_circle_corner/white_concrete"
 	},
 	"elements": [

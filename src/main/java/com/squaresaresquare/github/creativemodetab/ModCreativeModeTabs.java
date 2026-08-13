@@ -2,7 +2,7 @@ package com.squaresaresquare.github.creativemodetab;
 
 import com.mojang.serialization.Codec;
 import com.squaresaresquare.github.item.ModPaintings;
-import com.squaresaresquare.github.util.PaintingConversionTool;
+import com.squaresaresquare.github.data.ModDataComponents;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
@@ -30,13 +30,6 @@ import java.util.Optional;
 import java.util.stream.Stream;
 
 public class ModCreativeModeTabs {
-    public static final DataComponentType<@NotNull Integer> MY_INT_COMPONENT = Registry.register(
-            BuiltInRegistries.DATA_COMPONENT_TYPE,
-            Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "my_integer"),
-            DataComponentType.<Integer>builder()
-                    .persistent(Codec.INT) // Makes sure the integer saves to the item NBT on disk
-                    .build()
-    );
     public static final ResourceKey<@NotNull CreativeModeTab> PAINTINGS_TAB_KEY = ResourceKey.create(
             Registries.CREATIVE_MODE_TAB,
             Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "paintings_tab")
@@ -78,14 +71,6 @@ public class ModCreativeModeTabs {
             return Optional.empty();
         }
     };
-    public static final CreativeModeTab PAINTINGS_TAB = Registry.register(
-            BuiltInRegistries.CREATIVE_MODE_TAB,
-            PAINTINGS_TAB_KEY,
-            FabricCreativeModeTab.builder().icon(() -> new ItemStack(Items.PAINTING))
-                    .title(Component.translatable("itemGroup." + ArchitectureBlocks.MOD_ID + ".paintings_tab"))
-                    .displayItems((displayContext, output) -> {
-                        output.accept(PaintingConversionTool.getItem(provider, ModPaintings.ACCOLADE_RK,  "accolade"));
-                    }).build());;
     public static final CreativeModeTab MOSAIC_TAB = Registry.register(
             BuiltInRegistries.CREATIVE_MODE_TAB,
             MOSAIC_TAB_KEY,
@@ -331,7 +316,7 @@ public class ModCreativeModeTabs {
                                     ? new ItemStack(TabLayout.get(slotIndex))
                                     : new ItemStack(ModBlocks.INVISIBLE);
 
-                            stack.set(MY_INT_COMPONENT, slotIndex);
+                            stack.set(ModDataComponents.MY_INT_COMPONENT, slotIndex);
                             entries.accept(stack);
                         }
                     }).build());
@@ -391,7 +376,7 @@ public class ModCreativeModeTabs {
                             ? new ItemStack(TabLayout.get(slotIndex))
                             : new ItemStack(ModBlocks.INVISIBLE);
 
-                    stack.set(MY_INT_COMPONENT, slotIndex);
+                    stack.set(ModDataComponents.MY_INT_COMPONENT, slotIndex);
                     entries.accept(stack);
                 }
             }).build());
@@ -455,7 +440,7 @@ public class ModCreativeModeTabs {
                             ? new ItemStack(TabLayout.get(slotIndex))
                             : new ItemStack(ModBlocks.INVISIBLE);
 
-                    stack.set(MY_INT_COMPONENT, slotIndex);
+                    stack.set(ModDataComponents.MY_INT_COMPONENT, slotIndex);
                     entries.accept(stack);
                 }
             }).build());
@@ -531,7 +516,7 @@ public class ModCreativeModeTabs {
                             ? new ItemStack(TabLayout.get(slotIndex))
                             : new ItemStack(ModBlocks.INVISIBLE);
 
-                    stack.set(MY_INT_COMPONENT, slotIndex);
+                    stack.set(ModDataComponents.MY_INT_COMPONENT, slotIndex);
                     entries.accept(stack);
                 }
             }).build());

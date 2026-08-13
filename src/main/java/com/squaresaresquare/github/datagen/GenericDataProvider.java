@@ -48,7 +48,7 @@ public class GenericDataProvider<CustomDataObj> implements DataProvider {
 
     @Override
     public CompletableFuture<?> run(CachedOutput cache) {
-        return null;
+        return CompletableFuture.completedFuture(null);
     }
 
     @Override

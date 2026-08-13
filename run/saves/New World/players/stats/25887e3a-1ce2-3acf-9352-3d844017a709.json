@@ -1,34 +1,5 @@
 {
   "stats": {
-    "minecraft:custom": {
-      "minecraft:time_since_rest": 41788,
-      "minecraft:walk_one_cm": 4713,
-      "minecraft:total_world_time": 134900,
-      "minecraft:leave_game": 1,
-      "minecraft:fly_one_cm": 52655,
-      "minecraft:crouch_one_cm": 3,
-      "minecraft:sneak_time": 599,
-      "minecraft:play_time": 41788,
-      "minecraft:jump": 8,
-      "minecraft:time_since_death": 41788,
-      "minecraft:drop": 9
-    },
-    "minecraft:picked_up": {
-      "architecture-blocks:quadruple_window_arch_row1_col5": 1,
-      "architecture-blocks:quadruple_window_arch_row1_col3": 1,
-      "architecture-blocks:quadruple_window_arch_row1_col2": 1
-    },
-    "minecraft:dropped": {
-      "architecture-blocks:quadruple_window_arch_row1_col5": 1,
-      "architecture-blocks:quadruple_window_arch_row3_col1": 1,
-      "architecture-blocks:quadruple_window_arch_row1_col3": 1,
-      "architecture-blocks:right_pillar_base": 1,
-      "architecture-blocks:pillarless_window_base": 1,
-      "architecture-blocks:left_half_pillar_middle": 1,
-      "architecture-blocks:left_half_pillar_base": 1,
-      "architecture-blocks:right_pillar_middle": 1,
-      "architecture-blocks:quadruple_window_arch_row1_col2": 1
-    },
     "minecraft:used": {
       "minecraft:polished_tuff": 23,
       "architecture-blocks:quartz_circle_corner": 4,
@@ -90,6 +61,36 @@
       "architecture-blocks:right_half_pillar_cap": 3,
       "architecture-blocks:left_end_middle": 18,
       "architecture-blocks:left_pillar_middle": 19
+    },
+    "minecraft:dropped": {
+      "architecture-blocks:quadruple_window_arch_row1_col5": 1,
+      "architecture-blocks:quadruple_window_arch_row3_col1": 1,
+      "architecture-blocks:quadruple_window_arch_row1_col3": 1,
+      "architecture-blocks:right_pillar_base": 1,
+      "architecture-blocks:pillarless_window_base": 1,
+      "architecture-blocks:left_half_pillar_middle": 1,
+      "architecture-blocks:left_half_pillar_base": 1,
+      "architecture-blocks:right_pillar_middle": 1,
+      "architecture-blocks:quadruple_window_arch_row1_col2": 1
+    },
+    "minecraft:picked_up": {
+      "architecture-blocks:quadruple_window_arch_row1_col5": 1,
+      "architecture-blocks:quadruple_window_arch_row1_col3": 1,
+      "architecture-blocks:quadruple_window_arch_row1_col2": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 42463,
+      "minecraft:walk_one_cm": 4713,
+      "minecraft:total_world_time": 135627,
+      "minecraft:leave_game": 2,
+      "minecraft:fly_one_cm": 52655,
+      "minecraft:crouch_one_cm": 3,
+      "minecraft:sneak_time": 599,
+      "minecraft:play_time": 42463,
+      "minecraft:interact_with_stonecutter": 1,
+      "minecraft:jump": 8,
+      "minecraft:time_since_death": 42463,
+      "minecraft:drop": 9
     }
   },
   "DataVersion": 4903
