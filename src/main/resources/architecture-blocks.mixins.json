@@ -5,10 +5,7 @@
   "refmap": "architecture-blocks-refmap.json",
   "mixins": [
     "ExampleMixin",
-    "PaintingRendererMixin",
-    "AbstractContainerMenuInterceptorMixin",
-    "StonecutterPaintingInterceptorMixin",
-    "StonecutterMenuMixin"
+    "PaintingRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

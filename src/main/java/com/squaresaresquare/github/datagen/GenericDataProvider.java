@@ -3,21 +3,22 @@ package com.squaresaresquare.github.datagen;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
 import com.squaresaresquare.github.ArchitectureBlocks;
+import net.fabricmc.loader.api.ModContainer;
 import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.CachedOutput;
+import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 
-import java.nio.file.Path;
-import java.util.Arrays;
-import java.util.HashMap;
+import java.nio.file.*;
 import java.util.concurrent.CompletableFuture;
 
 public class GenericDataProvider<CustomDataObj> implements DataProvider {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
-    private final PackOutput packOutput;
+    private static FabricPackOutput packOutput = null;
 
-    public GenericDataProvider(PackOutput packOutput) {
+    public GenericDataProvider(FabricPackOutput packOutput) {
         this.packOutput = packOutput;
     }
 
@@ -29,21 +30,26 @@ public class GenericDataProvider<CustomDataObj> implements DataProvider {
      * PackOutput.Target.RESOURCE_PACK // if you're adding to the resourcepack
      * PackOutput.Target.REPORTS // if you're adding to reports
      * For example to write a stonecutting recipe
-     *    map (your hashmap)
+     *    jsonString a string of json to write
      *    PackOutput.Target.DATA_PACK
      *    Path.of(ArchitectureBlocks.MOD_ID, "recipe", "<blockname>_stonecutting.json");
      */
-    public static CompletableFuture<?> writeCustomJson(CachedOutput cache, HashMap<String, Object> dataMap, String target, String path) {
-        PackOutput.Target.valueOf(target);
+    public static CompletableFuture<?> writeCustomJson(CachedOutput cache, String jsonString, String target, String path) {
+        Path modID = Path.of(ArchitectureBlocks.MOD_ID);
+        ModContainer container = packOutput.getModContainer();
+        Path outputFolder = packOutput.getOutputFolder(PackOutput.Target.valueOf(target));
 
-        // takes a hashmap and makes json
-        JsonElement jsonResult = GSON.toJsonTree(dataMap);
+        FabricPackOutput fabricPackOutput = new FabricPackOutput(container, outputFolder, false);
+        PackOutput.Target packTarget = PackOutput.Target.valueOf(target);
 
-        // Resolves the file location relative to the data target folder
+        JsonElement jsonElement = JsonParser.parseString(jsonString);
 
-        Path resolvedPath = Path.of(Arrays.toString(path.split("/")));
+        Path resolvedPath = outputFolder.resolve(outputFolder, modID, Path.of(path)).toAbsolutePath();
+        ArchitectureBlocks.LOGGER.info("output folder is " + resolvedPath.toString());
         // Safely writes the JSON object to disk via Minecraft's data caching system
-        return DataProvider.saveStable(cache, jsonResult, resolvedPath);
+        CompletableFuture<?> save = DataProvider.saveStable(cache, jsonElement, resolvedPath);
+        ArchitectureBlocks.LOGGER.info("completed future is " + save.toString());
+        return save.completedFuture(null);
     }
 
     @Override
