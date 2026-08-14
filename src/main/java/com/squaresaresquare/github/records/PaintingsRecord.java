@@ -74,7 +74,7 @@ public class PaintingsRecord{
                         "",
                         ""
                 ));
-        PaintingMap.put("ludwin_general_1",
+        PaintingMap.put("ludwig_general_1",
                 new Painting(
                         ModPaintings.LUDWIG_GENERAL_1_RK,
                         2, 3,
@@ -155,7 +155,7 @@ public class PaintingsRecord{
                         "",
                         ""
                 ));
-        PaintingMap.put("sigurn_meets_grypin",
+        PaintingMap.put("sigurd_meets_grypin",
                 new Painting(
                         ModPaintings.SIGURD_MEETS_GRYPIN_RK,
                         3, 4,
@@ -182,7 +182,7 @@ public class PaintingsRecord{
                         "",
                         ""
                 ));
-        PaintingMap.put("tristan_and_isolde_separation",
+        PaintingMap.put("tristan_isolde_separation",
                 new Painting(
                         ModPaintings.TRISTAN_AND_ISOLDE_SEPERATION_RK,
                         5, 3,

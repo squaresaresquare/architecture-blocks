@@ -1,6 +1,7 @@
 package com.squaresaresquare.github.creativemodetab;
 
 import com.mojang.serialization.Codec;
+import com.squaresaresquare.github.item.ModItems;
 import com.squaresaresquare.github.item.ModPaintings;
 import com.squaresaresquare.github.data.ModDataComponents;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
@@ -30,10 +31,6 @@ import java.util.Optional;
 import java.util.stream.Stream;
 
 public class ModCreativeModeTabs {
-    public static final ResourceKey<@NotNull CreativeModeTab> PAINTINGS_TAB_KEY = ResourceKey.create(
-            Registries.CREATIVE_MODE_TAB,
-            Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "paintings_tab")
-    );
     public static final ResourceKey<@NotNull CreativeModeTab> SIMPLE_ARCHED_WINDOW_TAB_KEY = ResourceKey.create(
             Registries.CREATIVE_MODE_TAB,
             Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, "simple_arched_window_tab")
@@ -71,6 +68,7 @@ public class ModCreativeModeTabs {
             return Optional.empty();
         }
     };
+
     public static final CreativeModeTab MOSAIC_TAB = Registry.register(
             BuiltInRegistries.CREATIVE_MODE_TAB,
             MOSAIC_TAB_KEY,

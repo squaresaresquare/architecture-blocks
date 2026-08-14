@@ -12,6 +12,8 @@ import net.minecraft.data.CachedOutput;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 
 import java.nio.file.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class GenericDataProvider<CustomDataObj> implements DataProvider {
@@ -47,9 +49,18 @@ public class GenericDataProvider<CustomDataObj> implements DataProvider {
         Path resolvedPath = outputFolder.resolve(outputFolder, modID, Path.of(path)).toAbsolutePath();
         ArchitectureBlocks.LOGGER.info("output folder is " + resolvedPath.toString());
         // Safely writes the JSON object to disk via Minecraft's data caching system
-        CompletableFuture<?> save = DataProvider.saveStable(cache, jsonElement, resolvedPath);
-        ArchitectureBlocks.LOGGER.info("completed future is %s %s %s = %s".formatted(cache.toString(), jsonElement.toString(), resolvedPath.toString(), save.toString()));
-        return save.completedFuture(null);
+        CompletableFuture<?> jsonDatagen = DataProvider.saveStable(cache, jsonElement, resolvedPath).completedFuture(null);
+
+        String[] parts = outputFolder.toString().split("/");
+        String name = parts[parts.length -1];
+        if (jsonDatagen.isCompletedExceptionally()){
+            LOGGER.info("%s jsonDatagen completed exceptionally (with errors)".formatted(name));
+        } else if (jsonDatagen.state().toString() == "SUCCESS") {
+            LOGGER.info("%s jsonDatagen completed successfully".formatted(name));
+        } else {
+            LOGGER.info("%s jsonDatagen not completed".formatted(name));
+        }
+        return jsonDatagen;
     }
 
     @Override

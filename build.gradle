@@ -13,7 +13,6 @@ sourceSets {
 }
 loom {
 	mixin {
-		//useLegacyMixinAp = true
 		useLegacyMixinAp = false
 		defaultRefmapName = "${modid}.refmap.json"
 	}
@@ -27,18 +26,10 @@ loom {
 }
 
 repositories {
-	// Add repositories to retrieve artifacts from in here.
-	// You should only use this when depending on other mods because
-	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
-	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
-	// for more information about repositories.
 	mavenCentral()
 	maven {
 		url = uri("https://oss.sonatype.org/content/repositories/snapshots/")
 	}
-	//maven {
-	//	url "https://repo.spongepowered.org/maven"
-	//}
 }
 
 fabricApi {
@@ -73,6 +64,36 @@ tasks.withType(JavaCompile).configureEach {
 }
 tasks.withType(JavaExec).configureEach {
 	jvmArgs += '--enable-preview'
+}
+tasks.register('copyTexturesToGenerated', Copy) {
+	group = 'custom'
+	description = 'copy thumbnails to generated'
+	def sourceDir = layout.projectDirectory.dir('src/main/resources/assets/architecture-blocks/textures/painting_buttons')
+	def destDir = layout.projectDirectory.dir('src/main/generated/assets/architecture-blocks/textures/item')
+	from(sourceDir)
+	into(destDir)
+	include '**/*'
+	outputs.upToDateWhen { false }
+	doFirst {
+		def files = sourceDir.getAsFile().listFiles()
+		if (files == null || files.length == 0) {
+			logger.warn("WARNING: Source directory is empty or does not exist: ${sourceDir.getAsFile().absolutePath}")
+		} else {
+			logger.lifecycle("Found ${files.length} files to copy from source.")
+		}
+	}
+	doLast {
+		logger.lifecycle("Successfully copied custom thumbnails to generated assets!")
+	}
+	// Force Gradle to ignore its internal cache tracking for this specific folder bridge
+	outputs.upToDateWhen { false }
+
+	doLast {
+		logger.lifecycle("Successfully copied custom thumbnails to generated assets!")
+	}
+}
+tasks.matching { it.name.startsWith('runDatagen') }.configureEach {
+	finalizedBy 'copyTexturesToGenerated'
 }
 java {
 	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
