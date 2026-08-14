@@ -47,9 +47,9 @@ public class PaintingsRecord{
                         "",
                         ""
                 ));
-        PaintingMap.put("court_life_at_the_castle_of_the_grail",
+        PaintingMap.put("court_life_at_grail_castle",
                 new Painting(
-                        ModPaintings.COURT_LIFE_AT_THE_CASTLE_OF_THE_GRAIL_RK,
+                        ModPaintings.COURT_LIFE_AT_GRAIL_CASTLE_RK,
                         3, 4,
                         "Court Life at the Castle of the Grail",
                         "Ferdinand Piloty",
@@ -65,27 +65,27 @@ public class PaintingsRecord{
                         "",
                         ""
                 ));
-        PaintingMap.put("immaculate_conception_of_mary",
+        PaintingMap.put("immaculate_conception",
                 new Painting(
-                        ModPaintings.IMMACULATE_CONCEPTION_OF_MARY_RK,
+                        ModPaintings.IMMACULATE_CONCEPTION_RK,
                         3, 5,
                         "The Immaculate Conception of Mary stained glass window",
                         "Franz Mayer Mayerischen Studios",
                         "",
                         ""
                 ));
-        PaintingMap.put("ludwin_ii_blue_general_1",
+        PaintingMap.put("ludwin_general_1",
                 new Painting(
-                        ModPaintings.LUDWIG_II_BLUE_GENERAL_1_RK,
+                        ModPaintings.LUDWIG_GENERAL_1_RK,
                         2, 3,
                         "King Ludwig II of Bavaria in a blue generals uniform",
                         "Ferdinand Piloty",
                         "",
                         ""
                 ));
-        PaintingMap.put("ludwig_ii_blue_general_2",
+        PaintingMap.put("ludwig_general_2",
                 new Painting(
-                        ModPaintings.LUDWIG_II_BLUE_GENERAL_2_RK,
+                        ModPaintings.LUDWIG_GENERAL_2_RK,
                         2, 3,
                         "King Ludwig II of Bavaria in a blue generals uniform",
                         "Ferdinand Piloty",

@@ -33,11 +33,11 @@ public class ModPaintings {
     public static final ResourceKey<@NotNull PaintingVariant> ARCHER_ANGEL_RK = create("archer_angel");
     public static final ResourceKey<@NotNull PaintingVariant> BEDROOM_LOVE_POTION_RK = create("bedroom_love_potion");
     public static final ResourceKey<@NotNull PaintingVariant> CHAPEL_RK = create("chapel");
-    public static final ResourceKey<@NotNull PaintingVariant> COURT_LIFE_AT_THE_CASTLE_OF_THE_GRAIL_RK = create("court_life_at_the_castle_of_the_grail");
+    public static final ResourceKey<@NotNull PaintingVariant> COURT_LIFE_AT_GRAIL_CASTLE_RK = create("court_life_at_grail_castle");
     public static final ResourceKey<@NotNull PaintingVariant> HERMANN_OF_THURINGIA_RK = create("hermann_of_thuringia");
-    public static final ResourceKey<@NotNull PaintingVariant> IMMACULATE_CONCEPTION_OF_MARY_RK = create("immaculate_conception_of_mary");
-    public static final ResourceKey<@NotNull PaintingVariant> LUDWIG_II_BLUE_GENERAL_1_RK = create("ludwig_ii_blue_general_1");
-    public static final ResourceKey<@NotNull PaintingVariant> LUDWIG_II_BLUE_GENERAL_2_RK = create("ludwig_ii_blue_general_2");
+    public static final ResourceKey<@NotNull PaintingVariant> IMMACULATE_CONCEPTION_RK = create("immaculate_conception");
+    public static final ResourceKey<@NotNull PaintingVariant> LUDWIG_GENERAL_1_RK = create("ludwig_general_1");
+    public static final ResourceKey<@NotNull PaintingVariant> LUDWIG_GENERAL_2_RK = create("ludwig_general_2");
     public static final ResourceKey<@NotNull PaintingVariant> MALCOLM_AND_MARGARET_RK = create("malcolm_and_margaret");
     public static final ResourceKey<@NotNull PaintingVariant> MIRACLE_OF_THE_GRAIL_RK = create("miracle_of_the_grail");
     public static final ResourceKey<@NotNull PaintingVariant> ORATORY_STAINED_GLASS_RK = create("oratory_stained_glass");

@@ -1,6 +1,10 @@
 {
   "values": [
     {
+      "id": "architecture-blocks:ludwig_general_1",
+      "required": false
+    },
+    {
       "id": "architecture-blocks:tristan_isolde_potion",
       "required": false
     },
@@ -13,10 +17,6 @@
       "required": false
     },
     {
-      "id": "architecture-blocks:immaculate_conception_of_mary",
-      "required": false
-    },
-    {
       "id": "architecture-blocks:bedroom_love_potion",
       "required": false
     },
@@ -25,11 +25,7 @@
       "required": false
     },
     {
-      "id": "architecture-blocks:court_life_at_the_castle_of_the_grail",
-      "required": false
-    },
-    {
-      "id": "architecture-blocks:ludwig_ii_blue_general_2",
+      "id": "architecture-blocks:court_life_at_grail_castle",
       "required": false
     },
     {
@@ -42,6 +38,10 @@
     },
     {
       "id": "architecture-blocks:hermann_of_thuringia",
+      "required": false
+    },
+    {
+      "id": "architecture-blocks:ludwig_general_2",
       "required": false
     },
     {
@@ -61,10 +61,6 @@
       "required": false
     },
     {
-      "id": "architecture-blocks:ludwig_ii_blue_general_1",
-      "required": false
-    },
-    {
       "id": "architecture-blocks:oratory_stained_glass",
       "required": false
     },
@@ -74,6 +70,10 @@
     },
     {
       "id": "architecture-blocks:tristan_on_his_sickbed",
+      "required": false
+    },
+    {
+      "id": "architecture-blocks:immaculate_conception",
       "required": false
     },
     {

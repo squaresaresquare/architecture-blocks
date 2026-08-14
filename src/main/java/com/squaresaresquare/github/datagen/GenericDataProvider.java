@@ -34,8 +34,8 @@ public class GenericDataProvider<CustomDataObj> implements DataProvider {
      *    PackOutput.Target.DATA_PACK
      *    Path.of(ArchitectureBlocks.MOD_ID, "recipe", "<blockname>_stonecutting.json");
      */
-    public static CompletableFuture<?> writeCustomJson(CachedOutput cache, String jsonString, String target, String path) {
-        Path modID = Path.of(ArchitectureBlocks.MOD_ID);
+    public static CompletableFuture<?> writeCustomJson(CachedOutput cache, String jsonString, String target, String path, String modIDString) {
+        Path modID = Path.of(modIDString);
         ModContainer container = packOutput.getModContainer();
         Path outputFolder = packOutput.getOutputFolder(PackOutput.Target.valueOf(target));
 
@@ -48,7 +48,7 @@ public class GenericDataProvider<CustomDataObj> implements DataProvider {
         ArchitectureBlocks.LOGGER.info("output folder is " + resolvedPath.toString());
         // Safely writes the JSON object to disk via Minecraft's data caching system
         CompletableFuture<?> save = DataProvider.saveStable(cache, jsonElement, resolvedPath);
-        ArchitectureBlocks.LOGGER.info("completed future is " + save.toString());
+        ArchitectureBlocks.LOGGER.info("completed future is %s %s %s = %s".formatted(cache.toString(), jsonElement.toString(), resolvedPath.toString(), save.toString()));
         return save.completedFuture(null);
     }
 

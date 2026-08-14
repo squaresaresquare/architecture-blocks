@@ -27,6 +27,7 @@ public class ArchitectureBlocksDataGenerator implements DataGeneratorEntrypoint 
 
 		pack.addProvider((output, registries) -> new ModRegistryDataProvider(output, registries));
 		pack.addProvider((FabricDataGenerator.Pack.Factory<@NotNull GenericDataProvider<Object>>) GenericDataProvider::new);
+		pack.addProvider((output, registries) -> new ModPaintingJson(output, registries));
 	}
 	@Override
 	public void buildRegistry(net.minecraft.core.RegistrySetBuilder registryBuilder) {

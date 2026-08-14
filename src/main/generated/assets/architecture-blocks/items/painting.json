@@ -1,0 +1,254 @@
+{
+  "model": {
+    "cases": [
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/ludwin_general_1",
+          "textures": {
+            "layer0": "minecraft:item/ludwin_general_1"
+          }
+        },
+        "when": "minecraft:ludwin_general_1"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/tristan_isolde_potion",
+          "textures": {
+            "layer0": "minecraft:item/tristan_isolde_potion"
+          }
+        },
+        "when": "minecraft:tristan_isolde_potion"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/under_the_lindon",
+          "textures": {
+            "layer0": "minecraft:item/under_the_lindon"
+          }
+        },
+        "when": "minecraft:under_the_lindon"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/the_arrival_of_lohengrin",
+          "textures": {
+            "layer0": "minecraft:item/the_arrival_of_lohengrin"
+          }
+        },
+        "when": "minecraft:the_arrival_of_lohengrin"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/bedroom_love_potion",
+          "textures": {
+            "layer0": "minecraft:item/bedroom_love_potion"
+          }
+        },
+        "when": "minecraft:bedroom_love_potion"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/chapel",
+          "textures": {
+            "layer0": "minecraft:item/chapel"
+          }
+        },
+        "when": "minecraft:chapel"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/court_life_at_grail_castle",
+          "textures": {
+            "layer0": "minecraft:item/court_life_at_grail_castle"
+          }
+        },
+        "when": "minecraft:court_life_at_grail_castle"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/curse_of_grail_messenger",
+          "textures": {
+            "layer0": "minecraft:item/curse_of_grail_messenger"
+          }
+        },
+        "when": "minecraft:curse_of_grail_messenger"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/under_the_lindon_2",
+          "textures": {
+            "layer0": "minecraft:item/under_the_lindon_2"
+          }
+        },
+        "when": "minecraft:under_the_lindon_2"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/hermann_of_thuringia",
+          "textures": {
+            "layer0": "minecraft:item/hermann_of_thuringia"
+          }
+        },
+        "when": "minecraft:hermann_of_thuringia"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/ludwig_general_2",
+          "textures": {
+            "layer0": "minecraft:item/ludwig_general_2"
+          }
+        },
+        "when": "minecraft:ludwig_general_2"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/sigurn_meets_grypin",
+          "textures": {
+            "layer0": "minecraft:item/sigurn_meets_grypin"
+          }
+        },
+        "when": "minecraft:sigurn_meets_grypin"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/tristan_and_isolde_separation",
+          "textures": {
+            "layer0": "minecraft:item/tristan_and_isolde_separation"
+          }
+        },
+        "when": "minecraft:tristan_and_isolde_separation"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/parzifal",
+          "textures": {
+            "layer0": "minecraft:item/parzifal"
+          }
+        },
+        "when": "minecraft:parzifal"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/malcolm_and_margaret",
+          "textures": {
+            "layer0": "minecraft:item/malcolm_and_margaret"
+          }
+        },
+        "when": "minecraft:malcolm_and_margaret"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/oratory_stained_glass",
+          "textures": {
+            "layer0": "minecraft:item/oratory_stained_glass"
+          }
+        },
+        "when": "minecraft:oratory_stained_glass"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/saint_margaret",
+          "textures": {
+            "layer0": "minecraft:item/saint_margaret"
+          }
+        },
+        "when": "minecraft:saint_margaret"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/tristan_on_his_sickbed",
+          "textures": {
+            "layer0": "minecraft:item/tristan_on_his_sickbed"
+          }
+        },
+        "when": "minecraft:tristan_on_his_sickbed"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/immaculate_conception",
+          "textures": {
+            "layer0": "minecraft:item/immaculate_conception"
+          }
+        },
+        "when": "minecraft:immaculate_conception"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/archer_angel",
+          "textures": {
+            "layer0": "minecraft:item/archer_angel"
+          }
+        },
+        "when": "minecraft:archer_angel"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/miracle_of_the_grail",
+          "textures": {
+            "layer0": "minecraft:item/miracle_of_the_grail"
+          }
+        },
+        "when": "minecraft:miracle_of_the_grail"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/our_lady_rosary",
+          "textures": {
+            "layer0": "minecraft:item/our_lady_rosary"
+          }
+        },
+        "when": "minecraft:our_lady_rosary"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/accolade",
+          "textures": {
+            "layer0": "minecraft:item/accolade"
+          }
+        },
+        "when": "minecraft:accolade"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/parzifals_fight",
+          "textures": {
+            "layer0": "minecraft:item/parzifals_fight"
+          }
+        },
+        "when": "minecraft:parzifals_fight"
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/painting",
+      "textures": {
+        "layer0": "minecraft:item/painting"
+      }
+    },
+    "property": "minecraft:painting"
+  }
+}
