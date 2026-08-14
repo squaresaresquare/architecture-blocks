@@ -15,7 +15,6 @@ public class ArchitectureBlocksDataGenerator implements DataGeneratorEntrypoint 
 	private static final Logger log = LogManager.getLogger(ArchitectureBlocksDataGenerator.class);
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
-		CompletableFuture<HolderLookup.Provider> registryLookupFuture = fabricDataGenerator.getRegistries();
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 		PaintingsRecord.initialize();
 		pack.addProvider((output, registries) -> new ModPaintingVariantProvider(output, registries));

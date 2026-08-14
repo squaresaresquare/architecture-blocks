@@ -1,5 +1,6 @@
 package com.squaresaresquare.github.block.custom.triplewindowarch;
 
+import net.minecraft.world.level.BlockGetter;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -55,7 +56,8 @@ public class TripleWindowArchRow5Col2Block extends BaseEntityBlock {
         return this.makeShape();
     }
 
-    public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, CollisionContext context) {
+    @Override
+    protected @NotNull VoxelShape getCollisionShape(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull CollisionContext context) {
         return this.makeShape();
     }
 

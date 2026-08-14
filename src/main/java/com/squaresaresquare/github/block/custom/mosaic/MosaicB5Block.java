@@ -1,5 +1,6 @@
 package com.squaresaresquare.github.block.custom.mosaic;
 
+import net.minecraft.world.level.BlockGetter;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -20,8 +21,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import com.squaresaresquare.github.block.ModBlocks;
 import com.squaresaresquare.github.block.entity.custom.mosaic.MosaicB5BlockEntity;
-
-import javax.swing.text.html.BlockView;
 
 public class MosaicB5Block extends BaseEntityBlock {
     public static final EnumProperty<@NotNull Direction> FACING = BlockStateProperties.HORIZONTAL_FACING;
@@ -46,7 +45,7 @@ public class MosaicB5Block extends BaseEntityBlock {
     }
    
     @Override
-    protected VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+    protected @NotNull VoxelShape getCollisionShape(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull CollisionContext context) {
         VoxelShape shape = Shapes.empty();
         shape = Shapes.join(shape, Shapes.box(0, 0, 0, 1, 1, 1), BooleanOp.OR);
 

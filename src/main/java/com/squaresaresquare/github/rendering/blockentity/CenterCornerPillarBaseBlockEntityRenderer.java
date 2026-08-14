@@ -14,6 +14,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import com.squaresaresquare.github.block.entity.custom.CenterCornerPillarBaseBlockEntity;
 
+/** @noinspection ALL*/
 public class CenterCornerPillarBaseBlockEntityRenderer implements BlockEntityRenderer<@NotNull CenterCornerPillarBaseBlockEntity, @NotNull CenterCornerPillarBaseBlockEntityRenderState> {
     private final Font font;
     private final ItemModel itemModel = null;

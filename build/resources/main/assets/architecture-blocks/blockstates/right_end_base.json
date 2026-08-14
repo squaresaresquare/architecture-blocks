@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "architecture-blocks:block/right_end_base",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "architecture-blocks:block/right_end_base",
+      "y": -90
+    },
+    "facing=south": {
+      "model": "architecture-blocks:block/right_end_base"
+    },
+    "facing=west": {
+      "model": "architecture-blocks:block/right_end_base",
+      "y": 90
+    }
+  }
+}
+        

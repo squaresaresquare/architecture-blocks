@@ -1,5 +1,6 @@
 package com.squaresaresquare.github.block.custom;
 
+import net.minecraft.world.level.BlockGetter;
 import com.mojang.serialization.MapCodec;
 import com.squaresaresquare.github.block.entity.custom.PolishedDioriteKeyholeBlockEntity;
 import net.minecraft.core.BlockPos;

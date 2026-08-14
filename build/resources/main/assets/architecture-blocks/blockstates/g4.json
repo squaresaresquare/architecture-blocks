@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "architecture-blocks:block/g4",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "architecture-blocks:block/g4",
+      "y": -90
+    },
+    "facing=south": {
+      "model": "architecture-blocks:block/g4"
+    },
+    "facing=west": {
+      "model": "architecture-blocks:block/g4",
+      "y": 90
+    }
+  }
+}

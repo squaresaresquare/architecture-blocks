@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "architecture-blocks:left_half_pillar_middle"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

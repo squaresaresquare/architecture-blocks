@@ -1,19 +1,14 @@
 package com.squaresaresquare.github.creativemodetab;
 
-import com.mojang.serialization.Codec;
-import com.squaresaresquare.github.item.ModItems;
-import com.squaresaresquare.github.item.ModPaintings;
 import com.squaresaresquare.github.data.ModDataComponents;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.Registry;
 import net.minecraft.core.component.DataComponentPatch;
-import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
@@ -64,7 +59,7 @@ public class ModCreativeModeTabs {
         }
 
         @Override
-        public <T> Optional<? extends HolderLookup.RegistryLookup<T>> lookup(ResourceKey<? extends Registry<? extends T>> key) {
+        public <T> @NotNull Optional<? extends HolderLookup.RegistryLookup<T>> lookup(@NotNull ResourceKey<? extends Registry<? extends T>> key) {
             return Optional.empty();
         }
     };

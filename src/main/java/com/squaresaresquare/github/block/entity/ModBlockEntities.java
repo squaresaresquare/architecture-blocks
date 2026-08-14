@@ -1,7 +1,6 @@
 package com.squaresaresquare.github.block.entity;
 
 import com.squaresaresquare.github.block.entity.custom.doublewindowarch.*;
-import com.squaresaresquare.github.block.entity.custom.mosaic.MosaicA1BlockEntity;
 import com.squaresaresquare.github.block.entity.custom.quadruplewindowarch.*;
 import com.squaresaresquare.github.block.entity.custom.simplearchedwindow.*;
 import com.squaresaresquare.github.block.entity.custom.triplewindowarch.*;

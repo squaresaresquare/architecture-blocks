@@ -5,6 +5,8 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataProvider;
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 
@@ -14,7 +16,7 @@ public class ModPaintingJson implements DataProvider {
     }
 
     @Override
-    public CompletableFuture<?> run(CachedOutput cache) {
+    public @NotNull CompletableFuture<?> run(@NotNull CachedOutput cache) {
         PaintingsRecord.initialize();
         String pathString = "items/painting.json";
         String targetString = "RESOURCE_PACK";
@@ -62,6 +64,7 @@ public class ModPaintingJson implements DataProvider {
 
         for (Map.Entry<String, PaintingsRecord.Painting> painting : PaintingsRecord.PaintingMap.entrySet()) {
             pathString = "models/item/%s.json".formatted(painting.getKey());
+            //noinspection RedundantStringFormatCall
             System.out.println("create file %s".formatted(pathString));
             jsonSB.setLength(0);
             jsonSB.append("{\n");
@@ -73,16 +76,14 @@ public class ModPaintingJson implements DataProvider {
             GenericDataProvider.writeCustomJson(cache, jsonSB.toString(), targetString, pathString, modIdString);
             try {
                 Thread.sleep(200);
-            } catch (InterruptedException e) {
-                continue;
-            }
+            } catch (InterruptedException e) {}
         }
         return completableFuture2;
         
     }
 
     @Override
-    public String getName() {
+    public @NotNull String getName() {
         return null;
     }
 }

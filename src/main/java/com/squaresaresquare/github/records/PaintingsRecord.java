@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class PaintingsRecord{
     public static record Painting(ResourceKey<PaintingVariant> resourceKey, Integer width, Integer height, String title, String author, String location, String note) { }
-    public static Map<String, Painting> PaintingMap = new HashMap<>();
+    public static final Map<String, Painting> PaintingMap = new HashMap<>();
     public static void initialize() {
         int forceClassLoad = ModPaintings.DATA_GEN_TRACKER.size();
         PaintingMap.put("accolade",

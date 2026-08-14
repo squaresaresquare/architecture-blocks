@@ -24,7 +24,7 @@ public class ModPaintings {
         }
 
         @Override
-        public <T> Optional<? extends HolderLookup.RegistryLookup<T>> lookup(ResourceKey<? extends Registry<? extends T>> key) {
+        public <T> @NotNull Optional<? extends HolderLookup.RegistryLookup<T>> lookup(@NotNull ResourceKey<? extends Registry<? extends T>> key) {
             return Optional.empty();
         }
     };

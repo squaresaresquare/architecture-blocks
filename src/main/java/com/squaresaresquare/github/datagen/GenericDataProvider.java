@@ -10,10 +10,9 @@ import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.CachedOutput;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
+import org.jetbrains.annotations.NotNull;
 
 import java.nio.file.*;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class GenericDataProvider<CustomDataObj> implements DataProvider {
@@ -64,12 +63,12 @@ public class GenericDataProvider<CustomDataObj> implements DataProvider {
     }
 
     @Override
-    public CompletableFuture<?> run(CachedOutput cache) {
+    public @NotNull CompletableFuture<?> run(@NotNull CachedOutput cache) {
         return CompletableFuture.completedFuture(null);
     }
 
     @Override
-    public String getName() {
+    public @NotNull String getName() {
         return "Custom HashMap JSON Provider";
     }
 }

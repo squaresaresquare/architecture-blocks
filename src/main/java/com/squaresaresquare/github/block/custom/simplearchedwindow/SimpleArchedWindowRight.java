@@ -1,5 +1,6 @@
 package com.squaresaresquare.github.block.custom.simplearchedwindow;
 
+import net.minecraft.world.level.BlockGetter;
 import com.mojang.serialization.MapCodec;
 import com.squaresaresquare.github.block.ModBlocks;
 import com.squaresaresquare.github.block.entity.custom.simplearchedwindow.SimpleArchedWindowRightBlockEntity;
@@ -56,7 +57,8 @@ public class SimpleArchedWindowRight extends BaseEntityBlock {
         return this.makeShape();
     }
 
-    public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, CollisionContext context) {
+    @Override
+    protected @NotNull VoxelShape getCollisionShape(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull CollisionContext context) {
         return this.makeShape();
     }
 

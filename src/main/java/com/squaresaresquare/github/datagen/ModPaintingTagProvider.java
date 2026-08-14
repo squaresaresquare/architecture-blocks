@@ -1,13 +1,10 @@
 package com.squaresaresquare.github.datagen;
 
-import com.squaresaresquare.github.item.ModPaintings;
 import com.squaresaresquare.github.records.PaintingsRecord;
 import net.minecraft.core.HolderLookup;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.PaintingVariantTags;
-import net.minecraft.tags.TagEntry;
 import net.minecraft.world.entity.decoration.painting.PaintingVariant;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;

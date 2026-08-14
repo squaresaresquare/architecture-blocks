@@ -793,15 +793,17 @@ public class ModBlocks {
     }
 
     public static ResourceKey<@NotNull Block> getRK(Block block) {
-        return BuiltInRegistries.BLOCK.getResourceKey(block).get();
+        if (BuiltInRegistries.BLOCK.getResourceKey(block).isPresent()){
+            return BuiltInRegistries.BLOCK.getResourceKey(block).get();
+        }else{
+            return null;
+        }
     }
 
     public static boolean neverAllowSpawn(BlockState state, BlockGetter level, BlockPos pos, EntityType<?> type) {
         return false;
     }
 
-
- 
     public static final Block QUADRUPLE_WINDOW_ARCH_ROW3_COL1 = register(
         "quadruple_window_arch_row3_col1",
         QuadrupleWindowArchRow3Col1Block::new,

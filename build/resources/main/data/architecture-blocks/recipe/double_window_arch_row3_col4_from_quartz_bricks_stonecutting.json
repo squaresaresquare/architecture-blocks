@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:quartz_bricks",
+  "result": {
+    "id": "architecture-blocks:double_window_arch_row3_col4"
+  }
+}
