@@ -74,6 +74,15 @@ public class PaintingsRecord{
                         "",
                         ""
                 ));
+        PaintingMap.put("lady_reading_poem",
+                new Painting(
+                        ModPaintings.LADY_READING_POEM_RK,
+                        3, 2,
+                        "Medieval lady reading the poem Tristan und Isolde",
+                        "August Spiess",
+                        "bedroom",
+                        "The mural of a medieval lady reading the poem Tristan und Isolde displaying the opening two lines."
+                ));
         PaintingMap.put("ludwig_general_1",
                 new Painting(
                         ModPaintings.LUDWIG_GENERAL_1_RK,
@@ -121,7 +130,7 @@ public class PaintingsRecord{
                 ));
         PaintingMap.put("our_lady_rosary",
                 new Painting(
-                        ModPaintings.OUR_LADY_OF_THE_ROSARY_RK,
+                        ModPaintings.OUR_LADY_ROSARY_RK,
                         2, 3,
                         "Our lady of the rosary simone cantarini",
                         "Simone Cantarini",
@@ -221,7 +230,7 @@ public class PaintingsRecord{
         PaintingMap.put("under_the_lindon",
                 new Painting(
                         ModPaintings.UNDER_THE_LINDON_RK,
-                        6, 4,
+                        5, 3,
                         "Tristan and Isolde under the lindon",
                         "Ferdinand Piloty",
                         "",

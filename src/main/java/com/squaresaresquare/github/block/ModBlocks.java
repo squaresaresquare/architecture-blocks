@@ -1174,9 +1174,9 @@ public class ModBlocks {
                     .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
             true
     );
-    public static final Block CROWN_MOLDING_LEFT = register(
-            "crown_molding_left",
-            CrownMoldingLeft::new,
+    public static final Block CROWN_MOLDING = register(
+            "crown_molding",
+            CrownMolding::new,
             BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
                     .noOcclusion()
                     .strength(1,1)
@@ -1185,19 +1185,6 @@ public class ModBlocks {
                     .isViewBlocking((state, level, pos) -> false),
             true
     );
-
-    public static final Block CROWN_MOLDING_RIGHT = register(
-            "crown_molding_right",
-            CrownMoldingRight::new,
-            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
-                    .noOcclusion()
-                    .strength(1,1)
-                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;})
-                    .isSuffocating((state, level, pos) -> false)
-                    .isViewBlocking((state, level, pos) -> false),
-            true
-    );
-
     public static final Block CIRCLE_CORNER = register(
             "circle_corner",
             CircleCornerBlock::new,

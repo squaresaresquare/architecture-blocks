@@ -1,5 +1,5 @@
 {
-  "parent": "architecture-blocks:block/crown_molding_left",
+  "parent": "architecture-blocks:block/crown_molding",
   "display": {
 		"thirdperson_righthand": {
 			"rotation": [45, -18, 35],
@@ -38,9 +38,9 @@
         0
       ],
       "scale": [
-        0.2,
-        0.2,
-        0.2
+        0.75,
+        0.75,
+        0.75
       ]
     },
     "firstperson_lefthand": {
@@ -55,9 +55,9 @@
         0
       ],
       "scale": [
-        0.2,
-        0.2,
-        0.2
+        0.6,
+        0.6,
+        0.6
       ]
     },
     "thirdperson_righthand": {

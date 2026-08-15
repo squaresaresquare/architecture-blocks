@@ -130,8 +130,7 @@ public class ModBlockEntities {
     public static final BlockEntityType<@NotNull SimpleArchedWindowLeftBlockEntity> SIMPLE_ARCHED_WINDOW_LEFT_BLOCK_ENTITY = register("simple_arched_window_left", SimpleArchedWindowLeftBlockEntity::new, ModBlocks.SIMPLE_ARCHED_WINDOW_LEFT);
     public static final BlockEntityType<@NotNull SimpleArchedWindowRightBlockEntity> SIMPLE_ARCHED_WINDOW_RIGHT_BLOCK_ENTITY = register("simple_arched_window_right", SimpleArchedWindowRightBlockEntity::new, ModBlocks.SIMPLE_ARCHED_WINDOW_RIGHT);
     public static final BlockEntityType<@NotNull SimpleArchedWindowBetweenBlockEntity> SIMPLE_ARCHED_WINDOW_BETWEEN_BLOCK_ENTITY = register("simple_arched_window_between", SimpleArchedWindowBetweenBlockEntity::new, ModBlocks.SIMPLE_ARCHED_WINDOW_BETWEEN);
-    public static final BlockEntityType<@NotNull CrownMoldingRightBlockEntity> CROWN_MOLDING_RIGHT_BLOCK_ENTITY = register("crown_molding_right", CrownMoldingRightBlockEntity::new, ModBlocks.CROWN_MOLDING_RIGHT);
-    public static final BlockEntityType<@NotNull CrownMoldingLeftBlockEntity> CROWN_MOLDING_LEFT_BLOCK_ENTITY = register("crown_molding_left", CrownMoldingLeftBlockEntity::new, ModBlocks.CROWN_MOLDING_LEFT);
+    public static final BlockEntityType<@NotNull CrownMoldingBlockEntity> CROWN_MOLDING_BLOCK_ENTITY = register("crown_molding", CrownMoldingBlockEntity::new, ModBlocks.CROWN_MOLDING);
 
     public static final BlockEntityType<@NotNull WhiteConcreteKeyholeBlockEntity> WHITE_CONCRETE_KEYHOLE_BLOCK_ENTITY = register("white_concrete_keyhole", WhiteConcreteKeyholeBlockEntity::new, ModBlocks.WHITE_CONCRETE_KEYHOLE_BLOCK);
     public static final BlockEntityType<@NotNull PolishedDioriteKeyholeBlockEntity> POLISHED_DIORITE_KEYHOLE_BLOCK_ENTITY = register("polished_diorite_keyhole", PolishedDioriteKeyholeBlockEntity::new, ModBlocks.POLISHED_DIORITE_KEYHOLE_BLOCK);

@@ -257,8 +257,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.PILLARLESS_WINDOW_BASE);
                         output.accept(ModBlocks.PILLARLESS_WINDOW_MIDDLE);
                         output.accept(ModBlocks.PILLARLESS_WINDOW_CAP);
-                        output.accept(ModBlocks.CROWN_MOLDING_LEFT);
-                        output.accept(ModBlocks.CROWN_MOLDING_RIGHT);
+                        output.accept(ModBlocks.CROWN_MOLDING);
                         output.accept(ModBlocks.CIRCLE_CORNER);
                         output.accept(ModBlocks.QUARTZ_CIRCLE_CORNER);
                         output.accept(ModBlocks.WHITE_CONCRETE_CIRCLE_CORNER);

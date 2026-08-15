@@ -2,7 +2,7 @@ package com.squaresaresquare.github.rendering.blockentity;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import com.squaresaresquare.github.block.entity.custom.CrownMoldingRightBlockEntity;
+import com.squaresaresquare.github.block.entity.custom.CrownMoldingBlockEntity;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.renderer.SubmitNodeCollector;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
@@ -14,26 +14,26 @@ import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class CrownMoldingRightBlockEntityRenderer implements BlockEntityRenderer<@NotNull CrownMoldingRightBlockEntity, @NotNull CrownMoldingRightBlockEntityRenderState> {
+public class CrownMoldingBlockEntityRenderer implements BlockEntityRenderer<@NotNull CrownMoldingBlockEntity, @NotNull CrownMoldingBlockEntityRenderState> {
     private final Font font;
     private final ItemModel itemModel = null;
 
-    public CrownMoldingRightBlockEntityRenderer(BlockEntityRendererProvider.Context context) {
+    public CrownMoldingBlockEntityRenderer(BlockEntityRendererProvider.Context context) {
         this.font = context.font();
     }
 
     @Override
-    public CrownMoldingRightBlockEntityRenderState createRenderState() {
-        return new CrownMoldingRightBlockEntityRenderState();
+    public CrownMoldingBlockEntityRenderState createRenderState() {
+        return new CrownMoldingBlockEntityRenderState();
     }
 
     @Override
-    public void extractRenderState(CrownMoldingRightBlockEntity blockEntity, CrownMoldingRightBlockEntityRenderState state, float tickProgress, @NotNull Vec3 cameraPos, @Nullable ModelFeatureRenderer.CrumblingOverlay crumblingOverlay) {
+    public void extractRenderState(CrownMoldingBlockEntity blockEntity, CrownMoldingBlockEntityRenderState state, float tickProgress, @NotNull Vec3 cameraPos, @Nullable ModelFeatureRenderer.CrumblingOverlay crumblingOverlay) {
         BlockEntityRenderer.super.extractRenderState(blockEntity, state, tickProgress, cameraPos, crumblingOverlay);
     }
 
     @Override
-    public void submit(CrownMoldingRightBlockEntityRenderState state, PoseStack matrices, @NotNull SubmitNodeCollector queue, @NotNull CameraRenderState cameraState) {
+    public void submit(CrownMoldingBlockEntityRenderState state, PoseStack matrices, @NotNull SubmitNodeCollector queue, @NotNull CameraRenderState cameraState) {
         matrices.pushPose();
         matrices.translate(0.5, 1, 0.5);
         matrices.mulPose(Axis.XP.rotationDegrees(90));

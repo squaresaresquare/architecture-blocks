@@ -5,9 +5,9 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class CrownMoldingRightBlockEntity extends BlockEntity {
-    public CrownMoldingRightBlockEntity(BlockPos pos, BlockState state) {
-        super(ModBlockEntities.CROWN_MOLDING_RIGHT_BLOCK_ENTITY, pos, state);
+public class CrownMoldingBlockEntity extends BlockEntity {
+    public CrownMoldingBlockEntity(BlockPos pos, BlockState state) {
+        super(ModBlockEntities.CROWN_MOLDING_BLOCK_ENTITY, pos, state);
     }
 }
         

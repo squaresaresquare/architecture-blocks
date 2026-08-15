@@ -7,15 +7,18 @@ import com.squaresaresquare.github.item.ModItems;
 import com.squaresaresquare.github.item.ModPaintings;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.AttackBlockCallback;
+import net.minecraft.core.Direction;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import net.minecraft.resources.Identifier;
+import net.minecraft.world.item.context.BlockPlaceContext;
 
 
 public class ArchitectureBlocks implements ModInitializer {
@@ -41,15 +44,17 @@ public class ArchitectureBlocks implements ModInitializer {
 			HitResult hit = player.pick(reach, 0.0F, true); // true catches empty/non-solid shapes
 
 			if (hit.getType() == HitResult.Type.BLOCK) {
+
 				BlockHitResult blockHit = (BlockHitResult) hit;
 				BlockPos raycastPos = blockHit.getBlockPos();
 				BlockState lookedAtState = level.getBlockState(raycastPos);
 
 				// Evaluate if the player's crosshair is aiming directly at your molding block
-				if (lookedAtState.is(ModBlocks.CROWN_MOLDING_LEFT) || lookedAtState.is(ModBlocks.CROWN_MOLDING_RIGHT)) {
+				if (lookedAtState.is(ModBlocks.CROWN_MOLDING)) {
 
 					// If this loop is running on the internal server thread, delete the block permanently
 					if (!level.isClientSide()) {
+
 						level.destroyBlock(raycastPos, true, player);
 					}
 

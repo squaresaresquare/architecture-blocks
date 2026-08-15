@@ -6,7 +6,7 @@ import net.minecraft.world.entity.Display.ItemDisplay.ItemRenderState;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 
-public class CrownMoldingRightBlockEntityRenderState extends BlockEntityRenderState {
+public class CrownMoldingBlockEntityRenderState extends BlockEntityRenderState {
     final ItemRenderState itemRenderState = new ItemRenderState(ItemStack.EMPTY, ItemDisplayContext.NONE);
     public BlockPos lightPosition;
     public float rotation;

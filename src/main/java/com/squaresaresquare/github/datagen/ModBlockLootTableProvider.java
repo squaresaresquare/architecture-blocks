@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootSubProvider;
 import net.minecraft.core.HolderLookup;
 import com.squaresaresquare.github.block.ModBlocks;
+import com.squaresaresquare.github.item.ModPaintings;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -115,8 +116,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.SIMPLE_ARCHED_WINDOW_TOP_CENTER);
         dropSelf(ModBlocks.SIMPLE_ARCHED_WINDOW_TOP_LEFT);
         dropSelf(ModBlocks.SIMPLE_ARCHED_WINDOW_TOP_LEFT);
-        dropSelf(ModBlocks.CROWN_MOLDING_LEFT);
-        dropSelf(ModBlocks.CROWN_MOLDING_RIGHT);
+        dropSelf(ModBlocks.CROWN_MOLDING);
         dropSelf(ModBlocks.CIRCLE_CORNER);
         dropSelf(ModBlocks.QUARTZ_CIRCLE_CORNER);
         dropSelf(ModBlocks.WHITE_CONCRETE_CIRCLE_CORNER);
@@ -279,6 +279,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.MOSAIC_BORDER10_BLOCK);
         dropSelf(ModBlocks.MOSAIC_BORDER11_BLOCK);
         dropSelf(ModBlocks.MOSAIC_BORDER12_BLOCK);
+
         //:::::::::::
     }
 }
