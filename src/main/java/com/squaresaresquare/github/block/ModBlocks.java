@@ -1212,6 +1212,17 @@ public class ModBlocks {
                     .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;}),
             true
     );
+    public static final Block CURTAIN_BLOCK = register(
+            "curtain",
+            CurtainBlock::new,
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+                    .noOcclusion()
+                    .strength(1,1)
+                    .isValidSpawn((state, blockGetter, pos, entityType) -> {return false;})
+                    .isSuffocating((state, level, pos) -> false)
+                    .isViewBlocking((state, level, pos) -> false),
+            true
+    );
     public static final Block POLISHED_DIORITE_KEYHOLE_BLOCK = register(
             "polished_diorite_keyhole",
             PolishedDioriteKeyholeBlock::new,

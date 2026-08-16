@@ -263,6 +263,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.WHITE_CONCRETE_CIRCLE_CORNER);
                         output.accept(ModBlocks.POLISHED_DIORITE_KEYHOLE_BLOCK);
                         output.accept(ModBlocks.WHITE_CONCRETE_KEYHOLE_BLOCK);
+                        output.accept(ModBlocks.CURTAIN_BLOCK);
                         //::new architecture_block here
                     }).build());
     public static final CreativeModeTab SIMPLE_ARCHED_WINDOW_TAB = Registry.register(

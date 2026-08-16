@@ -5,11 +5,43 @@
       "required": false
     },
     {
-      "id": "architecture-blocks:tristan_isolde_potion",
+      "id": "architecture-blocks:under_the_lindon",
       "required": false
     },
     {
-      "id": "architecture-blocks:under_the_lindon",
+      "id": "architecture-blocks:court_life_at_grail_castle",
+      "required": false
+    },
+    {
+      "id": "architecture-blocks:ludwig_general_1",
+      "required": false
+    },
+    {
+      "id": "architecture-blocks:ludwig_general_2",
+      "required": false
+    },
+    {
+      "id": "architecture-blocks:saint_margaret",
+      "required": false
+    },
+    {
+      "id": "architecture-blocks:tristan_on_his_sickbed",
+      "required": false
+    },
+    {
+      "id": "architecture-blocks:love_potion",
+      "required": false
+    },
+    {
+      "id": "architecture-blocks:archer_angel",
+      "required": false
+    },
+    {
+      "id": "architecture-blocks:accolade",
+      "required": false
+    },
+    {
+      "id": "architecture-blocks:tristan_isolde_potion",
       "required": false
     },
     {
@@ -17,15 +49,7 @@
       "required": false
     },
     {
-      "id": "architecture-blocks:bedroom_love_potion",
-      "required": false
-    },
-    {
       "id": "architecture-blocks:chapel",
-      "required": false
-    },
-    {
-      "id": "architecture-blocks:court_life_at_grail_castle",
       "required": false
     },
     {
@@ -38,14 +62,6 @@
     },
     {
       "id": "architecture-blocks:hermann_of_thuringia",
-      "required": false
-    },
-    {
-      "id": "architecture-blocks:ludwig_general_1",
-      "required": false
-    },
-    {
-      "id": "architecture-blocks:ludwig_general_2",
       "required": false
     },
     {
@@ -65,11 +81,7 @@
       "required": false
     },
     {
-      "id": "architecture-blocks:saint_margaret",
-      "required": false
-    },
-    {
-      "id": "architecture-blocks:tristan_on_his_sickbed",
+      "id": "architecture-blocks:lady_reading_poem",
       "required": false
     },
     {
@@ -77,7 +89,7 @@
       "required": false
     },
     {
-      "id": "architecture-blocks:archer_angel",
+      "id": "architecture-blocks:tristan_isolde_potion_2",
       "required": false
     },
     {
@@ -85,11 +97,7 @@
       "required": false
     },
     {
-      "id": "architecture-blocks:our_lady_of_the_rosary",
-      "required": false
-    },
-    {
-      "id": "architecture-blocks:accolade",
+      "id": "architecture-blocks:our_lady_rosary",
       "required": false
     },
     {

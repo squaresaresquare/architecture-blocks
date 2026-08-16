@@ -31,7 +31,7 @@ public class ModPaintings {
     public static final List<ResourceKey<PaintingVariant>> DATA_GEN_TRACKER = new ArrayList<>();
     public static final ResourceKey<@NotNull PaintingVariant> ACCOLADE_RK = create("accolade");
     public static final ResourceKey<@NotNull PaintingVariant> ARCHER_ANGEL_RK = create("archer_angel");
-    public static final ResourceKey<@NotNull PaintingVariant> BEDROOM_LOVE_POTION_RK = create("bedroom_love_potion");
+    public static final ResourceKey<@NotNull PaintingVariant> LOVE_POTION_RK = create("love_potion");
     public static final ResourceKey<@NotNull PaintingVariant> CHAPEL_RK = create("chapel");
     public static final ResourceKey<@NotNull PaintingVariant> COURT_LIFE_AT_GRAIL_CASTLE_RK = create("court_life_at_grail_castle");
     public static final ResourceKey<@NotNull PaintingVariant> HERMANN_OF_THURINGIA_RK = create("hermann_of_thuringia");
@@ -51,6 +51,7 @@ public class ModPaintings {
     public static final ResourceKey<@NotNull PaintingVariant> THE_ARRIVAL_OF_LOHENGRIN_RK = create("the_arrival_of_lohengrin");
     public static final ResourceKey<@NotNull PaintingVariant> TRISTAN_AND_ISOLDE_SEPERATION_RK = create("tristan_and_isolde_seperation");
     public static final ResourceKey<@NotNull PaintingVariant> TRISTAN_ISOLDE_POTION_RK = create("tristan_isolde_potion");
+    public static final ResourceKey<@NotNull PaintingVariant> TRISTAN_ISOLDE_POTION_2_RK = create("tristan_isolde_potion_2");
     public static final ResourceKey<@NotNull PaintingVariant> TRISTAN_ON_HIS_SICKBED_RK = create("tristan_on_his_sickbed");
     public static final ResourceKey<@NotNull PaintingVariant> UNDER_THE_LINDON_2_RK = create("under_the_lindon_2");
     public static final ResourceKey<@NotNull PaintingVariant> UNDER_THE_LINDON_RK = create("under_the_lindon");

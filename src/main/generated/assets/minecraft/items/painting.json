@@ -12,16 +12,72 @@
       {
         "model": {
           "type": "minecraft:model",
-          "model": "architecture-blocks:item/tristan_isolde_potion"
+          "model": "architecture-blocks:item/under_the_lindon"
         },
-        "when": "architecture-blocks:tristan_isolde_potion"
+        "when": "architecture-blocks:under_the_lindon"
       },
       {
         "model": {
           "type": "minecraft:model",
-          "model": "architecture-blocks:item/under_the_lindon"
+          "model": "architecture-blocks:item/court_life_at_grail_castle"
         },
-        "when": "architecture-blocks:under_the_lindon"
+        "when": "architecture-blocks:court_life_at_grail_castle"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "architecture-blocks:item/ludwig_general_1"
+        },
+        "when": "architecture-blocks:ludwig_general_1"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "architecture-blocks:item/ludwig_general_2"
+        },
+        "when": "architecture-blocks:ludwig_general_2"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "architecture-blocks:item/saint_margaret"
+        },
+        "when": "architecture-blocks:saint_margaret"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "architecture-blocks:item/tristan_on_his_sickbed"
+        },
+        "when": "architecture-blocks:tristan_on_his_sickbed"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "architecture-blocks:item/love_potion"
+        },
+        "when": "architecture-blocks:love_potion"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "architecture-blocks:item/archer_angel"
+        },
+        "when": "architecture-blocks:archer_angel"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "architecture-blocks:item/accolade"
+        },
+        "when": "architecture-blocks:accolade"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "architecture-blocks:item/tristan_isolde_potion"
+        },
+        "when": "architecture-blocks:tristan_isolde_potion"
       },
       {
         "model": {
@@ -33,23 +89,9 @@
       {
         "model": {
           "type": "minecraft:model",
-          "model": "architecture-blocks:item/bedroom_love_potion"
-        },
-        "when": "architecture-blocks:bedroom_love_potion"
-      },
-      {
-        "model": {
-          "type": "minecraft:model",
           "model": "architecture-blocks:item/chapel"
         },
         "when": "architecture-blocks:chapel"
-      },
-      {
-        "model": {
-          "type": "minecraft:model",
-          "model": "architecture-blocks:item/court_life_at_grail_castle"
-        },
-        "when": "architecture-blocks:court_life_at_grail_castle"
       },
       {
         "model": {
@@ -71,20 +113,6 @@
           "model": "architecture-blocks:item/hermann_of_thuringia"
         },
         "when": "architecture-blocks:hermann_of_thuringia"
-      },
-      {
-        "model": {
-          "type": "minecraft:model",
-          "model": "architecture-blocks:item/ludwig_general_1"
-        },
-        "when": "architecture-blocks:ludwig_general_1"
-      },
-      {
-        "model": {
-          "type": "minecraft:model",
-          "model": "architecture-blocks:item/ludwig_general_2"
-        },
-        "when": "architecture-blocks:ludwig_general_2"
       },
       {
         "model": {
@@ -117,16 +145,9 @@
       {
         "model": {
           "type": "minecraft:model",
-          "model": "architecture-blocks:item/saint_margaret"
+          "model": "architecture-blocks:item/lady_reading_poem"
         },
-        "when": "architecture-blocks:saint_margaret"
-      },
-      {
-        "model": {
-          "type": "minecraft:model",
-          "model": "architecture-blocks:item/tristan_on_his_sickbed"
-        },
-        "when": "architecture-blocks:tristan_on_his_sickbed"
+        "when": "architecture-blocks:lady_reading_poem"
       },
       {
         "model": {
@@ -138,9 +159,9 @@
       {
         "model": {
           "type": "minecraft:model",
-          "model": "architecture-blocks:item/archer_angel"
+          "model": "architecture-blocks:item/tristan_isolde_potion_2"
         },
-        "when": "architecture-blocks:archer_angel"
+        "when": "architecture-blocks:tristan_isolde_potion_2"
       },
       {
         "model": {
@@ -155,13 +176,6 @@
           "model": "architecture-blocks:item/our_lady_rosary"
         },
         "when": "architecture-blocks:our_lady_rosary"
-      },
-      {
-        "model": {
-          "type": "minecraft:model",
-          "model": "architecture-blocks:item/accolade"
-        },
-        "when": "architecture-blocks:accolade"
       },
       {
         "model": {

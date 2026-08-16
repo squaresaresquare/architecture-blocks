@@ -3,7 +3,7 @@
   "ingredient": "minecraft:painting",
   "result": {
     "components": {
-      "minecraft:painting/variant": "architecture-blocks:our_lady_rosary"
+      "minecraft:painting/variant": "architecture-blocks:tristan_isolde_potion_2"
     },
     "id": "minecraft:painting"
   }

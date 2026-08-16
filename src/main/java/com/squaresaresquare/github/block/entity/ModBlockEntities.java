@@ -131,7 +131,7 @@ public class ModBlockEntities {
     public static final BlockEntityType<@NotNull SimpleArchedWindowRightBlockEntity> SIMPLE_ARCHED_WINDOW_RIGHT_BLOCK_ENTITY = register("simple_arched_window_right", SimpleArchedWindowRightBlockEntity::new, ModBlocks.SIMPLE_ARCHED_WINDOW_RIGHT);
     public static final BlockEntityType<@NotNull SimpleArchedWindowBetweenBlockEntity> SIMPLE_ARCHED_WINDOW_BETWEEN_BLOCK_ENTITY = register("simple_arched_window_between", SimpleArchedWindowBetweenBlockEntity::new, ModBlocks.SIMPLE_ARCHED_WINDOW_BETWEEN);
     public static final BlockEntityType<@NotNull CrownMoldingBlockEntity> CROWN_MOLDING_BLOCK_ENTITY = register("crown_molding", CrownMoldingBlockEntity::new, ModBlocks.CROWN_MOLDING);
-
+    public static final BlockEntityType<@NotNull CurtainBlockEntity> CURTAIN_BLOCK_ENTITY = register("curtain", CurtainBlockEntity::new, ModBlocks.CURTAIN_BLOCK);
     public static final BlockEntityType<@NotNull WhiteConcreteKeyholeBlockEntity> WHITE_CONCRETE_KEYHOLE_BLOCK_ENTITY = register("white_concrete_keyhole", WhiteConcreteKeyholeBlockEntity::new, ModBlocks.WHITE_CONCRETE_KEYHOLE_BLOCK);
     public static final BlockEntityType<@NotNull PolishedDioriteKeyholeBlockEntity> POLISHED_DIORITE_KEYHOLE_BLOCK_ENTITY = register("polished_diorite_keyhole", PolishedDioriteKeyholeBlockEntity::new, ModBlocks.POLISHED_DIORITE_KEYHOLE_BLOCK);
     public static final BlockEntityType<@NotNull MosaicA1BlockEntity> MOSAIC_A1_BLOCK_ENTITY = register("a1", MosaicA1BlockEntity::new, ModBlocks.MOSAIC_A1_BLOCK);

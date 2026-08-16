@@ -29,14 +29,23 @@ public class PaintingsRecord{
                         "",
                         ""
                 ));
-        PaintingMap.put("bedroom_love_potion",
+        PaintingMap.put("love_potion",
                 new Painting(
-                        ModPaintings.BEDROOM_LOVE_POTION_RK,
+                        ModPaintings.LOVE_POTION_RK,
                         5, 8,
                         "Tristan hands Isolde the love potion",
                         "August Spieß",
                         "",
                         ""
+                ));
+        PaintingMap.put("tristan_isolde_potion_2",
+                new Painting(
+                        ModPaintings.TRISTAN_ISOLDE_POTION_2_RK,
+                        5, 3,
+                        "Tristan hands Isolde the love potion",
+                        "August Spieß",
+                        "Bedroom",
+                        "Tristan hands Isolde the love potion. Painted by August Spieß, Tristan, son of King Meliadus, is seriously injured in a duel while on a quest in Ireland and is healed by Isolde with magic herbs, although the two belong to hostile tribes. Tristan wants to marry Isolde, but first he continues his journey to the court of King Marke in Cornwall, who is a brother-in-law of his father. The king sends him back to Isolde to win her hand on his behalf, and he is successful. As they travel back by sea on a hot, windless day, Tristan and Isolde drink a goblet of wine together, not knowing that it is actually a love potion which was intended for the elderly King Marke. Now passionately in love, the two meet secretly in the garden of the castle – although the wedding of Isolde and King Marke has already taken place. The king hears of their relationship and condemns Tristan to death.\nTristan succeeds in escaping. As a token of love and faithfulness Isolde gives him a ring. When King Marke learns that a magic potion was the cause, he forgives the two their involuntary unfaithfulness."
                 ));
         PaintingMap.put("chapel",
                 new Painting(
@@ -206,8 +215,8 @@ public class PaintingsRecord{
                         4, 6,
                         "Tristan and Isolde with the potion",
                         "John William Waterhouse",
-                        "",
-                        ""
+                        "Bedroom",
+                        "Tristan hands Isolde the love potion. Painted by John William Waterhouse, Tristan, son of King Meliadus, is seriously injured in a duel while on a quest in Ireland and is healed by Isolde with magic herbs, although the two belong to hostile tribes. Tristan wants to marry Isolde, but first he continues his journey to the court of King Marke in Cornwall, who is a brother-in-law of his father. The king sends him back to Isolde to win her hand on his behalf, and he is successful. As they travel back by sea on a hot, windless day, Tristan and Isolde drink a goblet of wine together, not knowing that it is actually a love potion which was intended for the elderly King Marke. Now passionately in love, the two meet secretly in the garden of the castle – although the wedding of Isolde and King Marke has already taken place. The king hears of their relationship and condemns Tristan to death.\\nTristan succeeds in escaping. As a token of love and faithfulness Isolde gives him a ring. When King Marke learns that a magic potion was the cause, he forgives the two their involuntary unfaithfulness."
                 ));
         PaintingMap.put("tristan_on_his_sickbed",
                 new Painting(

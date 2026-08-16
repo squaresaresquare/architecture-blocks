@@ -50,7 +50,7 @@ public class ArchitectureBlocks implements ModInitializer {
 				BlockState lookedAtState = level.getBlockState(raycastPos);
 
 				// Evaluate if the player's crosshair is aiming directly at your molding block
-				if (lookedAtState.is(ModBlocks.CROWN_MOLDING)) {
+				if (lookedAtState.is(ModBlocks.CROWN_MOLDING) || (lookedAtState.is(ModBlocks.CURTAIN_BLOCK))) {
 
 					// If this loop is running on the internal server thread, delete the block permanently
 					if (!level.isClientSide()) {
