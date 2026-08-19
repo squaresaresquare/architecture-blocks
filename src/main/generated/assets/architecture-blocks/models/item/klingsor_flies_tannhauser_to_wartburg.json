@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "architecture-blocks:item/klingsor_flies_tannhauser_to_wartburg_icon"
+  }
+}

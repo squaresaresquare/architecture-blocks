@@ -3,7 +3,7 @@ package com.squaresaresquare.github;
 import com.squaresaresquare.github.item.ModPaintings; // Replace with your actual ModPaintings package path
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.minecraft.core.HolderLookup;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;

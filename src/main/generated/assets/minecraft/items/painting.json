@@ -19,6 +19,13 @@
       {
         "model": {
           "type": "minecraft:model",
+          "model": "architecture-blocks:item/klingsor_flies_tannhauser_to_wartburg"
+        },
+        "when": "architecture-blocks:klingsor_flies_tannhauser_to_wartburg"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
           "model": "architecture-blocks:item/court_life_at_grail_castle"
         },
         "when": "architecture-blocks:court_life_at_grail_castle"
@@ -36,6 +43,20 @@
           "model": "architecture-blocks:item/ludwig_general_2"
         },
         "when": "architecture-blocks:ludwig_general_2"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "architecture-blocks:item/schwanenrittersage1"
+        },
+        "when": "architecture-blocks:schwanenrittersage1"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "architecture-blocks:item/wolfram_translates_the_poem"
+        },
+        "when": "architecture-blocks:wolfram_translates_the_poem"
       },
       {
         "model": {
@@ -71,6 +92,34 @@
           "model": "architecture-blocks:item/accolade"
         },
         "when": "architecture-blocks:accolade"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "architecture-blocks:item/klingsor_offering_tresure"
+        },
+        "when": "architecture-blocks:klingsor_offering_tresure"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "architecture-blocks:item/song_contest_prizes"
+        },
+        "when": "architecture-blocks:song_contest_prizes"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "architecture-blocks:item/portrait_wolfram_von_eschenbach_2"
+        },
+        "when": "architecture-blocks:portrait_wolfram_von_eschenbach_2"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "architecture-blocks:item/portrait_wolfram_von_eschenbach_1"
+        },
+        "when": "architecture-blocks:portrait_wolfram_von_eschenbach_1"
       },
       {
         "model": {
@@ -145,6 +194,13 @@
       {
         "model": {
           "type": "minecraft:model",
+          "model": "architecture-blocks:item/back_wall"
+        },
+        "when": "architecture-blocks:back_wall"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
           "model": "architecture-blocks:item/lady_reading_poem"
         },
         "when": "architecture-blocks:lady_reading_poem"
@@ -155,6 +211,13 @@
           "model": "architecture-blocks:item/immaculate_conception"
         },
         "when": "architecture-blocks:immaculate_conception"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "architecture-blocks:item/hermann_recovers_manuscript"
+        },
+        "when": "architecture-blocks:hermann_recovers_manuscript"
       },
       {
         "model": {

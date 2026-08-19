@@ -3,37 +3,59 @@ import com.squaresaresquare.github.block.ModBlocks;
 import com.squaresaresquare.github.block.entity.ModBlockEntities;
 import com.squaresaresquare.github.creativemodetab.ModCreativeModeTabs;
 import com.squaresaresquare.github.data.ModDataComponents;
+import com.squaresaresquare.github.gui.PaintingInteractionHandler;
 import com.squaresaresquare.github.item.ModItems;
 import com.squaresaresquare.github.item.ModPaintings;
+import com.squaresaresquare.github.records.PaintingsRecord;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.event.player.AttackBlockCallback;
-import net.minecraft.core.Direction;
-import net.minecraft.core.RegistrySetBuilder;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.MouseHandler;
 import net.minecraft.core.BlockPos;
+import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import net.minecraft.resources.Identifier;
-import net.minecraft.world.item.context.BlockPlaceContext;
 
+import javax.swing.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 public class ArchitectureBlocks implements ModInitializer {
 	public static final String MOD_ID = "architecture-blocks";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-
+    public static Map paintingMap = PaintingsRecord.PaintingMap;
+	private boolean hasExecuted = false;
 	@Override
+
 	public void onInitialize() {
+		ModPaintings.initialize();
+
+		LOGGER.info("initialize client");
 		ModDataComponents.registerDataComponents();
 		ModBlocks.initialize();
 		ModItems.registerModItems();
 		ModBlockEntities.initialize();
 		ModItems.initialize();
-    	ModPaintings.initialize();
+		PaintingInteractionHandler.register();
+		ClientTickEvents.END_CLIENT_TICK.register((Minecraft client) -> {
+			// 1. Check if we already ran this to prevent infinite loops
+			if (hasExecuted) {
+				return;
+			}
+			if (client.player != null && client.level != null) {
 
+				System.out.println("Successfully executed after start screen!");
+
+				hasExecuted = true;
+			}
+		});
 		AttackBlockCallback.EVENT.register((player, level, hand, pos, direction) -> {
 			if (player.isSpectator()) {
 				return InteractionResult.PASS;

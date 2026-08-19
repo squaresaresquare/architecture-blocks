@@ -1,5 +1,6 @@
 **/.DS_Store
 run/.mixin.out
+build
 .idea
 .git
 .cache

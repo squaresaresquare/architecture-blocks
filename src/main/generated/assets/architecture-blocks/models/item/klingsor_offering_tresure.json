@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "architecture-blocks:item/klingsor_offering_tresure_icon"
+  }
+}

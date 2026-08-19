@@ -1,7 +1,3 @@
-/weather clear
-/kill @e[type=!minecraft:player]
-/gamemode spectator
-/gamemode creative
 /kill @e[type=!minecraft:player]
 /gamemode spectator
 /gamemode creative
@@ -48,3 +44,7 @@
 /give @p minecraft:painting[minecraft:item_name=accolade]
 /give @p minecraft:painting[minecraft:custom_name=accolade]
 /give @p minecraft:painting[minecraft:painting/variant='architecture-blocks:accolade']
+/time set minecraft:day
+/time set day
+/weather clear
+/time set day

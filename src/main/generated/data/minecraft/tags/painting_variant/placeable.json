@@ -1,11 +1,15 @@
 {
   "values": [
     {
-      "id": "architecture-blocks:tristan_and_isolde_seperation",
+      "id": "architecture-blocks:tristan_isolde_seperation",
       "required": false
     },
     {
       "id": "architecture-blocks:under_the_lindon",
+      "required": false
+    },
+    {
+      "id": "architecture-blocks:klingsor_flies_tannhauser_to_wartburg",
       "required": false
     },
     {
@@ -18,6 +22,14 @@
     },
     {
       "id": "architecture-blocks:ludwig_general_2",
+      "required": false
+    },
+    {
+      "id": "architecture-blocks:schwanenrittersage1",
+      "required": false
+    },
+    {
+      "id": "architecture-blocks:wolfram_translates_the_poem",
       "required": false
     },
     {
@@ -38,6 +50,22 @@
     },
     {
       "id": "architecture-blocks:accolade",
+      "required": false
+    },
+    {
+      "id": "architecture-blocks:klingsor_offering_treasure",
+      "required": false
+    },
+    {
+      "id": "architecture-blocks:song_contest_prizes",
+      "required": false
+    },
+    {
+      "id": "architecture-blocks:portrait_wolfram_von_eschenbach_2",
+      "required": false
+    },
+    {
+      "id": "architecture-blocks:portrait_wolfram_von_eschenbach_1",
       "required": false
     },
     {
@@ -81,11 +109,19 @@
       "required": false
     },
     {
+      "id": "architecture-blocks:back_wall",
+      "required": false
+    },
+    {
       "id": "architecture-blocks:lady_reading_poem",
       "required": false
     },
     {
       "id": "architecture-blocks:immaculate_conception",
+      "required": false
+    },
+    {
+      "id": "architecture-blocks:hermann_recovers_manuscript",
       "required": false
     },
     {

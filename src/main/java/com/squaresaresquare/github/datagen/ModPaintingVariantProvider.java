@@ -24,8 +24,8 @@ public class ModPaintingVariantProvider extends FabricDynamicRegistryProvider {
             entries.add(
                     painting.getValue().resourceKey(),
                     new PaintingVariant(
-                            painting.getValue().height(),
                             painting.getValue().width(),
+                            painting.getValue().height(),
                             painting.getValue().resourceKey().identifier(),
                             java.util.Optional.of(Component.literal(painting.getValue().title()).withStyle(ChatFormatting.YELLOW)),
                             java.util.Optional.of(Component.literal(painting.getValue().author()).withStyle(ChatFormatting.GRAY)))

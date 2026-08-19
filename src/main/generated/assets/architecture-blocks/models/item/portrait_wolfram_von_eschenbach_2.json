@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "architecture-blocks:item/portrait_wolfram_von_eschenbach_2_icon"
+  }
+}
