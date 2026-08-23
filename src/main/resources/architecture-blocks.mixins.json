@@ -5,7 +5,8 @@
   "refmap": "architecture-blocks-refmap.json",
   "mixins": [
     "ExampleMixin",
-    "PaintingRendererMixin"
+    "PaintingRendererMixin",
+    "DisableHangingEntityOverlapMixin"
   ],
   "injectors": {
     "defaultRequire": 1

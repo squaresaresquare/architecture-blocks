@@ -26,6 +26,6 @@ public class ModDataComponents {
     }
 
     public static void registerDataComponents() {
-        ArchitectureBlocks.LOGGER.info("Registering Data Components for " + ArchitectureBlocks.MOD_ID);
+        ArchitectureBlocks.LOGGER.debug("Registering Data Components for " + ArchitectureBlocks.MOD_ID);
     }
 }

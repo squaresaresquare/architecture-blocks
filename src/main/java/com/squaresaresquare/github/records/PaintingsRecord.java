@@ -203,7 +203,7 @@ public class PaintingsRecord{
                 ));
         PaintingMap.put("tristan_isolde_separation",
                 new Painting(
-                        ModPaintings.TRISTAN_ISOLDE_SEPERATION_RK,
+                        ModPaintings.TRISTAN_ISOLDE_SEPARATION_RK,
                         5, 3,
                         "Tristan and isolde seperation",
                         "August Spieß",
@@ -266,9 +266,9 @@ public class PaintingsRecord{
                         "diningroom",
                         "Tannhäuser/Heinrich von Ofterdingen presenting his work to Landgrave Hermann I of Thuringia and and the pious Landgravine Sophia in a contest with his life at stake where he ultimately loses and faces execution. He is granted a year to fetch the magician Klingsor from Hungary to defend his honor."
                 ));
-        PaintingMap.put("klingsor_flies_tannhauser_to_wartburg",
+        PaintingMap.put("klingsor_flies_tannhauser",
                 new Painting(
-                        ModPaintings.KLINGSOR_FLIES_TANNHAUSER_TO_WARTBURG_RK,
+                        ModPaintings.KLINGSOR_FLIES_TANNHAUSER_RK,
                         3, 4,
                         "Klingsor flies Tannhäuser/Heinrich von Ofterdingen back to Wartburg",
                         "Josef Aigner/Ferdinand Piloty",
@@ -328,6 +328,24 @@ public class PaintingsRecord{
                         "Josef Aigner/Ferdinand Piloty",
                         "diningroom",
                         "Landgrave Hermann I of Thuringia asks Wolfram Von Eschenbach author of Parzival and Willehalm to translate Willehalm."
+                ));
+        PaintingMap.put("left_curtain",
+                new Painting(
+                        ModPaintings.LEFT_CURTAIN_RK,
+                        1, 4,
+                        "Left Curtain",
+                        "NA",
+                        "bedroom",
+                        "Left Curtain"
+                ));
+        PaintingMap.put("right_curtain",
+                new Painting(
+                        ModPaintings.RIGHT_CURTAIN_RK,
+                        1, 4,
+                        "Right Curtain",
+                        "NA",
+                        "bedroom",
+                        "Right Curtain"
                 ));
     }
 }

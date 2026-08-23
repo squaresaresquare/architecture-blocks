@@ -46,18 +46,18 @@ public class GenericDataProvider<CustomDataObj> implements DataProvider {
         JsonElement jsonElement = JsonParser.parseString(jsonString);
 
         Path resolvedPath = outputFolder.resolve(outputFolder, modID, Path.of(path)).toAbsolutePath();
-        ArchitectureBlocks.LOGGER.info("output folder is " + resolvedPath.toString());
+        ArchitectureBlocks.LOGGER.debug("output folder is " + resolvedPath.toString());
         // Safely writes the JSON object to disk via Minecraft's data caching system
         CompletableFuture<?> jsonDatagen = DataProvider.saveStable(cache, jsonElement, resolvedPath).completedFuture(null);
 
         String[] parts = outputFolder.toString().split("/");
         String name = parts[parts.length -1];
         if (jsonDatagen.isCompletedExceptionally()){
-            LOGGER.info("%s jsonDatagen completed exceptionally (with errors)".formatted(name));
+            LOGGER.debug("%s jsonDatagen completed exceptionally (with errors)".formatted(name));
         } else if (jsonDatagen.state().toString() == "SUCCESS") {
-            LOGGER.info("%s jsonDatagen completed successfully".formatted(name));
+            LOGGER.debug("%s jsonDatagen completed successfully".formatted(name));
         } else {
-            LOGGER.info("%s jsonDatagen not completed".formatted(name));
+            LOGGER.debug("%s jsonDatagen not completed".formatted(name));
         }
         return jsonDatagen;
     }

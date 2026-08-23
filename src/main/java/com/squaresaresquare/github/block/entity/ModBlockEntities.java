@@ -292,6 +292,11 @@ public class ModBlockEntities {
     public static final BlockEntityType<@NotNull MosaicBORDER10BlockEntity> MOSAIC_BORDER10_BLOCK_ENTITY = register("border10", MosaicBORDER10BlockEntity::new, ModBlocks.MOSAIC_BORDER10_BLOCK);
     public static final BlockEntityType<@NotNull MosaicBORDER11BlockEntity> MOSAIC_BORDER11_BLOCK_ENTITY = register("border11", MosaicBORDER11BlockEntity::new, ModBlocks.MOSAIC_BORDER11_BLOCK);
     public static final BlockEntityType<@NotNull MosaicBORDER12BlockEntity> MOSAIC_BORDER12_BLOCK_ENTITY = register("border12", MosaicBORDER12BlockEntity::new, ModBlocks.MOSAIC_BORDER12_BLOCK);
+    public static final BlockEntityType<@NotNull CopperPotBlockEntity> COPPER_POT_BLOCK_ENTITY = register("copper_pot", CopperPotBlockEntity::new, ModBlocks.COPPER_POT_BLOCK);
+    public static final BlockEntityType<@NotNull CopperPot2BlockEntity> COPPER_POT2_BLOCK_ENTITY = register("copper_pot2", CopperPot2BlockEntity::new, ModBlocks.COPPER_POT2_BLOCK);
+    public static final BlockEntityType<@NotNull OvenFrontBlockEntity> OVEN_FRONT_BLOCK_ENTITY = register("oven_front", OvenFrontBlockEntity::new, ModBlocks.OVEN_FRONT_BLOCK);
+    public static final BlockEntityType<@NotNull OvenLeftBlockEntity> OVEN_LEFT_BLOCK_ENTITY = register("oven_left", OvenLeftBlockEntity::new, ModBlocks.OVEN_LEFT_BLOCK);
+    public static final BlockEntityType<@NotNull OvenRightBlockEntity> OVEN_RIGHT_BLOCK_ENTITY = register("oven_right", OvenRightBlockEntity::new, ModBlocks.OVEN_RIGHT_BLOCK);
     //:::::::::::
 
 }

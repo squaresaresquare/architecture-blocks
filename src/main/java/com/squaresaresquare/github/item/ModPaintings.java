@@ -49,21 +49,23 @@ public class ModPaintings {
     public static final ResourceKey<@NotNull PaintingVariant> SIGURD_MEETS_GRYPIN_RK = create("sigurd_meets_grypin");
     public static final ResourceKey<@NotNull PaintingVariant> CURSE_OF_GRAIL_MESSENGER_RK = create("curse_of_grail_messenger");
     public static final ResourceKey<@NotNull PaintingVariant> THE_ARRIVAL_OF_LOHENGRIN_RK = create("the_arrival_of_lohengrin");
-    public static final ResourceKey<@NotNull PaintingVariant> TRISTAN_ISOLDE_SEPERATION_RK = create("tristan_isolde_seperation");
+    public static final ResourceKey<@NotNull PaintingVariant> TRISTAN_ISOLDE_SEPARATION_RK = create("tristan_isolde_separation");
     public static final ResourceKey<@NotNull PaintingVariant> TRISTAN_ISOLDE_POTION_RK = create("tristan_isolde_potion");
     public static final ResourceKey<@NotNull PaintingVariant> TRISTAN_ISOLDE_POTION_2_RK = create("tristan_isolde_potion_2");
     public static final ResourceKey<@NotNull PaintingVariant> TRISTAN_ON_HIS_SICKBED_RK = create("tristan_on_his_sickbed");
     public static final ResourceKey<@NotNull PaintingVariant> UNDER_THE_LINDON_2_RK = create("under_the_lindon_2");
     public static final ResourceKey<@NotNull PaintingVariant> UNDER_THE_LINDON_RK = create("under_the_lindon");
-    public static final ResourceKey<@NotNull PaintingVariant> KLINGSOR_OFFERING_TREASURE_RK = create("klingsor_offering_treasure");
+    public static final ResourceKey<@NotNull PaintingVariant> KLINGSOR_OFFERING_TREASURE_RK = create("klingsor_offering_tresure");
     public static final ResourceKey<@NotNull PaintingVariant> BACK_WALL_RK = create("back_wall");
-    public static final ResourceKey<@NotNull PaintingVariant> KLINGSOR_FLIES_TANNHAUSER_TO_WARTBURG_RK = create("klingsor_flies_tannhauser_to_wartburg");
+    public static final ResourceKey<@NotNull PaintingVariant> KLINGSOR_FLIES_TANNHAUSER_RK = create("klingsor_flies_tannhauser");
     public static final ResourceKey<@NotNull PaintingVariant> PORTRAIT_WOLFRAM_VON_ESCHENBACH_1_RK = create("portrait_wolfram_von_eschenbach_1");
     public static final ResourceKey<@NotNull PaintingVariant> PORTRAIT_WOLFRAM_VON_ESCHENBACH_2_RK = create("portrait_wolfram_von_eschenbach_2");
     public static final ResourceKey<@NotNull PaintingVariant> SONG_CONTEST_PRIZES_RK = create("song_contest_prizes");
     public static final ResourceKey<@NotNull PaintingVariant> SCHWANENRITTERSAGE1_RK = create("schwanenrittersage1");
     public static final ResourceKey<@NotNull PaintingVariant> HERMANN_RECOVERS_MANUSCRIPT_RK = create("hermann_recovers_manuscript");
     public static final ResourceKey<@NotNull PaintingVariant> WOLFRAM_TRANSLATES_THE_POEM_RK = create("wolfram_translates_the_poem");
+    public static final ResourceKey<@NotNull PaintingVariant> LEFT_CURTAIN_RK = create("left_curtain");
+    public static final ResourceKey<@NotNull PaintingVariant> RIGHT_CURTAIN_RK = create("right_curtain");
     private static ResourceKey<@NotNull PaintingVariant> create(final String id) {
         ResourceKey<PaintingVariant> key = ResourceKey.create(
                 Registries.PAINTING_VARIANT,

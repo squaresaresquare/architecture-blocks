@@ -1,4 +1,5 @@
 package com.squaresaresquare.github;
+
 import com.squaresaresquare.github.block.ModBlocks;
 import com.squaresaresquare.github.block.entity.ModBlockEntities;
 import com.squaresaresquare.github.creativemodetab.ModCreativeModeTabs;
@@ -11,15 +12,16 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.event.player.AttackBlockCallback;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.MouseHandler;
 import net.minecraft.core.BlockPos;
-import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
+import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 
 import javax.swing.*;
 import java.util.HashMap;
@@ -37,7 +39,7 @@ public class ArchitectureBlocks implements ModInitializer {
 	public void onInitialize() {
 		ModPaintings.initialize();
 
-		LOGGER.info("initialize client");
+		LOGGER.debug("initialize client");
 		ModDataComponents.registerDataComponents();
 		ModBlocks.initialize();
 		ModItems.registerModItems();
@@ -64,15 +66,16 @@ public class ArchitectureBlocks implements ModInitializer {
 			// Perform the non-solid targeting raycast
 			double reach = player.blockInteractionRange();
 			HitResult hit = player.pick(reach, 0.0F, true); // true catches empty/non-solid shapes
+			//EntityHitResult entityHit = player.pick(reach, 0.0F, true);
+
 
 			if (hit.getType() == HitResult.Type.BLOCK) {
-
 				BlockHitResult blockHit = (BlockHitResult) hit;
 				BlockPos raycastPos = blockHit.getBlockPos();
 				BlockState lookedAtState = level.getBlockState(raycastPos);
 
 				// Evaluate if the player's crosshair is aiming directly at your molding block
-				if (lookedAtState.is(ModBlocks.CROWN_MOLDING) || (lookedAtState.is(ModBlocks.CURTAIN_BLOCK))) {
+				if (lookedAtState.is(ModBlocks.CROWN_MOLDING) || lookedAtState.is(ModBlocks.CURTAIN_BLOCK) ) {
 
 					// If this loop is running on the internal server thread, delete the block permanently
 					if (!level.isClientSide()) {

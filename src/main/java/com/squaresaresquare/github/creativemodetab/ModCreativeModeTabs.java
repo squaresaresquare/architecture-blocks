@@ -263,7 +263,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.WHITE_CONCRETE_CIRCLE_CORNER);
                         output.accept(ModBlocks.POLISHED_DIORITE_KEYHOLE_BLOCK);
                         output.accept(ModBlocks.WHITE_CONCRETE_KEYHOLE_BLOCK);
-                        output.accept(ModBlocks.CURTAIN_BLOCK);
+                        output.accept(ModBlocks.COPPER_POT_BLOCK);
+                        output.accept(ModBlocks.OVEN_FRONT_BLOCK);
+                        output.accept(ModBlocks.OVEN_LEFT_BLOCK);
+                        output.accept(ModBlocks.OVEN_RIGHT_BLOCK);
                         //::new architecture_block here
                     }).build());
     public static final CreativeModeTab SIMPLE_ARCHED_WINDOW_TAB = Registry.register(
@@ -533,6 +536,6 @@ public class ModCreativeModeTabs {
     }
     public static void registerModCreativeModeTabs() {
         System.out.print("Registering Creative Mode Tabs");
-        ArchitectureBlocks.LOGGER.info("Registering Creative Mode Tabs for " + ArchitectureBlocks.MOD_ID);
+        ArchitectureBlocks.LOGGER.debug("Registering Creative Mode Tabs for " + ArchitectureBlocks.MOD_ID);
     }
 }

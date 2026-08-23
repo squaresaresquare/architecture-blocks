@@ -1,15 +1,11 @@
 {
   "values": [
     {
-      "id": "architecture-blocks:tristan_isolde_seperation",
+      "id": "architecture-blocks:tristan_isolde_separation",
       "required": false
     },
     {
       "id": "architecture-blocks:under_the_lindon",
-      "required": false
-    },
-    {
-      "id": "architecture-blocks:klingsor_flies_tannhauser_to_wartburg",
       "required": false
     },
     {
@@ -53,11 +49,15 @@
       "required": false
     },
     {
-      "id": "architecture-blocks:klingsor_offering_treasure",
+      "id": "architecture-blocks:klingsor_offering_tresure",
       "required": false
     },
     {
       "id": "architecture-blocks:song_contest_prizes",
+      "required": false
+    },
+    {
+      "id": "architecture-blocks:right_curtain",
       "required": false
     },
     {
@@ -117,7 +117,15 @@
       "required": false
     },
     {
+      "id": "architecture-blocks:left_curtain",
+      "required": false
+    },
+    {
       "id": "architecture-blocks:immaculate_conception",
+      "required": false
+    },
+    {
+      "id": "architecture-blocks:klingsor_flies_tannhauser",
       "required": false
     },
     {

@@ -49,7 +49,7 @@ public class PaintingLoreScreen extends Screen {
         this.scrollbarTop = top + 8;
         int lineHeight = 13;
         int totalContentHeight = (("Title: %s".formatted(data.title()).length() / 39 + "Title: %s".formatted(data.title()).length() / 39  + data.note().length() / 39) * lineHeight);
-        ArchitectureBlocks.LOGGER.info("Total height is %d".formatted(totalContentHeight));
+        ArchitectureBlocks.LOGGER.debug("Total height is %d".formatted(totalContentHeight));
         int viewableAreaHeight = 105;
         this.maxScroll = Math.max(0, totalContentHeight - viewableAreaHeight);
 
@@ -77,7 +77,7 @@ public class PaintingLoreScreen extends Screen {
         extractor.scissorStack.push(new ScreenRectangle(left + 8, top + 8, boxWidth - 25, 105));
 
         int currentY = top + 3 - this.scrollOffset;
-        ArchitectureBlocks.LOGGER.info("write text to window");
+        ArchitectureBlocks.LOGGER.debug("write text to window");
         currentY += 22;
         extractor.textWithWordWrap(this.font, FormattedText.of("Title: %s".formatted(data.title())), left +10, currentY,boxWidth - 45, 0xFFFFFF00, false);
         currentY += 22;

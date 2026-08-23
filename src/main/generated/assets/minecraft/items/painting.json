@@ -19,13 +19,6 @@
       {
         "model": {
           "type": "minecraft:model",
-          "model": "architecture-blocks:item/klingsor_flies_tannhauser_to_wartburg"
-        },
-        "when": "architecture-blocks:klingsor_flies_tannhauser_to_wartburg"
-      },
-      {
-        "model": {
-          "type": "minecraft:model",
           "model": "architecture-blocks:item/court_life_at_grail_castle"
         },
         "when": "architecture-blocks:court_life_at_grail_castle"
@@ -106,6 +99,13 @@
           "model": "architecture-blocks:item/song_contest_prizes"
         },
         "when": "architecture-blocks:song_contest_prizes"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "architecture-blocks:item/right_curtain"
+        },
+        "when": "architecture-blocks:right_curtain"
       },
       {
         "model": {
@@ -208,9 +208,23 @@
       {
         "model": {
           "type": "minecraft:model",
+          "model": "architecture-blocks:item/left_curtain"
+        },
+        "when": "architecture-blocks:left_curtain"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
           "model": "architecture-blocks:item/immaculate_conception"
         },
         "when": "architecture-blocks:immaculate_conception"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "architecture-blocks:item/klingsor_flies_tannhauser"
+        },
+        "when": "architecture-blocks:klingsor_flies_tannhauser"
       },
       {
         "model": {

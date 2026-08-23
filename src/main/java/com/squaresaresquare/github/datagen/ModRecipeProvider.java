@@ -399,7 +399,7 @@ public class ModRecipeProvider extends FabricRecipeProvider{
                 );
 
                 // Define the precise output file path location identifier
-                Identifier recipeId = Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, pathName + "_painting_from_stonecutting");
+                Identifier recipeId = Identifier.fromNamespaceAndPath(ArchitectureBlocks.MOD_ID, pathName);
                 //ResourceKey<Recipe> recipeKey = ResourceKey.create(Registries.RECIPE, recipeId);
                 ResourceKey<Recipe<?>> recipeKey = ResourceKey.create(Registries.RECIPE, recipeId);
                 // Initialize a non-static instance of the unlock advancement builder

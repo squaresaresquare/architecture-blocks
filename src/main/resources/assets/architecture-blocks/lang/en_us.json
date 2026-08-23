@@ -1,6 +1,11 @@
 {
+  "block.architecture-blocks.copper_pot": "first copper pot",
+  "block.architecture-blocks.copper_pot2": "second copper pot",
   "block.architecture-blocks.circle_corner": "polished diorite circle corner",
   "block.architecture-blocks.quartz_circle_corner": "quartz circle corner",
+  "block.architecture-blocks.oven_front": "oven front",
+  "block.architecture-blocks.oven_left": "oven left",
+  "block.architecture-blocks.oven_right": "oven right",
   "block.architecture-blocks.white_concrete_circle_corner": "white concrete circle corner",
   "block.architecture-blocks.polished_diorite_keyhole": "polished diorite keyhole window",
   "block.architecture-blocks.white_concrete_keyhole": "white concrete keyhole window",
